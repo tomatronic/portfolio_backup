@@ -60,7 +60,6 @@ function HomePage() {
       <div className="mainContainer">
       <Link href="/work/designflows">
         <div className={` ${'row'} , ${styles.caseStudy}`}>
-        
           <div className="column">
             <img src="/169competition.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
           </div>
