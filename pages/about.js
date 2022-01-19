@@ -1,7 +1,6 @@
 import styles from "./css/about.module.css"
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
-import Image from "next/image"
 import Head from "next/head"
 
 
@@ -17,7 +16,7 @@ function About() {
                 <div className={styles.mainContainer}>
                     <div className="reverse-row">
                         <div className="column">
-                            <Image src="/bio.jpeg" layout="responsive" width="394" height="214" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
+                            <img src="/bio.jpeg" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
                         </div>
                         <div className="double-column">
                             <h2>
