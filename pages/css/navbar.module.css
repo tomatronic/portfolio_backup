@@ -44,6 +44,14 @@
     transition: 0.3s;
 }
 
+.nav li a:hover::before {
+    transform: scaleX(0);
+  }
+
+.wrapper a:hover::before {
+    transform: scaleX(0);
+  }
+
 @media screen and (min-width:600px) {
     .site-header__wrapper {
         max-width: 1200px;
