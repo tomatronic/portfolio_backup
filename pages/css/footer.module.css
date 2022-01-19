@@ -1,0 +1,28 @@
+.footer {
+    border-top: 1px solid #e9ecef;
+    padding: 40px 0 24px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 120px;
+    margin: 16px auto 40px;
+}
+
+.email {
+    width: 24px;
+    height: 24px;
+    fill: #273959;
+}
+
+  .email:hover {
+    fill: #916DF9;
+  }

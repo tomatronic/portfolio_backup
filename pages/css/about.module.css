@@ -1,0 +1,65 @@
+.introContainer {
+    max-width: 100%;
+    border-left: #916DF9 8px solid;
+    margin: 80px 24px;
+    padding: 10px 24px 45px;
+}
+
+.intro {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.bioImg {
+    box-shadow: none;
+    margin: 40px auto;
+    max-width: 50%;
+}
+
+.btnintro {
+    margin: 0 24px 0 0;
+}
+
+.blurb {
+    font-size: 18px;
+    margin: 0 0 40px;
+}
+
+.highlight {
+    display: inline;
+    text-decoration: underline;
+    text-decoration-color: #3EE8B5;
+    text-decoration-style: wavy;
+    font-weight: bold;    
+}
+
+.twocol {
+    display: flex;
+    gap: 160px;
+}
+
+.twocol div {
+    flex: 1 1 auto;
+}
+
+@media screen and (min-width:600px) { 
+    .introContainer {
+        width: 45%;
+        min-width: 550px;
+    }
+    
+    .intro {
+        font-size: 64px;
+        font-weight: bold;
+    }
+
+    .bioImg {
+        margin: 70px 0 0;
+        min-width: 100%;
+    }
+    
+    .blurb {
+        font-size: 24px;
+    }
+
+}
