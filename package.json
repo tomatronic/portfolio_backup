@@ -1,7 +1,5 @@
 {
-  "name": "nextjs",
-  "private": true,
-  "scripts": {
+    "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
