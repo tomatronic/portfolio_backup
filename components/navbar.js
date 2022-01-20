@@ -20,9 +20,9 @@ function NavBar() {
                 <li>          
                   <ActiveLink activeClassName="active" href="/about"><a link="/about"> About </a></ActiveLink>  
                 </li>
-                <il>
+                <li>
                   <ActiveLink activeClassName="active" href="/resume.pdf"><a link="/resume.pdf" target="_blank" rel="noopener noreferrer"> Resumé </a></ActiveLink>
-                </il>
+                </li>
               </ul>                      
             </nav>
         </div>
