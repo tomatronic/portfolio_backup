@@ -1,6 +1,5 @@
 import NavBar from "../../components/navbar"
 import Link from "next/link"
-import Image from "next/image"
 import styles from "./css/caseStudy.module.css"
 import Footer from "../../components/footer"
 import ChevronLeft from "@mui/icons-material/ChevronLeft"
@@ -14,7 +13,7 @@ function beerBlog() {
             <NavBar />
             <div className={styles.csIntroBannerbb} />
             <div className={styles.introContainer}>
-                <div className="display">Beer blog</div>
+                <div className="display">It's Brewtiful</div>
             </div>
             <div className="mainContainer">
                     <div className="row">
@@ -25,11 +24,11 @@ function beerBlog() {
                             <p>I decided that my aim would be to plug this gap by creating a blog/magazine style website that catologued beers I sampled and also ackowledged and admired the effort that went into the designs on the packaging.</p>
                         </div>
                         <div className="column">
-                            <Image src="/X.png" layout="responsive" width="394" height="214" alt="Brewtiful - An idea" />
+                            Words here
                         </div>
                     </div>
                 </div>
-                <div className="outer-row">
+                <div className="outer-row-bb">
                     <div className="mainContainer">
                         <div className="nopad-row">
                             <div className="column">

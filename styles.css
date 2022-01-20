@@ -228,6 +228,18 @@ button[disabled]{
    color: #FFF;
 }
 
+.outer-row-bb {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: 40px 0 0;
+   padding: 0;
+   align-items: center;
+   background-color: #0C293F;
+   color: #FFF;
+}
+
 .nopad-row {
    display: flex;
    flex-direction: row;

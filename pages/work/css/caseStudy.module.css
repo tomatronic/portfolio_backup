@@ -24,6 +24,14 @@
     min-height: 240px;
   }
 
+  .csIntroBannerbb {
+    display: flex;
+    background-image: url("../../../public/brewtifulBg.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 240px;
+  }
+
   .csIntroBannerDesignFlows {
       display: flex;
       background-color: #264654;
@@ -45,6 +53,7 @@
     margin: 0;
 }
 
+
   .imgRound {
       border-radius: 20px;
   }
@@ -62,6 +71,14 @@
       .csIntroBannerdf {
         display: flex;
         background-image: url("../../../public/dfbg.png");
+        background-size: cover;
+        width: 100%;
+        min-height: 500px;
+      }
+
+      .csIntroBannerbb {
+        display: flex;
+        background-image: url("../../../public/brewtifulBg.png");
         background-size: cover;
         width: 100%;
         min-height: 500px;
