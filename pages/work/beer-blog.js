@@ -21,7 +21,9 @@ function beerBlog() {
                             <h1>About the project</h1>
                             <p>I decided I wanted to find a new project for myself. I wanted to create something that would both challenge me as a designer but also still provide a solution to a problem.</p>
                             <p>So what did I decide? After spending a long time thinking about what I enjoyed and how I may be able to transform this into a project I came up with the concept of 'Brewtiful'. The basis to the idea is that craft beers often feature great designs on the cans and bottles they are distrubuted in. I noticed that although there are many websites and apps out there that focus on the beer itself very few mentioned the design effort.</p>
-                            <p>I decided that my aim would be to plug this gap by creating a blog/magazine style website that catologued beers I sampled and also ackowledged and admired the effort that went into the designs on the packaging.</p>
+                            <br />
+                            <h1>Project Goal</h1>
+                            <p>Create a magazine/blog style website that focuses on craft beers and the packaging they are delivered in. Each beer will be reviewed in a way that entertains but also educates.</p>
                         </div>
                         <div className="column">
                             Words here
@@ -56,9 +58,6 @@ function beerBlog() {
                         <h1>A new brand is born</h1>
                         <p>So now I had my idea in place I wanted to give it name. I wanted to be able to refer to this idea as a brand and not just a thing. I also new I needed to create my goal. So my next steps was to come up with a name and an end goal.</p>
                         <p>I decided I wanted to highlight that the brand involved beer and design, I knew I wanted a name that was easy and played on words. After many hours of searching the internet, checking domain availabilities and social channels names I settled on the name 'Brewtiful'! More on this in a bit.</p>
-                        <br />
-                        <h1>Project Goal</h1>
-                        <p>Create a magazine/blog style website that focuses on craft beers and the packaging they are delivered in. Each beer will be reviewed in a way that entertains but also educates.</p>
                     </div>
                     <div className="column">Image</div>
                 </div>
