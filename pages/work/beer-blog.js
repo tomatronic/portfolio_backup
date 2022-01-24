@@ -4,6 +4,9 @@ import styles from "./css/caseStudy.module.css"
 import Footer from "../../components/footer"
 import ChevronLeft from "@mui/icons-material/ChevronLeft"
 import Head from "next/head"
+import React from "react"
+import Zoom from "react-medium-image-zoom"
+import 'react-medium-image-zoom/dist/styles.css'
 
 function beerBlog() {
     return (
@@ -26,7 +29,9 @@ function beerBlog() {
                             <p>Create a magazine/blog style website that focuses on craft beers and the packaging they are delivered in. Each beer will be reviewed in a way that entertains but also educates.</p>
                         </div>
                         <div className="column">
-                            Words here
+                        <Zoom>
+                            <img src="/sampleBeer.png" width="100%" height="auto" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                        </Zoom>
                         </div>
                     </div>
                 </div>
@@ -64,10 +69,14 @@ function beerBlog() {
                 <div className="row">
                     <div className="column">
                         <h1>Understanding the landscape</h1>
-                        <p>My initial task was to explore what options were already available. I explored lots of beer related websites to try and gain an understanding of what was available. I decided to place each site into a small matrix to highlight the content being offered. The matrix was created based on my initial idea, the first axis was to show how beer focused the site was, the second axis was to show how and if the design was highlighted.</p>
-                        <p>I quickly came to notice that nothing came close to the area I was envisioning this project. It seemed that most sites focused on one or the other. I would be aiming for something much more central.</p>
+                        <p>My initial task was to explore what options were already available to try and gain an understanding of where my idea may sit.</p>
+                        <p>I collated a few of the sites into a list and identifed where they were similar and if they offered any unique selling points. I then plotted my proposal against these findings.</p>
                     </div>
-                    <div className="column">Image of matrix</div>
+                    <div className="column">
+                        <Zoom>
+                            <img src="/brewComp.png" width="100%" height="auto" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                        </Zoom>
+                    </div>
                 </div>
                 <div className="row">
                     <div className="column">
