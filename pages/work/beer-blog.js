@@ -1,5 +1,6 @@
 import NavBar from "../../components/navbar"
 import Link from "next/link"
+import Image from "next/image"
 import styles from "./css/caseStudy.module.css"
 import Footer from "../../components/footer"
 import ChevronLeft from "@mui/icons-material/ChevronLeft"
@@ -30,7 +31,7 @@ function beerBlog() {
                         </div>
                         <div className="column">
                         <Zoom>
-                            <img src="/sampleBeer.png" width="100%" height="auto" alt="I had previously begun exploring ways of documenting beers I had sampled" />
+                            <Image src="/sampleBeer.png" layout="intrinsic" width="500" height="542" alt="I had previously begun exploring ways of documenting beers I had sampled" />
                         </Zoom>
                         </div>
                     </div>
@@ -74,7 +75,7 @@ function beerBlog() {
                     </div>
                     <div className="column">
                         <Zoom>
-                            <img src="/brewComp.png" width="100%" height="auto" alt="Competitor research - Investigating the craft beer and design review landscape" />
+                            <Image src="/brewComp.png" layout="intrinsic" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
                         </Zoom>
                     </div>
                 </div>
