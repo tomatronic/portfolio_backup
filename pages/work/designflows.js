@@ -5,6 +5,7 @@ import Image from "next/image"
 import Footer from "../../components/footer"
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import Head from "next/head"
+import Zoom from "react-medium-image-zoom"
 
 function caseStudy() {
     return (
@@ -25,7 +26,9 @@ function caseStudy() {
                             <p>Safe to say that I drank a lot of coffee that weekend...☕</p>
                         </div>
                         <div className="column">
-                            <Image src="/designflows.png" layout="responsive" width="394" height="214" alt="Designflows 2021 logo" />
+                            <Zoom>
+                                <Image src="/designflows.png" layout="intrinsic" width="394" height="214" alt="Designflows 2021 logo" />
+                            </Zoom>
                         </div>
                     </div>
                 </div>
@@ -71,7 +74,9 @@ function caseStudy() {
                             <p>Once happy I understood what was being asked for I begun making a to do list. This would help me work methodically and would make sure I covered everything required of me during this weekend.</p>
                         </div>
                         <div className="column">
-                            <Image src="/poa.png" layout="responsive" width="944" height="944" alt="It was important for me to make a to do list to help ensure I stayed on track." />
+                            <Zoom>
+                                <Image src="/poa.png" layout="intrinsic" width="944" height="944" alt="It was important for me to make a to do list to help ensure I stayed on track." />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="row">
@@ -80,7 +85,9 @@ function caseStudy() {
                             <p>Due to the time constraints I had to take a slightly different appraoch to what I am used to. The research phase is the most important part of the project, it helps ensure that my understanding as as good as it can be.</p>
                             <p>I decided the quickest approach to the research phase of this particular project would be to look at what could be considered competitor businesses. I begun by looking at large DIY style companies, IKEA, B&amp;Q etc. I then also considered businesses that primarily offer a hire service, for example Uber. I then went even further and looked at companies that offered collection and delivery services such as deliveroo. These companies and there apps helped me to build a better understanding of the current market, the common UI elements and where I may be able to make improvements.</p>
                             <br />
-                            <Image src="/compResearch.png" layout="responsive" width="2000" height="944" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                            <Zoom>
+                                <Image src="/compResearch.png" layout="intrinsic" width="2000" height="944" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="row">
@@ -89,7 +96,9 @@ function caseStudy() {
                             <p>I decided to spend some time inventing a brand identiy for this project. It meant I was able to create a simple pattern library that I could then deploy much quicker into the final design.</p>
                             <p>I mainly focused on colour palette and typography. I settled on something that was fairly simple but offered a level of uniqueness.</p>
                             <br />
-                            <Image src="/brandID.png" layout="responsive" width="2000" height="1040" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                            <Zoom>
+                                <Image src="/brandID.png" layout="intrinsic" width="2000" height="1040" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="row">
@@ -101,7 +110,9 @@ function caseStudy() {
                             <p>By Saturday evening I was confident that I had created a sketch that I could work with. I decided to take a break at this point until the next day. It meant I had plenty of time to focus on the high fidelity mocks, icon and presentation poster the next day.</p>
                         </div>
                         <div className="column">
-                            <Image src="/sketch.png" layout="responsive" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
+                            <Zoom>
+                                <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="nopad-row">
@@ -115,7 +126,9 @@ function caseStudy() {
                     <div className="mainContainer">
                         <div className="row">
                             <div className="nopad-column">
-                                <Image src="/appMocks.png" layout="responsive" width="1365" height="879" alt="Preview of how the app mocks were looking" />
+                            <Zoom>
+                                <Image src="/appMocks.png" layout="intrinsic" width="1365" height="879" alt="Preview of how the app mocks were looking" />
+                            </Zoom>
                             </div>
                         </div>
                     </div>
@@ -128,7 +141,9 @@ function caseStudy() {
                             <p>The initial step here was to make sure I was working to correct dimensions. I then spent some time understanding what was needed to create an app icon that stands out.</p>
                             <p>I spent a lot of effort and made many iterations to icon. I ended up settling on a simple icon that used the colour palette from the app to ensure a consistant expereince.</p>
                             <br />
-                            <Image src="/iconexploration.png" layout="responsive" width="2000" height="646" alt="Examples of the many icon ideas I explored" />
+                            <Zoom>
+                                <Image src="/iconexploration.png" layout="intrinsic" width="2000" height="646" alt="Examples of the many icon ideas I explored" />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="row">
@@ -141,14 +156,18 @@ function caseStudy() {
                             </p>
                         </div>
                         <div className="column">
-                            <Image src="/appStoreMock.png" layout="responsive" width="1024" height="1757" alt="Final icon design" />
+                            <Zoom>
+                                <Image src="/appStoreMock.png" layout="intrinsic" width="1024" height="1757" alt="Final icon design" />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="row">
                         <div className="column">
                             <h1>Outcome</h1>
                             <br />
-                            <Image src="/dfFinal.png" layout="responsive" width="1403" height="931" alt="Designflows final submission 2021" />
+                            <Zoom>
+                                <Image src="/dfFinal.png" layout="intrinsic" width="1403" height="931" alt="Designflows final submission 2021" />
+                            </Zoom>
                             <br />
                             <p>Overall I am happy with the result. However, I wish I had more time to perfect this.</p>
                             <p>The initial area I would have spent more time on would have been the research phase, I would have liked to have gained a better understanding of the competitor landscape. The addition of user interviews would have also assisted in the research and the end result. I also think I could of come up with a more refined color palette and framework for the project, but this may of been a stretch to achieve given the time constraint.</p>

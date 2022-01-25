@@ -1,4 +1,5 @@
 import "../styles.css";
+import 'react-medium-image-zoom/dist/styles.css'
 import Script from "next/script";
 import Head from "next/head";
 

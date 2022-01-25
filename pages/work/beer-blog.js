@@ -7,7 +7,6 @@ import ChevronLeft from "@mui/icons-material/ChevronLeft"
 import Head from "next/head"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
-import 'react-medium-image-zoom/dist/styles.css'
 
 function beerBlog() {
     return (
