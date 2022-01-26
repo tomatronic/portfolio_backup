@@ -64,7 +64,11 @@ function beerBlog() {
                         <p>So now I had my idea in place I wanted to give it name. I wanted to be able to refer to this idea as a brand and not just a thing. I also new I needed to create my goal. So my next steps was to come up with a name and an end goal.</p>
                         <p>I decided I wanted to highlight that the brand involved beer and design, I knew I wanted a name that was easy and played on words. After many hours of searching the internet, checking domain availabilities and social channels names I settled on the name 'Brewtiful'! More on this in a bit.</p>
                     </div>
-                    <div className="column">Image</div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/initialDoodle.png" layout="intrinsic" width="1000" height="774" alt="Some very messy initial thoughts on what I wanted to include and the direction I could take a name" />
+                        </Zoom>
+                    </div>
                 </div>
                 <div className="row">
                     <div className="column">
@@ -80,7 +84,7 @@ function beerBlog() {
                 </div>
                 <div className="row">
                     <div className="column">
-                        This page is currently being constructed, please check back soon...
+                        <h1><center>This project is ongoing, I am updating the case study as I have more material to share!</center></h1>
                     </div>
                 </div>
             </div>

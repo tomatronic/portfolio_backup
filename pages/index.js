@@ -85,7 +85,7 @@ function HomePage() {
             </div>
           </div>
         </Link>
-        {/* <Link href="/work/brewtiful"> */}
+        <Link href="/work/beer-blog">
         <div className={` ${'row'} , ${styles.caseStudy}`}>
           <div className="column">
             <img src="/169brewtiful.png" alt="Brewtiful - My own project looking at beers and design" className={styles.imgRound} />
@@ -94,11 +94,13 @@ function HomePage() {
             <div className={styles.csTitle}>Brewtiful</div>
             <h3>Beer Blog</h3>
             <p>A personal project where I set out to capture a range of beers and breweries and talk about both the beer itself and the can (and bottle) designs.</p>
-            <button className="secondary" disabled>Coming Soon...</button>
+            <p><b>Project is ongoing</b> - This means the case study is incomplete (actively being updated!)</p>
+            <button className="secondary">View Case Study</button>
           </div>
         </div>
+        </Link>
       </div>
-      {/* </Link> */}
+      
       <Footer />
     </div>
   </>
