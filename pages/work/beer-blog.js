@@ -113,12 +113,12 @@ function beerBlog() {
                         <p>In order to start sketching some ideas I decided to plan out a rough IA (Information Architecture) in order to identify the pages that would need designing.</p>
                         <p>The site would likely be fairly simple and built in a way that I could reuse a template for multiple pages. I wanted to ensure that adding new content was not a labourious task. With this in mind I identified 5-6 main pages/templates I would require:</p>
                                 <p>
-                                <b>Homepage</b> - Something that promotes new content and encourages interaction.<br />
-                                <b>A search / directory page</b> - This could be used for both beers and breweries.<br />
-                                <b>Beer bio</b> - A page for a single beer, this is the most information packed of the pages.<br />
-                                <b>Brewery bio</b> - I would keep this quite simple, basic details and reviewed beers.<br />
-                                <b>Blog</b> - This can be kept fairly simple. The main focus is the beer!<br />
-                                <b>Resource pages</b> - This includes 'about', 'contact' etc.
+                               &bull; <b>Homepage</b> - Something that promotes new content and encourages interaction.<br />
+                               &bull; <b>A search / directory page</b> - This could be used for both beers and breweries.<br />
+                               &bull; <b>Beer bio</b> - A page for a single beer, this is the most information packed of the pages.<br />
+                               &bull; <b>Brewery bio</b> - I would keep this quite simple, basic details and reviewed beers.<br />
+                               &bull; <b>Blog</b> - This can be kept fairly simple. The main focus is the beer!<br />
+                               &bull;  <b>Resource pages</b> - This includes 'about', 'contact' etc.
                                 </p>
                         <p>At this point I have a good idea about the structure of the site. It's time to start thinking about design.</p>
                         <br />
