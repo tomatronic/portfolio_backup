@@ -38,12 +38,7 @@ function beerBlog() {
                 <div className="outer-row-bb">
                     <div className="mainContainer">
                         <div className="nopad-row">
-                            <div className="column">
-                                <h1>My role</h1>
-                                <p>This is a personal project and so I am the only person involved.</p>
-                                <p><b>Project duration</b>: Dec 2021 - Ongoing</p><br />
-                            </div>
-                            <div className="column">
+                        <div className="column">
                                 <h1>What I did</h1>
                                 <p>&bull; Planned meticulously<br />
                                     &bull; Competitor research<br />
@@ -54,6 +49,11 @@ function beerBlog() {
                                     &bull; Website design
                                 </p>
                             </div>
+                            <div className="column">
+                                <h1>My role</h1>
+                                <p>This is a personal project and so I am the only person involved.</p>
+                                <p><b>Project duration</b>: Dec 2021 - Ongoing</p><br />
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -82,11 +82,81 @@ function beerBlog() {
                         </Zoom>
                     </div>
                 </div>
+                </div>
+                <div className="outer-row-bby">
+                    <div className="mainContainer">
+                <div className="nopad-row">
+                    <div className="nopad-column">
+                        <center><h1>Who is this for?</h1></center>
+                        <center><p>My next task was to work out who my audience was and what they might want to get from this new site. As this is a personal project my access to research is a little more limited, but I went ahead and created a couple of personas based on data I could find. I focused o the two sides of this project, the beer lover and the design lover. The end goal is to create  project that an be enjoyed from both parties. Creating these personas will help ensure I stay as user centric as possible.</p></center>
+                    </div>
+                </div>
+                <div className="nopad-row">
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/beerLover.png" layout="intrinsic" width="1684" height="1190" alt="User Persona A - The user persona of a beer lover" />
+                        </Zoom>
+                    </div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/designLover.png" layout="intrinsic" width="1684" height="1190" alt="User Persona B - The user persona of a design lover" />
+                        </Zoom>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div className="mainContainer">
+                <div className="row">
+                    <div className="column">
+                        <h1>Conidering content</h1>
+                        <p>Now was time to start thinking about what content would make up this site.</p>
+                        <p>In order to start sketching some ideas I decided to plan out a rough IA (Information Architecture) in order to identify the pages that would need designing.</p>
+                        <p>The site would likely be fairly simple and built in a way that I could reuse a template for multiple pages. I wanted to ensure that adding new content was not a labourious task. With this in mind I identified 5-6 main pages/templates I would require:</p>
+                                <p>
+                                <b>Homepage</b> - Something that promotes new content and encourages interaction.<br />
+                                <b>A search / directory page</b> - This could be used for both beers and breweries.<br />
+                                <b>Beer bio</b> - A page for a single beer, this is the most information packed of the pages.<br />
+                                <b>Brewery bio</b> - I would keep this quite simple, basic details and reviewed beers.<br />
+                                <b>Blog</b> - This can be kept fairly simple. The main focus is the beer!<br />
+                                <b>Resource pages</b> - This includes 'about', 'contact' etc.
+                                </p>
+                        <p>At this point I have a good idea about the structure of the site. It's time to start thinking about design.</p>
+                        <br />
+                        <Zoom>
+                            <Image src="/brewtifulIA.png" layout="intrinsic" width="1392" height="622" alt="My inital decision for the IA of the new site. Kept a fairly flat IA." />
+                        </Zoom>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="column">
+                        <h1>Initial sketches</h1>
+                        <p>I decided to take pen to paper again at this point and begin sketching some ideas. I wanted to get a rough idea of what may work and aimed to identify information that may or may not be needed on the pages.</p>
+                        <p>The idea of quick scribbles like this allows me to perform multiple iterations in minimal time. It also helps begin the process of creating more of a brand identity.</p>
+                    </div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/placehold.png" layout="intrinsic" width="1000" height="1000" alt="I doodled quite a bit for this project, here is a sample of some of my ideas." />
+                        </Zoom>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="column">
+                        <h1>Brand identity</h1>
+                        <p>I decided to take pen to paper again at this point and begin sketching some ideas. I wanted to get a rough idea of what may work and aimed to identify information that may or may not be needed on the pages.</p>
+                        <p>The idea of quick scribbles like this allows me to perform multiple iterations in minimal time. It also helps begin the process of creating more of a brand identity.</p>
+                    </div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/beerID.png" layout="intrinsic" width="1545" height="1152" alt="I created a simple colour palette and chose two fonts to identify my brand." />
+                        </Zoom>
+                    </div>
+                </div>               
                 <div className="row">
                     <div className="column">
                         <h1><center>This project is ongoing, I am updating the case study as I have more material to share!</center></h1>
                     </div>
                 </div>
+                
             </div>
             <div className="projectNavContainer">
                 <div className="row">

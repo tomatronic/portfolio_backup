@@ -241,6 +241,18 @@ button[disabled]{
    color: #FFF;
 }
 
+.outer-row-bby {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: 40px 0 0;
+   padding: 0;
+   align-items: center;
+   background-color: #E9C46A;
+   color: #0C293F;
+}
+
 .nopad-row {
    display: flex;
    flex-direction: row;

@@ -35,12 +35,7 @@ function caseStudy() {
                 <div className="outer-row">
                     <div className="mainContainer">
                         <div className="nopad-row">
-                            <div className="column">
-                                <h1>My role</h1>
-                                <p>As this project was a competition I was the only person involved. It meant a lot of careful planning and self critque.</p>
-                                <p><b>Project duration</b>: 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p><br />
-                            </div>
-                            <div className="column">
+                        <div className="column">
                                 <h1>What I did</h1>
                                 <p>&bull; Planned meticulously<br />
                                     &bull; Competitor research<br />
@@ -51,6 +46,12 @@ function caseStudy() {
                                     &bull; Poster design
                                 </p>
                             </div>
+                            <div className="column">
+                                <h1>My role</h1>
+                                <p>As this project was a competition I was the only person involved. It meant a lot of careful planning and self critque.</p>
+                                <p><b>Project duration</b>: 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p><br />
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
