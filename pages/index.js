@@ -95,7 +95,7 @@ function HomePage() {
             <h3>Beer Blog</h3>
             <p>A personal project where I set out to capture a range of beers and breweries and talk about both the beer itself and the can (and bottle) designs.</p>
             <p><b>Project is ongoing</b> - This means the case study is incomplete (actively being updated!)</p>
-            <button className="secondary">View Case Study</button>
+            <button className="secondary">View Case Study &#x2192;</button>
           </div>
         </div>
         </Link>

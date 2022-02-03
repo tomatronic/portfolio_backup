@@ -19,6 +19,15 @@ function beerBlog() {
                 <div className="display">It's Brewtiful</div>
             </div>
             <div className="mainContainer">
+                <div className={styles.banner}>
+                            <div className={styles.ringContainer}>
+                                <div class={styles.ringring}></div>
+                                <div class={styles.circle}></div>
+                            </div>
+                            <div className={styles.bannerCopy}>
+                            This is an <b>active project</b>, case study is being continously updated. Check back for updates soon.
+                            </div>
+                        </div>
                     <div className="row">
                         <div className="column">
                             <h1>About the project</h1>
@@ -150,13 +159,31 @@ function beerBlog() {
                             <Image src="/beerID.png" layout="intrinsic" width="1545" height="1152" alt="I created a simple colour palette and chose two fonts to identify my brand." />
                         </Zoom>
                     </div>
-                </div>               
+                </div> 
                 <div className="row">
                     <div className="column">
-                        <h1><center>This project is ongoing, I am updating the case study as I have more material to share!</center></h1>
+                        <h1>Low fidelity mocks</h1>
+                        <p>I felt at this point that the project was at a good point. And although not a huge step I decided to grab my favourite of the previous sketches and reproduce them in an ever so slightly better version.</p>
+                        <p>This new version of the mockups helped me further understad how the final page may look. A few tweaks added here and I am strting to be very happy with the design direction.</p>
+                    </div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/placehold.png" layout="intrinsic" width="1000" height="1000" alt="Developing sketches into some very simple digital assets" />
+                        </Zoom>
+                    </div>
+                </div>            
+                <div className="row">
+                    <div className="column">
+                        <h1>Simple prototyping</h1>
+                        <p>I followed a slightly alternate route to what I might usually. I decided to go ahead and create a few simple protypes that I could then try and gather some feedback on.</p>
+                        <p>At this point I wasnt sure how I would go about getting some testing completed, or even gathering feedback. I didnt want to rely on friends and collegaues as they can tend to be less honest due to knowing me. So I would have to find a resource online in order to complete a little testing and gather some feedback.</p>
+                    </div>
+                    <div className="column">
+                    <Zoom>
+                            <Image src="/placehold.png" layout="intrinsic" width="1000" height="1000" alt="Developing sketches into some very simple digital assets" />
+                        </Zoom>
                     </div>
                 </div>
-                
             </div>
             <div className="projectNavContainer">
                 <div className="row">
