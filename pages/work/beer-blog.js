@@ -21,8 +21,8 @@ function beerBlog() {
             <div className="mainContainer">
                 <div className={styles.banner}>
                             <div className={styles.ringContainer}>
-                                <div class={styles.ringring}></div>
-                                <div class={styles.circle}></div>
+                                <div className={styles.ringring}></div>
+                                <div className={styles.circle}></div>
                             </div>
                             <div className={styles.bannerCopy}>
                             This is an <b>active project</b>, case study is being continously updated. Check back for updates soon.
