@@ -144,7 +144,7 @@ function beerBlog() {
                     </div>
                     <div className="column">
                     <Zoom>
-                            <Image src="/placehold.png" layout="intrinsic" width="1000" height="1000" alt="I doodled quite a bit for this project, here is a sample of some of my ideas." />
+                            <Image src="/initialSketchBrewtiful.png" layout="intrinsic" width="1000" height="1000" alt="I doodled quite a bit for this project, here is a sample of some of my ideas." />
                         </Zoom>
                     </div>
                 </div>
