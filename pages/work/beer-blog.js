@@ -168,7 +168,7 @@ function beerBlog() {
                     </div>
                     <div className="column">
                     <Zoom>
-                            <Image src="/placehold.png" layout="intrinsic" width="1000" height="1000" alt="Developing sketches into some very simple digital assets" />
+                            <Image src="/lofiBeer.png" layout="intrinsic" width="2000" height="1500" alt="Developing sketches into some very simple digital assets" />
                         </Zoom>
                     </div>
                 </div>            
