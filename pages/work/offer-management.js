@@ -27,7 +27,7 @@ function caseStudy() {
                             <h1>About the project</h1>
                             <p>As a Publisher (a user that will promote an offer) I require a way to manage offers that are available to me from a host of available Advertisers (A user that wants to promote a business, product or marketing event), these offers are found in an Advertisers profile or the Advertiser may contact me directly with an offer proposal. I need to be able to see offers that are currently active as well as offers that may be beneficial to me and my affiliate development.</p><br /><br />
                             <h1>Solution</h1>
-                            <p>The goal of the project was to focuse on the redesigning of how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase the usage of the platform. This in turn would provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
+                            <p>The goal of the project was to focus on the redesigning of how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase usage of the platform. This in turn would provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
                         </div>
                         <div className="column">
                             <Zoom>
