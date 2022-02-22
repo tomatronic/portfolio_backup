@@ -57,21 +57,7 @@ function HomePage() {
         </div>
       </div>
       <a name="work" id="work" />
-      <div className="mainContainer">
-        <Link href="/work/designflows">
-          <div className={` ${'row'} , ${styles.caseStudy}`}>
-            <div className="column">
-              <img src="/169competition.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
-            </div>
-            <div className="column">
-              <div className={styles.csTitle}>Designflows 2021</div>
-              <h3>Tool Hire App</h3>
-              <p>A competition project to create a unique UI within a short amount of time.</p>
-              <button className="secondary">View Case Study &#x2192;</button>
-            </div>
-
-          </div>
-        </Link>
+      <div className="mainContainer">        
         <Link href="/work/offer-management">
           <div className={` ${'row'} , ${styles.caseStudy}`}>
             <div className="column">
@@ -80,9 +66,23 @@ function HomePage() {
             <div className="column">
               <div className={styles.csTitle}>Rakuten Advertising</div>
               <h3>Offer Management</h3>
-              <p>The updating of a legacy application to offer a modern experience for the user.</p>
+              <p>Updating of a legacy application to offer a new and modern experience for the user.</p>
               <button className="secondary">View Case Study &#x2192;</button>
             </div>
+          </div>
+        </Link>
+        <Link href="/work/designflows">
+          <div className={` ${'row'} , ${styles.caseStudy}`}>
+            <div className="column">
+              <img src="/169competition.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
+            </div>
+            <div className="column">
+              <div className={styles.csTitle}>Designflows 2021</div>
+              <h3>Tool Hire App</h3>
+              <p>A limited time project to create a new UI for a fictitious app.</p>
+              <button className="secondary">View Case Study &#x2192;</button>
+            </div>
+
           </div>
         </Link>
         <Link href="/work/beer-blog">
@@ -93,7 +93,7 @@ function HomePage() {
           <div className="column">
             <div className={styles.csTitle}>Brewtiful</div>
             <h3>Beer Blog</h3>
-            <p>A personal project where I set out to capture a range of beers and breweries and talk about both the beer itself and the can (and bottle) designs.</p>
+            <p>A personal project where I set out to talk about both beer and the can (or bottle) designs.</p>
             <p><b>Project is ongoing</b> - This means the case study is incomplete (actively being updated!)</p>
             <button className="secondary">View Case Study &#x2192;</button>
           </div>
