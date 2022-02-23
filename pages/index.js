@@ -59,43 +59,42 @@ function HomePage() {
       <a name="work" id="work" />
       <div className="mainContainer">        
         <Link href="/work/offer-management">
-          <div className={` ${'row'} , ${styles.caseStudy}`}>
-            <div className="column">
-              <img src="/169offers.png" alt="Offer management section of the new dashboard for Rakuten Advertising" className={styles.imgRound} />
+        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
+            <div className="double-column">
+              <img src="/offersThumb.png" alt="Offer management section of the new dashboard for Rakuten Advertising" className={styles.imgRound} />
             </div>
             <div className="column">
               <div className={styles.csTitle}>Rakuten Advertising</div>
-              <h3>Offer Management</h3>
-              <p>Updating of a legacy application to offer a new and modern experience for the user.</p>
-              <button className="secondary">View Case Study &#x2192;</button>
+              <span className={styles.csDescription}>Improving the offer management experience</span>
+              <span className={styles.csSkills}>Product design, User research, User testing</span>
+              <a className="secondaryLink">View Case Study</a>
             </div>
           </div>
         </Link>
         <Link href="/work/designflows">
-          <div className={` ${'row'} , ${styles.caseStudy}`}>
-            <div className="column">
-              <img src="/169competition.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
+        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
+            <div className="double-column">
+              <img src="/competitionThumb.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
             </div>
             <div className="column">
               <div className={styles.csTitle}>Designflows 2021</div>
-              <h3>Tool Hire App</h3>
-              <p>A limited time project to create a new UI for a fictitious app.</p>
-              <button className="secondary">View Case Study &#x2192;</button>
+              <span className={styles.csDescription}>Creation of a tool hire app</span>
+              <span className={styles.csSkills}>Product design, User research, Brand creation</span>              
+              <a className="secondaryLink">View Case Study</a>
             </div>
 
           </div>
         </Link>
         <Link href="/work/beer-blog">
-        <div className={` ${'row'} , ${styles.caseStudy}`}>
-          <div className="column">
-            <img src="/169brewtiful.png" alt="Brewtiful - My own project looking at beers and design" className={styles.imgRound} />
+        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
+          <div className="double-column">
+            <img src="/brewtifulThumb.png" alt="Brewtiful - My own project looking at beers and design" className={styles.imgRound} />
           </div>
           <div className="column">
             <div className={styles.csTitle}>Brewtiful</div>
-            <h3>Beer Blog</h3>
-            <p>A personal project where I set out to talk about both beer and the can (or bottle) designs.</p>
-            <p><b>Project is ongoing</b> - This means the case study is incomplete (actively being updated!)</p>
-            <button className="secondary">View Case Study &#x2192;</button>
+            <span className={styles.csDescription}>Showcasing craft beers and packaging design</span>
+            <span className={styles.csSkills}>Product design, User research, Brand creation, Front-end development</span>            
+            <a className="secondaryLink">View Case Study</a>
           </div>
         </div>
         </Link>

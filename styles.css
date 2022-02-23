@@ -46,6 +46,16 @@ a::before {
    transform: scaleX(1);
  }
 
+.secondaryLink {
+   color: #916DF9;
+   margin-top: 24px;
+}
+
+ .secondaryLink:hover::before {
+   transform: scaleX(0);
+ }
+
+
 h1 {
    font-size: 36px;
    line-height: 1.2;
@@ -337,6 +347,16 @@ button[disabled]{
       flex-wrap: wrap;
       width: 100%;
       column-gap: 120px;
+      margin: 80px 0;
+      align-items: center;
+   }
+
+   .row-sm-gap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      column-gap: 24px;
       margin: 80px 0;
       align-items: center;
    }
