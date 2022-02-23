@@ -39,19 +39,18 @@ function HomePage() {
               </div>
             </div>
             <div className="column">
-              <div className={styles.blurb}>Hi, I'm</div>
-              <div className={styles.intro}>Tom Spencer.</div>
-              <div className={styles.blurb}>
-                <br /><b>UX/UI designer
-                </b>
-                &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />Currently UX Designer @ <b>Rakuten Advertising</b>.<br /><br /><br />
+              <div className={styles.blurb}>Hi, I'm Tom Spencer</div>
+              {/* <div className={styles.intro}>Tom Spencer.</div> */}
+              <div className={styles.intro}>
+                I'm a <b>UX Designer</b>
+                &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
+                </div>
+                <div className={styles.blurb}>Currently UX Designer @ <b>Rakuten Advertising</b>.<br /><br /><br />
               </div>
 
               <div className={styles.btnContainer}>
                 <Link href="#work"><button className={styles.btnintro}>See my case studies</button></Link>
-              </div>
-              <br />
-              <i>You can also check out some of my UI projects on <a href="https://dribbble.com/tomatronic" target="_blank" rel="noreferrer" >Dribbble</a> and my professional achievements on <a href="https://www.linkedin.com/in/thomas-spencer/" target="_blank" rel="noreferrer">Linkedin</a>.</i>
+              </div>              
             </div>
           </div>
         </div>

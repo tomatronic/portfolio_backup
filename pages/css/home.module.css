@@ -12,8 +12,8 @@
 }
 
 .intro {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 500;
     margin: 0;
     line-height: 1.2;
 }
@@ -61,7 +61,7 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
     border-radius: 8px;
     box-shadow: rgba(145, 109, 249, 0.2) 0px 2px 8px 0px;
     transition: 0.2s;
-     margin: 10px;
+    margin: 0px;
     overflow: hidden;
     cursor: pointer;
  }
@@ -141,9 +141,18 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
     }
     
     .intro {
-        font-size: 64px;
-        font-weight: bold;
+        font-size: 32px;
+        font-weight: 500;
     }
+
+    .imgRound {
+        border-radius: 8px;
+        box-shadow: rgba(145, 109, 249, 0.2) 0px 2px 8px 0px;
+        transition: 0.2s;
+        margin: 10px;
+        overflow: hidden;
+        cursor: pointer;
+     }
     
     .blurb {
         font-size: 20px;

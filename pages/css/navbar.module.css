@@ -17,7 +17,8 @@
 }
 
 .logo {
-    font-weight: 700;
+    font-weight: 600;
+    margin: 0 0 0 8px;
 }
 
 .nav {
@@ -66,7 +67,7 @@
     }
 
     .site-header ul li a, .site-header a {
-        margin-right: 1em;
+        margin-right: 8px;
     }
 }
 

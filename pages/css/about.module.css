@@ -14,6 +14,7 @@
     box-shadow: none;
     margin: 40px auto;
     max-width: 50%;
+    min-width: 170px;;   
 }
 
 .btnintro {
@@ -54,8 +55,8 @@
     }
 
     .bioImg {
-        margin: 70px 0 0;
-        min-width: 100%;
+        margin: 70px auto 0;
+        
     }
     
     .blurb {
