@@ -178,20 +178,26 @@ function caseStudy() {
                     </div>
                 </div>
                 <div className="projectNavContainer">
-                    <div className="row">
-                        <div className="blank-column">
-
-                            <div className="pNavDirection">&nbsp;</div>
-
-                            <div className="pNavName">&nbsp;</div>
-
-                        </div>
+                <div className="row">
                         <div className="column">
                             <Link href="/work/offer-management">
                                 <div className="pNavButton">
+                                    <ChevronLeft />
+                                    <div className="pNavTopic">
+                                        <div className="pNavDirection">Previous Project</div>
+                                        <div className="pNavName">Offer management</div>
+                                    </div>
+
+                                </div>
+                            </Link>
+
+                        </div>
+                        <div className="column">
+                            <Link href="/work/beer-blog">
+                                <div className="pNavButton">
                                     <div className="pNavTopic">
                                         <div className="pNavDirection">Next Project</div>
-                                        <div className="pNavName">Offer management</div>
+                                        <div className="pNavName">Beer blog</div>
                                     </div>
                                     <div className="pNavChevronR">
                                         <ChevronRight />
@@ -199,7 +205,7 @@ function caseStudy() {
                                 </div>
                             </Link>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
 
                 <Footer />

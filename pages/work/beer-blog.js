@@ -188,12 +188,12 @@ function beerBlog() {
             <div className="projectNavContainer">
                 <div className="row">
                 <div className="column">
-                        <Link href="/work/offer-management">
+                        <Link href="/work/designflows">
                             <div className="pNavButton">
                             <ChevronLeft />
                                 <div className="pNavTopic">
                                     <div className="pNavDirection">Previous Project</div>
-                                    <div className="pNavName">Offer management</div>
+                                    <div className="pNavName">Tool hire app</div>
                                 </div>                                
                             </div>
                         </Link>
