@@ -4,6 +4,7 @@ import styles from "./css/caseStudy.module.css"
 import Image from "next/image"
 import Footer from "../../components/footer"
 import ChevronRight from "@mui/icons-material/ChevronRight";
+import ChevronLeft from "@mui/icons-material/ChevronLeft";
 import Head from "next/head"
 import Zoom from "react-medium-image-zoom"
 
