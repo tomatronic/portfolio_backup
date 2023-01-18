@@ -21,7 +21,7 @@ function About() {
                     </div>
                     <div className="top-row">
                         <div className="column">
-                        <div className={styles.intro}>About</div>
+                        <h1>About</h1>
                         </div>
                         <div className="column">
                             <p>Hello, I'm Tom and I have been working in design for a number of years now. I am now settled into the world of user experience but am still often found experimenting with UI components or even getting my hands dirty with some (limited) front end developement.</p>
@@ -30,7 +30,7 @@ function About() {
                     </div>
                     <div className="top-row">
                         <div className="column">
-                        <div className={styles.intro}>Experience</div>
+                        <h1>Experience</h1>
                         </div>
                         <div className="column">
                             <p>UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
