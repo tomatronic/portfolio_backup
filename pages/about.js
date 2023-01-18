@@ -24,7 +24,7 @@ function About() {
                         <h1>About</h1>
                         </div>
                         <div className="double-column">
-                            <p>Hello, I'm Tom and I have been working in design for a number of years now. I am now settled into the world of user experience but am still often found experimenting with UI components or even getting my hands dirty with some (limited) front end developement.</p>
+                            <p>Hello, I'm Tom and I have been working in design for almost 10 years now. I am now settled into the world of user experience but am still often found experimenting with UI components or even getting my hands dirty with some (limited) front end developement.</p>
                             <p>Being a UX designer allows me to solve complex problems and bring the end user a pleasurable experience. I make sure that products are enjoyable, accessible and beautiful to look at. I have a passion for getting fully immersed in a problem and experimenting with a range of possible solutions.</p>
                             <p>Seeing the impact of how I can influence a user's behaviour within a product or application fascinates me. Being empathetic and understanding helps ensure that I can make a product not just work for its intended users but be something they feel comfortable with.</p>
                             <p>I'm currently based just outside of sunny Brighton, UK. You'll usually find me hiking on the South Downs or paddle boarding at sea.</p>
