@@ -26,12 +26,8 @@
     margin: 0 0 40px;
 }
 
-.highlight {
-    display: inline;
-    text-decoration: underline;
-    text-decoration-color: #3EE8B5;
-    text-decoration-style: wavy;
-    font-weight: bold;    
+.highlight {   
+    text-decoration-color: #595959;    
 }
 
 .twocol {
