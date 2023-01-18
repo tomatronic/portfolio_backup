@@ -23,7 +23,7 @@ function About() {
                         <div className="column">
                         <h1>About</h1>
                         </div>
-                        <div className="column">
+                        <div className="double-column">
                             <p>Hello, I'm Tom and I have been working in design for a number of years now. I am now settled into the world of user experience but am still often found experimenting with UI components or even getting my hands dirty with some (limited) front end developement.</p>
                             <p>Being a UX designer allows me to solve complex problems and bring the end user a pleasurable experience. I make sure that products are enjoyable, accessible and beautiful to look at. I have a passion for getting fully immersed in a problem and experimenting with a range of possible solutions.</p>
                         </div>
@@ -32,7 +32,7 @@ function About() {
                         <div className="column">
                         <h1>Experience</h1>
                         </div>
-                        <div className="column">
+                        <div className="double-column">
                             <p>UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
                             Feb 2020 - Present</p>
                             <p>Junior UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
