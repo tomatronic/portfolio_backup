@@ -33,16 +33,16 @@ function About() {
                         <div className={styles.intro}>Experience</div>
                         </div>
                         <div className="column">
-                            <p>UX Designer <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Feb 2020 - Present</p>
-                            <p>Junior UX Designer <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Jul 2018 - Feb 2020</p>
-                            <p>Senior Creative Developer <span className={styles.highlight}>Pure360</span></p>
-                            <p>Feb 2016 - Jul 2018</p>
-                            <p>Creative Developer <span className={styles.highlight}>Pure360</span></p>
-                            <p>Jun 2014 - Feb 2016</p>
-                            <p>Email Creative <span className={styles.highlight}>Friday Media Group</span></p>
-                            <p>Nov 2013 - Jun 2014</p>
+                            <p>UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
+                            Feb 2020 - Present</p>
+                            <p>Junior UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
+                            Jul 2018 - Feb 2020</p>
+                            <p>Senior Creative Developer <span className={styles.highlight}>Pure360</span><br />
+                            Feb 2016 - Jul 2018</p>
+                            <p>Creative Developer <span className={styles.highlight}>Pure360</span><br />
+                            Jun 2014 - Feb 2016</p>
+                            <p>Email Creative <span className={styles.highlight}>Friday Media Group</span><br />
+                            Nov 2013 - Jun 2014</p>
                         </div>
                     </div>
                     <div className="notm-row">
