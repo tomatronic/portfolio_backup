@@ -35,15 +35,15 @@ function About() {
                         <h1>Experience</h1>
                         </div>
                         <div className="double-column">
-                            <p>UX Designer &mdash; <span className={styles.highlight}>Feb 2020 - Present</span><br />
+                            <p>UX Designer <span className={styles.highlight}>&mdash; Feb 2020 - Present</span><br /><br />
                             <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Junior UX Designer &mdash; <span className={styles.highlight}>Jul 2018 - Feb 2020</span><br />
+                            <p>Junior UX Designer <span className={styles.highlight}>&mdash; Jul 2018 - Feb 2020</span><br /><br />
                             <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Senior Creative Developer &mdash; <span className={styles.highlight}>Feb 2016 - Jul 2018</span><br />
+                            <p>Senior Creative Developer <span className={styles.highlight}>&mdash; Feb 2016 - Jul 2018</span><br /><br />
                             <span className={styles.highlight}>Pure360</span></p>
-                            <p>Creative Developer &mdash; <span className={styles.highlight}>Jun 2014 - Feb 2016</span><br />
+                            <p>Creative Developer <span className={styles.highlight}>&mdash; Jun 2014 - Feb 2016</span><br /><br />
                             <span className={styles.highlight}>Pure360</span></p>
-                            <p>Email Creative &mdash; <span className={styles.highlight}>Nov 2013 - Jun 2014</span><br />
+                            <p>Email Creative <span className={styles.highlight}>&mdash; Nov 2013 - Jun 2014</span><br /><br />
                             <span className={styles.highlight}>Friday Media Group</span></p>
                         </div>
                     </div>
