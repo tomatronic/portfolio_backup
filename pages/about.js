@@ -19,7 +19,7 @@ function About() {
                             <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="top-row">
                         <div className="column">
                         <div className={styles.intro}>About</div>
                         </div>
@@ -28,7 +28,7 @@ function About() {
                             <p>Being a UX designer allows me to solve complex problems and bring the end user a pleasurable experience. I make sure that products are enjoyable, accessible and beautiful to look at. I have a passion for getting fully immersed in a problem and experimenting with a range of possible solutions.</p>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="top-row">
                         <div className="column">
                         <div className={styles.intro}>Experience</div>
                         </div>
