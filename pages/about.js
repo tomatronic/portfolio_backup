@@ -35,16 +35,16 @@ function About() {
                         <h1>Experience</h1>
                         </div>
                         <div className="double-column">
-                            <p>UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
-                            Feb 2020 - Present</p>
-                            <p>Junior UX Designer <span className={styles.highlight}>Rakuten Advertising</span><br />
-                            Jul 2018 - Feb 2020</p>
-                            <p>Senior Creative Developer <span className={styles.highlight}>Pure360</span><br />
-                            Feb 2016 - Jul 2018</p>
-                            <p>Creative Developer <span className={styles.highlight}>Pure360</span><br />
-                            Jun 2014 - Feb 2016</p>
-                            <p>Email Creative <span className={styles.highlight}>Friday Media Group</span><br />
-                            Nov 2013 - Jun 2014</p>
+                            <p>UX Designer &emdash; <span className={styles.highlight}>Feb 2020 - Present</span><br />
+                            <span className={styles.highlight}>Rakuten Advertising</span></p>
+                            <p>Junior UX Designer &emdash; <span className={styles.highlight}>Jul 2018 - Feb 2020</span><br />
+                            <span className={styles.highlight}>Rakuten Advertising</span></p>
+                            <p>Senior Creative Developer &emdash; <span className={styles.highlight}>Feb 2016 - Jul 2018</span><br />
+                            <span className={styles.highlight}>Pure360</span></p>
+                            <p>Creative Developer &emdash; <span className={styles.highlight}>Jun 2014 - Feb 2016</span><br />
+                            <span className={styles.highlight}>Pure360</span></p>
+                            <p>Email Creative &emdash; <span className={styles.highlight}>Nov 2013 - Jun 2014</span><br />
+                            <span className={styles.highlight}>Friday Media Group</span></p>
                         </div>
                     </div>
                     <div className="notm-row">
