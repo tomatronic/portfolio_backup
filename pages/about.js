@@ -33,15 +33,15 @@ function About() {
                         <div className={styles.intro}>Experience</div>
                         </div>
                         <div className="column">
-                            <p>UX Designer @ Rakuten Advertising</p>
+                            <p>UX Designer <span className="highlight">Rakuten Advertising</span></p>
                             <p>Feb 2020 - Present</p>
-                            <p>Junior UX Designer @ Rakuten Advertising</p>
+                            <p>Junior UX Designer <span className="highlight">Rakuten Advertising</span></p>
                             <p>Jul 2018 - Feb 2020</p>
-                            <p>Senior Creative Developer @ Pure360</p>
+                            <p>Senior Creative Developer <span className="highlight">Pure360</span></p>
                             <p>Feb 2016 - Jul 2018</p>
-                            <p>Creative Developer @ Pure360</p>
+                            <p>Creative Developer <span className="highlight">Pure360</span></p>
                             <p>Jun 2014 - Feb 2016</p>
-                            <p>Email Creative <span className="highlight">@ Friday Media Group</span></p>
+                            <p>Email Creative <span className="highlight">Friday Media Group</span></p>
                             <p>Nov 2013 - Jun 2014</p>
                         </div>
                     </div>
