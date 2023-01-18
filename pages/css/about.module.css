@@ -12,8 +12,8 @@
 
 .bioImg {
     box-shadow: none;
-    margin: 40px auto;
-    max-width: 50%;
+    margin: 0 auto;
+    max-width: 280px;
     min-width: 170px;;   
 }
 
