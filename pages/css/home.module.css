@@ -137,7 +137,7 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
         display: flex;
         width: 100%;
         max-width: 1000px;
-        text-align: left;
+        text-align: center;
     }
     
     .intro {
