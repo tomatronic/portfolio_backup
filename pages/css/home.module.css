@@ -127,8 +127,7 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
 @media screen and (min-width:600px) {   
         .mainIntroContainer {
             display: flex;
-            margin: 0px auto;
-            height: calc(80vh - 70px);
+            margin: 0px auto;            
             background-color: #FFF;
             align-items: center;
         }
