@@ -39,6 +39,7 @@ function HomePage() {
               </div>
             </div>
             <div className="column">
+            <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
               <div className={styles.blurb}>Hi, I'm Tom —</div>              
               <div className={styles.intro}>
                 I'm a <b>UX Designer</b>
