@@ -7,7 +7,7 @@ function NavBar() {
     <div className={styles['site-header']}>
       <div className={`${styles.wrapper} , ${styles['site-header__wrapper']}`}>
             <Link href="/">
-              <a link="/" className={styles.logo}>TOM SPENCER.</a>
+              <a link="/" className={styles.logo}>TOM SPENCER</a>
             </Link>
             <nav className={styles.nav}>
               <ul> 
