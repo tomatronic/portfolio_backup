@@ -33,13 +33,15 @@ function HomePage() {
       <div className={styles.mainIntroContainer}>
         <div className={styles.introContainer}>
           <div className="top-row-intro">
-            <div className="column-image">
+            {/* <div className="column-image">
               <div className={styles.introImg}>
                 <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="120" /></Link>
               </div>
-            </div>
+            </div> */}
             <div className="column">
-            <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
+            <div className="column-image">
+              <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
+              </div>
               <div className={styles.blurb}>Hi, I'm Tom —</div>              
               <div className={styles.intro}>
                 I'm a <b>UX Designer</b>
