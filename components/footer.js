@@ -15,8 +15,7 @@ function Footer() {
                                     <a href="mailto:tom.m.spencer@gmail.com?subject=Portfolio%20Enquiry" aria-label="Email me"><Email className={styles.email} /></a>
                                     <a href="https://dribbble.com/tomatronic" target="_blank" rel="noreferrer" aria-label="Dribbble"><Dribbble className={styles.email} /></a>
                                     <a href="https://www.linkedin.com/in/thomas-spencer/" target="_blank" aria-label="LinkedIn" rel="noreferrer"><Linkedin className={styles.email} /></a>                   
-                                </div>
-                    Tom Spencer 2023                   
+                                </div>                                     
                 </div>
             </div>
         </div>
