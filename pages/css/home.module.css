@@ -128,7 +128,7 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
         .mainIntroContainer {
             display: flex;
             margin: 0px auto;
-            height: calc(100vh - 70px);
+            height: calc(80vh - 70px);
             background-color: #FFF;
             align-items: center;
         }
@@ -136,7 +136,7 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
     .introContainer {
         display: flex;
         width: 100%;
-        max-width: 700px;
+        max-width: 1140px;
         text-align: left;
     }
     
