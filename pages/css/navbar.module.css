@@ -5,6 +5,9 @@
     font-size: 24px;
     font-weight: 500;
     border-bottom: #e9ecef 1px solid;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
     
 
