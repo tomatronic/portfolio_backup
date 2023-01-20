@@ -338,7 +338,7 @@ button[disabled]{
 
 @media screen and (min-width:600px) {   
    .mainContainer {
-       max-width: 1140px;
+       max-width: 1000px;
        width: 100%;
        margin: 0 auto;
    }
