@@ -408,6 +408,7 @@ button[disabled]{
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
+      max-width: 700px;
       column-gap: 24px;
       margin: 80px 0;
       align-items: flex-start;
