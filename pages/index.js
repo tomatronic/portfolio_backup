@@ -48,11 +48,7 @@ function HomePage() {
                 &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
                 </div>
                 <div className={styles.blurb}>Currently UX Designer @ <b>Rakuten Advertising</b><br /><br /><br />
-              </div>
-
-              <div className={styles.btnContainer}>
-                <Link href="#work"><button className={styles.btnintro}>See my case studies</button></Link>
-              </div>              
+              </div>          
             </div>
           </div>
         </div>
