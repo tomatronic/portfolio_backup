@@ -215,7 +215,7 @@ button[disabled]{
 
 .column-image {
    margin: 40px auto 0;
-   max-width: 120px;
+   max-width: 80px;
 }
 
 .outer-row {
@@ -466,7 +466,7 @@ button[disabled]{
     }
 
     .column-image {
-      margin: 0 auto;
+      margin: 0 0 24px 0;
       max-width: 120px;
    }
 
