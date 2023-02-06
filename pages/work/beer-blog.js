@@ -61,7 +61,7 @@ function beerBlog() {
                             <div className="column">
                                 <h1>My role</h1>
                                 <p>This is a personal project and so I am the only person involved.</p>
-                                <p><b>Project duration</b>: Dec 2021 - Ongoing</p><br />
+                                <p><b>Project duration</b>: Oct 2022 - Ongoing</p><br />
                             </div>                            
                         </div>
                     </div>
