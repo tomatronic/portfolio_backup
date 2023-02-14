@@ -174,9 +174,9 @@ function beerBlog() {
                 </div>            
                 <div className="row">
                     <div className="column">
-                        <h1>Simple prototyping</h1>
-                        <p>I followed a slightly alternate route to what I might usually. I decided to go ahead and create a few simple prototypes that I could then try and gather some feedback on.</p>
-                        <p>At this point I wasnt sure how I would go about getting some testing completed, or even gathering feedback. I didnt want to rely on friends and collegaues as they tend to be less honest due to a personal connection. So I would have to find a resource online in order to complete a little testing and gather some feedback.</p>
+                        <h1>Prototyping</h1>
+                        <p>I followed a slightly alternate route to what I might usually. I decided to go ahead and create a few prototypes that I could then try and gather some feedback on.</p>
+                        <p>At this point I wasnt sure how I would go about getting some testing completed, or gather feedback. I didnt want to rely on friends and collegaues due to the risk of bias opinion. So I will utilise an oline resource in order to complete testing and gather some feedback.</p>
                     </div>
                     <div className="column">
                     <Zoom>
