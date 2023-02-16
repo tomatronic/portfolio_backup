@@ -19,7 +19,6 @@ function beerBlog() {
                 <div className="display">It's Brewtiful</div>
             </div>
             <div className="mainContainer">
-                
                     <div className="row">
                         <div className="column">
                             <h1>About the project</h1>
@@ -193,6 +192,13 @@ function beerBlog() {
                         <Zoom>
                             <Image src="/brewtiful.png" layout="intrinsic" width="1212" height="784" alt="Brewtiful - The current hi-fidelity mocks" />
                         </Zoom>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="column">
+                        <h1>Project reflection</h1>
+                        <p>Being a personal project I am happy with where I have got to. I hope in the future to iterate on this further and maybe even take a dive into building this into a real life website.</p>
+                        <p>The design process required a bit more discipline than other projects I have worked on as I had to find time around my work and social life. I think if I embark on a similar project in the future I will make sure to plan time each week to focus solely on the idea.</p>
                     </div>
                 </div>
             </div>
