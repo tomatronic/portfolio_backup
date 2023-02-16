@@ -193,6 +193,16 @@ function beerBlog() {
                         </Zoom>
                     </div>
                 </div>
+                <div className="row">
+                    <div className="column">
+                        <h1>Final mocks</h1>
+                        <p>Armed with some feedback from the reddit community I decided to go ahead and make a few tweaks before settling on a design.</p>
+                    <br />
+                        <Zoom>
+                            <Image src="/brewtiful.png" layout="intrinsic" width="1212" height="784" alt="Brewtiful - The current hi-fidelity mocks" />
+                        </Zoom>
+                    </div>
+                </div>
             </div>
             <div className="projectNavContainer">
                 <div className="row">
