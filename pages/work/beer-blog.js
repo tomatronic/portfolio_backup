@@ -184,7 +184,7 @@ function beerBlog() {
                 </div>
                 <div className="row">
                     <div className="column">
-                        <h1>Positive feedback</h1>
+                        <h1>Feedback</h1>
                         <p>My approach of using reddit was not something I would usually do. It is not focused enough to gain true user insights and instead relies on the people commenting understanding the use case and having some design knowledge.</p>
                         <p>However, ignoring the above, the response from the unknown people reviewing my UI was positive. This was reassuring and also gave me some ideas for iterations.</p>
                     <br />
