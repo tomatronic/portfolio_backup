@@ -84,8 +84,7 @@ function beerBlog() {
                         <h1>Understanding the landscape</h1>
                         <p>My initial task was to explore what options were already available to try and gain an understanding of where my idea may sit.</p>
                         <p>I collated a few of the sites into a list and identifed where they were similar and if they offered any unique selling points. I then plotted my proposal against these findings.</p>
-                    </div>
-                    <div className="column">
+                    <br />
                         <Zoom>
                             <Image src="/brewComp.png" layout="intrinsic" width="2390" height="1206" alt="Competitor research - Investigating the craft beer and design review landscape" />
                         </Zoom>
@@ -176,7 +175,7 @@ function beerBlog() {
                     <div className="column">
                         <h1>Prototyping</h1>
                         <p>I followed a slightly alternate route to what I would usually. I decided to go ahead and create a few prototypes that I could then try and gather some feedback on.</p>
-                        <p>At this point I wasnt sure how I would go about getting some testing completed, or gather feedback. I didnt want to rely on friends and collegaues due to the risk of bias opinion. So I will utilise an oline resource in order to complete testing and gather some feedback.</p>
+                        <p>At this point I wasnt sure how I would go about getting some testing completed, or gather feedback. I didnt want to rely on friends and collegaues due to the risk of bias opinion. I opted to try reddit... Not a conventional approach and arguably not much better than asking friends and family as I dont know the background of those that respond.</p>
                     </div>
                     <div className="column">
                     <Zoom>
