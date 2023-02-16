@@ -164,8 +164,7 @@ function beerBlog() {
                         <h1>Low fidelity mocks</h1>
                         <p>I felt at this point that the project was at a good point. And although not a huge step I decided to grab my favourite of the previous sketches and reproduce them in an ever so slightly better version.</p>
                         <p>This new version of the mockups helped me further understad how the final page may look. A few tweaks added here and I am strting to be very happy with the design direction.</p>
-                    </div>
-                    <div className="column">
+                    <br />
                     <Zoom>
                             <Image src="/lofiBeer.png" layout="intrinsic" width="2000" height="1500" alt="Developing sketches into some very simple digital assets" />
                         </Zoom>
@@ -179,7 +178,18 @@ function beerBlog() {
                     </div>
                     <div className="column">
                     <Zoom>
-                            <Image src="/review.png" layout="intrinsic" width="1212" height="784" alt="Beer review - An example of how a review may be displayed" />
+                            <Image src="/review.png" layout="intrinsic" width="1212" height="784" alt="Beer review - An early example of how a review may be displayed" />
+                        </Zoom>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="column">
+                        <h1>Positive feedback</h1>
+                        <p>My approach of using reddit was not something I would usually do. It is not focused enough to gain true user insights and instead relies on the people commenting understanding the use case and having some design knowledge.</p>
+                        <p>However, ignoring the above, the response from the unknown people reviewing my UI was positive. This was reassuring and also gave me some ideas for iterations.</p>
+                    <br />
+                        <Zoom>
+                            <Image src="/crit.png" layout="intrinsic" width="1212" height="784" alt="Examples of replies and feedback from reddit" />
                         </Zoom>
                     </div>
                 </div>
