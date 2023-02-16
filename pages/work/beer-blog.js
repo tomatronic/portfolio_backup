@@ -19,15 +19,7 @@ function beerBlog() {
                 <div className="display">It's Brewtiful</div>
             </div>
             <div className="mainContainer">
-                <div className={styles.banner}>
-                            <div className={styles.ringContainer}>
-                                <div className={styles.ringring}></div>
-                                <div className={styles.circle}></div>
-                            </div>
-                            <div className={styles.bannerCopy}>
-                            This is an <b>active project</b>, case study is being continously updated. Check back for updates soon.
-                            </div>
-                        </div>
+                
                     <div className="row">
                         <div className="column">
                             <h1>About the project</h1>
