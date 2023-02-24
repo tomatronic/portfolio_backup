@@ -81,7 +81,7 @@ function caseStudy() {
                             </Zoom>
                         </div>
                     </div>
-                    <div className="reverse-row">
+                    <div className="row">
                         <div className="column">
                             <h1>Gaining insight</h1>
                             <p>I went ahead and captured some qualitative data. To do this I created a small survey within a google form (click the image to view) to distribute amongst the account management teams to help gather a better understanding of how they interacted with this feature, it was also a chance for me to understand known pain points that the team have been presented with. The reason I chose the account managers was due to the level of exposure they have to both the platform and the end users.</p>
