@@ -8,7 +8,7 @@ import Head from "next/head"
 
 function HomePage() {
 
-/* 
+
   React.useEffect(() => {
     const path = window.location.hash
     if (path && path.includes("#")) {
@@ -22,7 +22,7 @@ function HomePage() {
         })
       }, 600)
     }
-  }) */
+  })
 
   return (
     <>
