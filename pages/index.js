@@ -25,13 +25,14 @@ function HomePage() {
   })
 
   return (
-  <Layout>
+    <>
     <div>
       <Head>
         <title>Tom Spencer - UX/UI Designer</title>
         <meta property="og:title" content="Tom Spencer - Ux / UI Designer" />
       </Head>
       <NavBar />
+      <Layout>
       <div className={styles.mainIntroContainer}>
         <div className={styles.introContainer}>
           <div className="top-row-intro">
@@ -93,10 +94,11 @@ function HomePage() {
         </div>
         </Link>
       </div>
-      
+      </Layout>
       <Footer />
     </div>
-    </Layout>
+    
+    </>
   )
 }
 

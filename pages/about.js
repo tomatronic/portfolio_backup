@@ -7,13 +7,14 @@ import Head from "next/head"
 
 function About() {
     return (
-    <Layout>
+    <>
         <div>
             <Head>
                 <title>Tom Spencer - UX/UI Designer</title>
                 <meta property="og:title" content="Tom Spencer - Ux / UI Designer" />
             </Head>
             <NavBar />
+            <Layout>
             <div className="mainContainer">
                 <div className={styles.mainContainer}>
                     <div className="row">
@@ -56,9 +57,10 @@ function About() {
                     </div>
                 </div>
             </div>
+            </Layout>
             <Footer />
         </div>
-        </Layout>
+        </>
     )
 }
 
