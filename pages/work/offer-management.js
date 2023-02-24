@@ -183,7 +183,7 @@ function caseStudy() {
                             <h1>Outcome</h1>
                             <p>Since the updated offer management flow and UI have been implemented we have seen a reduction in the amount of support tickets raised, and account managers have reported less queries based around offer management. The account management have said that this reduction in queries has led to them having more time to focus on the users needs and build better relationships with them.</p>
                             <p>Since being released I continue to monitor usage through the FullStory application, allowing me to perform iterative design amends to ensure a continual progression to the applications development.</p>
-                            <br />
+                            <br /><br />
                             <Zoom>
                                 <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className={styles.imgRound} />
                             </Zoom>
