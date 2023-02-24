@@ -138,7 +138,7 @@ function caseStudy() {
                             </Zoom>
                         </div>
                     </div>
-                    <div className="notm-row">
+                    <div className="row">
                         <div className="column">
                             <h1>Sketching</h1>
                             <p>Once happy with the flow I opened my notepad and began sketching some initial ideas. At this stage I scribble a lot of ideas down both illustrated and in note form, it can look like a mess but I find it helps to get all my initial ideas on paper and then quickly eliminate ideas or come back to them at a later date if needed. As I develop an idea I start to sketch it into something of higher quality to allow me to easily translate it to a digital wireframe when the time comes.</p>
@@ -148,7 +148,7 @@ function caseStudy() {
                             </Zoom>
                         </div>
                     </div>
-                    <div className="notm-row">                        
+                    <div className="row">                        
                         <div className="column">
                             <h1>Prototypes</h1>
                             <p>In order to validate my ideas I proceeded to complete a round of simple user testing. Rather than exposing my test candidates to my sketches I went ahead and created simple wireframes within Sketch that I could share and gather initial feedback with. I used to Zoom to conduct interviews with the candidates and got them to complete a set of simple tasks. This first round of testing allowed me to identify that the users were wanting a dedicated landing page for offer invitations alongside the proposed notification based system.</p>
@@ -158,7 +158,7 @@ function caseStudy() {
                             </Zoom>
                         </div>
                     </div>
-                    <div className="notm-row">
+                    <div className="row">
                         <div className="column">
                             <h1>Flow iteration</h1>
                             <p>I continued to slowly increase the complexity of my mocks, allowing the user to gain more understanding of the goal driven outcome. Once the mockups reached a certain point I began mapping them into a map of hotspots within Sketch to allow the creation of an interactive prototype. This prototype creates a more linear flow but enables a test candidate to become much more immersed in the test and provide a greater level of feedback.</p>
