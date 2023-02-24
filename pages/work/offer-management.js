@@ -151,13 +151,12 @@ function caseStudy() {
                     </div>
                     <div className="notm-row">                        
                         <div className="column">
-                        <Zoom>
-                            <Image src="/digitalwireframe.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
-                            </Zoom>
-                        </div>
-                        <div className="column">
                             <h1>Prototypes</h1>
                             <p>In order to validate my ideas I proceeded to complete a round of simple user testing. Rather than exposing my test candidates to my sketches I went ahead and created simple wireframes within Sketch that I could share and gather initial feedback with. I used to Zoom to conduct interviews with the candidates and got them to complete a set of simple tasks. This first round of testing allowed me to identify that the users were wanting a dedicated landing page for offer invitations alongside the proposed notification based system.</p>
+                            <br />
+                            <Zoom>
+                                <Image src="/digitalwireframe.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
+                            </Zoom>
                         </div>
                     </div>
                     <div className="notm-row">
@@ -174,22 +173,21 @@ function caseStudy() {
                         <div className="column">
                             <h1>User testing</h1>
                             <p>After performing a number of protoype testing sessions I was able to identify a couple of further design adjustments that were required. This involved a round of iterations to ensure functionality was highlighted in a relevant way and that offers were made easier to compare.</p>
-                        </div>
-                        <div className="column">
+                        < br/>
                         <Zoom>
                             <Image src="/usertestingOffers.png" layout="intrinsic" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
-                            </Zoom>
+                        </Zoom>
                         </div>
                     </div>
                     <div className="row">
                         <div className="column">
-                            <Zoom>
-                                <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className={styles.imgRound} />
-                            </Zoom>
-                            <br />
                             <h1>Outcome</h1>
                             <p>Since the updated offer management flow and UI have been implemented we have seen a reduction in the amount of support tickets raised, and account managers have reported less queries based around offer management. The account management have said that this reduction in queries has led to them having more time to focus on the users needs and build better relationships with them.</p>
                             <p>Since being released I continue to monitor usage through the FullStory application, allowing me to perform iterative design amends to ensure a continual progression to the applications development.</p>
+                            <br />
+                            <Zoom>
+                                <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className={styles.imgRound} />
+                            </Zoom>
                         </div>
                     </div>
                 </div>
