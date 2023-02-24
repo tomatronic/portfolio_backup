@@ -1,4 +1,5 @@
 import styles from "./css/about.module.css"
+import Layout from "../components/Layout/index"
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 import Head from "next/head"
