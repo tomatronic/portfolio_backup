@@ -117,7 +117,6 @@ function caseStudy() {
                             </div>
                             <div className="column">
                                 <center>
-                                    
                                     <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p></center>
                             </div>
                         </div>
