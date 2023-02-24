@@ -6,6 +6,7 @@ import Head from "next/head"
 
 function About() {
     return <>
+    <Layout>
         <div>
             <Head>
                 <title>Tom Spencer - UX/UI Designer</title>
@@ -56,6 +57,7 @@ function About() {
             </div>
             <Footer />
         </div>
+        </Layout>
     </>
 }
 

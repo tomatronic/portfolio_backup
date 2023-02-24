@@ -2,6 +2,7 @@ import "../styles.css";
 import 'react-medium-image-zoom/dist/styles.css'
 import Script from "next/script";
 import Head from "next/head";
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
 
@@ -31,7 +32,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
     </div>
-    <Component {...pageProps} />
+    <AnimatePresence mode="wait" initial={false}>
+      <Component {...pageProps} key={router.asPath} />
+    </AnimatePresence>
     </>
   )
 }

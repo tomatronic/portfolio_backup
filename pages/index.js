@@ -1,6 +1,7 @@
 import NavBar from "../components/navbar"
 import styles from "./css/home.module.css"
 import Link from "next/link"
+import Layout from "../components/Layout";
 import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
@@ -24,6 +25,7 @@ function HomePage() {
   })
 
   return <>
+  <Layout>
     <div>
       <Head>
         <title>Tom Spencer - UX/UI Designer</title>
@@ -99,6 +101,7 @@ function HomePage() {
       
       <Footer />
     </div>
+    </Layout>
   </>
 }
 
