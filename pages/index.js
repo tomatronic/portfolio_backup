@@ -1,7 +1,7 @@
 import NavBar from "../components/navbar"
 import styles from "./css/home.module.css"
 import Link from "next/link"
-import Layout from "../components/Layout/index"
+import Layout from "../components/Layout"
 import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
@@ -24,7 +24,7 @@ function HomePage() {
     }
   })
 
-  return <>
+  return (
   <Layout>
     <div>
       <Head>
@@ -44,7 +44,7 @@ function HomePage() {
             <div className="column-image">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
               </div>
-              <div className={styles.blurb}>Hi, I'm Tom —</div>              
+              <div className={styles.blurb}>Hi, I'm Tomm —</div>              
               <div className={styles.intro}>
                 I'm a <b>UX Designer</b>
                 &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
@@ -102,7 +102,7 @@ function HomePage() {
       <Footer />
     </div>
     </Layout>
-  </>
+  )
 }
 
 export default HomePage

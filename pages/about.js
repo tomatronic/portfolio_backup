@@ -6,7 +6,7 @@ import Head from "next/head"
 
 
 function About() {
-    return <>
+    return (
     <Layout>
         <div>
             <Head>
@@ -59,7 +59,7 @@ function About() {
             <Footer />
         </div>
         </Layout>
-    </>
+    )
 }
 
 export default About
