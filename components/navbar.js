@@ -10,10 +10,7 @@ function NavBar() {
               <a link="/" className={styles.logo}>TOM SPENCER</a>
             </Link>
             <nav className={styles.nav}>
-              <ul> 
-                {/* <li>
-                  <ActiveLink activeClassName="active" href="/"><a link="/"> Home </a></ActiveLink>
-                </li> */}
+              <ul>
                 <li>     
                   <ActiveLink activeClassName="active" href="/#work"><a href="/#work"> Work </a></ActiveLink> 
                 </li>

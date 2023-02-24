@@ -3,10 +3,6 @@ import Link from "next/link"
 import styles from "./css/caseStudy.module.css"
 import Image from "next/image"
 import Footer from "../../components/footer"
-import Compare from "@mui/icons-material/Compare";
-import Search from "@mui/icons-material/Search";
-import People from "@mui/icons-material/People";
-import ChevronRight from "@mui/icons-material/ChevronRight";
 import Head from "next/head"
 import Zoom from "react-medium-image-zoom"
 
@@ -110,18 +106,18 @@ function caseStudy() {
                         <div className="nopad-row">
                             <div className="column">
                                 <center>
-                                    <Compare className="svgIcons" />
+                                    
                                     <p><b>Comparison</b><br />If I am presented with a new offer invitation I want to be able to compare it to my current offer.</p>
                                 </center>
                             </div>
                             <div className="column">
                                 <center>
-                                    <Search className="svgIcons" />
+                                    
                                     <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p></center>
                             </div>
                             <div className="column">
                                 <center>
-                                    <People className="svgIcons" />
+                                    
                                     <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p></center>
                             </div>
                         </div>
@@ -207,7 +203,7 @@ function caseStudy() {
                                         <div className="pNavName">Tool hire app</div>
                                     </div>
                                     <div className="pNavChevronR">
-                                        <ChevronRight />
+                                        
                                     </div>
                                 </div>
                             </Link>

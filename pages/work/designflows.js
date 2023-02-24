@@ -3,8 +3,6 @@ import Link from "next/link"
 import styles from "./css/caseStudy.module.css"
 import Image from "next/image"
 import Footer from "../../components/footer"
-import ChevronRight from "@mui/icons-material/ChevronRight";
-import ChevronLeft from "@mui/icons-material/ChevronLeft";
 import Head from "next/head"
 import Zoom from "react-medium-image-zoom"
 
@@ -183,7 +181,7 @@ function caseStudy() {
                         <div className="column">
                             <Link href="/work/offer-management">
                                 <div className="pNavButton">
-                                    <ChevronLeft />
+                                    
                                     <div className="pNavTopic">
                                         <div className="pNavDirection">Previous Project</div>
                                         <div className="pNavName">Offer management</div>
@@ -201,7 +199,7 @@ function caseStudy() {
                                         <div className="pNavName">Beer blog</div>
                                     </div>
                                     <div className="pNavChevronR">
-                                        <ChevronRight />
+                                        
                                     </div>
                                 </div>
                             </Link>

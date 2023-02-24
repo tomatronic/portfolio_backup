@@ -3,7 +3,6 @@ import Link from "next/link"
 import Image from "next/image"
 import styles from "./css/caseStudy.module.css"
 import Footer from "../../components/footer"
-import ChevronLeft from "@mui/icons-material/ChevronLeft"
 import Head from "next/head"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
@@ -207,7 +206,7 @@ function beerBlog() {
                 <div className="column">
                         <Link href="/work/designflows">
                             <div className="pNavButton">
-                            <ChevronLeft />
+                            
                                 <div className="pNavTopic">
                                     <div className="pNavDirection">Previous Project</div>
                                     <div className="pNavName">Tool hire app</div>
