@@ -74,21 +74,21 @@ function caseStudy() {
                             <p>The key to any project is to ensure a thorough discovery process.</p>
                             <p>To understand the problem I first reviewed the current platform and flows associated with the management of offers. I mapped out the flow within Miro using screenshots from the legacy dashboard. This ensured I had a full understanding of how the feature was already working and gain some inital insight into where improvements could be made.</p>
                             <p>However, I will not jump to conclusions without gaining input from the user.</p>
-                        < br/>
+                        </div>
+                        <div className="column">
                             <Zoom>
                                 <Image src="/legacy1.png" layout="intrinsic" width="1346" height="1841" alt="The legacy dashboard offer invitation screen" />
                             </Zoom>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="reverse-row">
                         <div className="column">
                             <h1>Gaining insight</h1>
                             <p>I went ahead and captured some qualitative data. To do this I created a small survey within a google form (click the image to view) to distribute amongst the account management teams to help gather a better understanding of how they interacted with this feature, it was also a chance for me to understand known pain points that the team have been presented with. The reason I chose the account managers was due to the level of exposure they have to both the platform and the end users.</p>
                             <p>Once I had a pool of data collated I created an affinity diagram to help group the results I had received, this helped me to identify and prioritise points in the next step of the process. I also followed up with some of the participants to further discuss their inputs and gather additional feedback. I feel this additional step is important, not only will it ensure that the survey answers are fully understood, it creates an additional layer of empathy to help understand the goal of the project.</p>
-                        < br/>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gpi8XoE7ODNskrNgo91T5mZLrLipiL0NYczPtvc-L4zKIw/viewform" target="_blank" rel="noreferrer">
-                                <Image src="/offersForm.png" layout="responsive" width="944" height="1422" alt="The survey that was communicated to candidates" />
-                            </a>
+                        </div>
+                        <div className="column">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6gpi8XoE7ODNskrNgo91T5mZLrLipiL0NYczPtvc-L4zKIw/viewform" target="_blank" rel="noreferrer"><Image src="/offersForm.png" layout="responsive" width="944" height="1422" alt="The survey that was communicated to candidates" /></a>
                         </div>
                     </div>
                     <div className="nopad-row">
