@@ -132,7 +132,7 @@ function caseStudy() {
                         <div className="column">
                             <h1>Planning</h1>
                             <p>With my new knowledge I could start planning my next steps. I begun with creating a simple flowchart to illustrate the possible routes a user would take in order to accept a new offer request. I ensured to liaise with several members of user facing teams to make sure nothing was missed out and that flows made sense.</p>
-                            <br />
+                            <br /><br />
                             <Zoom>
                                 <Image src="/flowchart.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                             </Zoom>
@@ -152,7 +152,7 @@ function caseStudy() {
                         <div className="column">
                             <h1>Prototypes</h1>
                             <p>In order to validate my ideas I proceeded to complete a round of simple user testing. Rather than exposing my test candidates to my sketches I went ahead and created simple wireframes within Sketch that I could share and gather initial feedback with. I used to Zoom to conduct interviews with the candidates and got them to complete a set of simple tasks. This first round of testing allowed me to identify that the users were wanting a dedicated landing page for offer invitations alongside the proposed notification based system.</p>
-                            <br />
+                            <br /><br />
                             <Zoom>
                                 <Image src="/digitalwireframe.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                             </Zoom>
@@ -172,7 +172,7 @@ function caseStudy() {
                         <div className="column">
                             <h1>User testing</h1>
                             <p>After performing a number of protoype testing sessions I was able to identify a couple of further design adjustments that were required. This involved a round of iterations to ensure functionality was highlighted in a relevant way and that offers were made easier to compare.</p>
-                        < br/>
+                        < br/><br />
                         <Zoom>
                             <Image src="/usertestingOffers.png" layout="intrinsic" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
                         </Zoom>
