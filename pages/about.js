@@ -2,11 +2,10 @@ import styles from "./css/about.module.css"
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 import Head from "next/head"
-import { motion, useIsPresent } from "framer-motion"
 
 
 function About() {
-    const isPresent = useIsPresent();
+    
     return (
     <>
         <div>
