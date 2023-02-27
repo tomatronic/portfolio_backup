@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
     </div>
     <AnimatePresence mode="wait" initial={false}>
-      <Component {...pageProps} key={router.asPath} />
+      {React.cloneElement(element, { key: location.pathname })}
     </AnimatePresence>
     </>
   )
