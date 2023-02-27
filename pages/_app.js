@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
     </div>
-    <AnimatePresence mode='wait' initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
+    <AnimatePresence mode="sync" initial={false}>
       <Component {...pageProps} key={router.asPath} />
     </AnimatePresence>
     </>
