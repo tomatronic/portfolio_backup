@@ -477,4 +477,14 @@ button[disabled]{
       text-align: right;
    }
 
+   .privacy-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #9166d9;
+      z-index: 2;
+    }
+
 }

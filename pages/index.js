@@ -32,7 +32,7 @@ function HomePage() {
         <meta property="og:title" content="Tom Spencer - Ux / UI Designer" />
       </Head>
       <NavBar />
-      <Layout>
+      
       <div className={styles.mainIntroContainer}>
         <div className={styles.introContainer}>
           <div className="top-row-intro">
@@ -93,8 +93,15 @@ function HomePage() {
           </div>
         </div>
         </Link>
+        <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : 1 }}
+        className="privacy-screen"
+      />
       </div>
-      </Layout>
+      
       <Footer />
     </div>
     
