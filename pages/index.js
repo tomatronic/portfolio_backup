@@ -23,7 +23,7 @@ function HomePage() {
       }, 600)
     }
   })
-
+  const isPresent = useIsPresent();
   return (
     <>
     <div>
