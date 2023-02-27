@@ -32,10 +32,11 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="description" content="Hi, I'm Tom Spencer. UX/UI designer focused on delivering effective user centric designs that drive engagement. Currently UX Designer @ Rakuten Advertising." />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
+      <AnimatePresence mode="sync" initial={false}>
+        <Component {...pageProps} key={router.asPath} />
+      </AnimatePresence>
     </div>
-    <AnimatePresence mode="sync" initial={false}>
-      <Component {...pageProps} key={router.asPath} />
-    </AnimatePresence>
+    
     </>
   )
 }
