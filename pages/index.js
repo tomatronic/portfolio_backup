@@ -51,6 +51,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+      </Layout>
       <a name="work" id="work" />
       <div className="mainContainer">        
         <Link href="/work/offer-management">
@@ -94,7 +95,7 @@ function HomePage() {
         </div>
         </Link>
       </div>
-      </Layout>
+      
       <Footer />
     </div>
     
