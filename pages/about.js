@@ -1,5 +1,4 @@
 import styles from "./css/about.module.css"
-import Layout from "../components/Layout/index"
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 import Head from "next/head"
@@ -14,7 +13,7 @@ function About() {
                 <meta property="og:title" content="Tom Spencer - Ux / UI Designer" />
             </Head>
             <NavBar />
-            <Layout>
+            
             <div className="mainContainer">
                 <div className={styles.mainContainer}>
                     <div className="row">
@@ -57,7 +56,13 @@ function About() {
                     </div>
                 </div>
             </div>
-            </Layout>
+            <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : 1 }}
+        className="privacy-screen"
+      />
             <Footer />
         </div>
         </>
