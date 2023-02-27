@@ -20,7 +20,7 @@ function About() {
                 <div className={styles.mainContainer}>
                     <div className="row">
                     <div className="column">
-                            <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} width="170" />
+                            <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
                         </div>
                     </div>
                     <div className="top-row">
@@ -61,7 +61,7 @@ function About() {
             <motion.div
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
-        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" }, opacity: 0 }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
         style={{ originX: isPresent ? 0 : 1 }}
         className="privacy-screen"
       />
