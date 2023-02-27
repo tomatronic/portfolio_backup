@@ -3,6 +3,7 @@ import styles from "./css/home.module.css"
 import Link from "next/link"
 import Footer from "../components/footer"
 import React from "react"
+import { motion, useIsPresent } from "framer-motion"
 import Head from "next/head"
 
 function HomePage() {
