@@ -105,19 +105,9 @@ function caseStudy() {
                         </div>
                         <div className="nopad-row">
                             <div className="column">
-                                <center>
-                                    
                                     <p><b>Comparison</b><br />If I am presented with a new offer invitation I want to be able to compare it to my current offer.</p>
-                                </center>
-                            </div>
-                            <div className="column">
-                                <center>
-                                    
-                                    <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p></center>
-                            </div>
-                            <div className="column">
-                                <center>
-                                    <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p></center>
+                                    <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p>
+                                    <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p>
                             </div>
                         </div>
                     </div>
