@@ -20,7 +20,7 @@ function About() {
                 <div className={styles.mainContainer}>
                     <div className="row">
                     <div className="column">
-                            <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
+                            <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" style={box-shadow:"none"; margin: "0 auto"; max-width: "280px"; min-width: "170px"; border-radius: "20px"; box-shadow: "rgba(145, 109, 249, 0.2) 0px 2px 8px 0px";} />
                         </div>
                     </div>
                     <div className="top-row">
