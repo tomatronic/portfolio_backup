@@ -1,7 +1,7 @@
 
 import React from 'react';
  
-function casestudy (props){
+function Presentation (props){
   return (
     <div style={{border:'1px solid black',
                  margin:'10px',width:'20%'}}>
@@ -18,4 +18,4 @@ function casestudy (props){
  
   )
 }
-export default casestudy;
+export default Presentation;
