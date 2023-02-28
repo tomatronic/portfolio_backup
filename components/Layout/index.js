@@ -8,6 +8,7 @@ const Layout = ({ children }) => (
     animate={{ y: 0, opacity: 1 }}
     // exit={{ y: 100, opacity: 0}}
     transition={{
+      when: "beforeChildren",
       type: "spring",
       stiffness: 260,
       damping: 20,
