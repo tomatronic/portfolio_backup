@@ -1,6 +1,6 @@
 
 import React from 'react'
-import styles from "./css/home.module.css"
+import styles from "../pages/css/home.module.css"
  
 function Presentation (props){
   return (
