@@ -1,20 +1,22 @@
 
-import React from 'react';
+import React from 'react'
+import styles from "./css/home.module.css"
  
 function Presentation (props){
   return (
-    <div style={{border:'1px solid black',
-                 margin:'10px',width:'20%'}}>
-      
- 
-<p> {props.tag} </p>
-<h1> {props.title}</h1>
-<p> {props.blurb}</p>
-<p> {props.link}</p>
-<p> {props.img}</p>
- 
- 
-     </div>
+    
+<div className='row'>
+<div className="double-column">
+  <img src="/{props.img}.png" alt="{props.title}" className={styles.imgRound} />
+</div>
+<div className="column">
+  <div className={styles.csTitle}>{props.tag}</div>
+  <span className={styles.csDescription}>{props.title}</span>
+  <span className={styles.csSkills}>{props.blurb}</span>
+  <a className="secondaryLink">View Case Study</a>
+</div>
+</div>
+     
  
   )
 }
