@@ -15,7 +15,7 @@ function Work() {
             <h2>Work</h2>       
             {caseStudies.map((e)=>{
        return (
-       <listWork tag={e.tag} title={e.title} blurb={e.blurb} link={e.link} img={e.img} />
+       <listWork key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} link={e.link} img={e.img} />
      );})}
         </div>
         
