@@ -28,7 +28,8 @@ function HomePage() {
       <div>
         <Head />
         <NavBar />
-        <div className="mainContainer">        
+        <div className="mainContainer">
+            <h2>Work</h2><br />        
           <Link href="/work/offer-management">
           <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
               <div className="double-column">
