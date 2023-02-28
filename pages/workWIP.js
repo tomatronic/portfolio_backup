@@ -2,10 +2,10 @@ import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
-import caseStudies from '../components/caseStudies'
-import listWork from '../components/caseStudy'
+import caseStudies from "../components/caseStudies"
+import listWork from "../components/caseStudy"
 
-function Work() {
+function WorkWIP() {
     return (
       <>
       <div>
@@ -13,10 +13,12 @@ function Work() {
         <NavBar />
         <div className="mainContainer">
             <h2>Work</h2>       
+            
             {caseStudies.map((e)=>{
        return (
-       <listWork key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} link={e.link} img={e.img} />
+       <listWork key={e.link} tag={e.tag} />
      );})}
+     
         </div>
         
         <Footer />
@@ -26,4 +28,4 @@ function Work() {
     )
   }
   
-  export default Work
+  export default WorkWIP
