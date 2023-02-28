@@ -6,30 +6,13 @@ import React from "react"
 import Head from "next/head"
 
 function HomePage() {
-
-
-    React.useEffect(() => {
-      const path = window.location.hash
-      if (path && path.includes("#")) {
-        setTimeout(() => {
-          const id = path.replace("#", "")
-          const el = window.document.getElementById(id)
-          const r = el.getBoundingClientRect()
-          window.top.scroll({
-            top: pageYOffset + r.top,
-            behavior: "smooth",
-          })
-        }, 600)
-      }
-    })
-  
     return (
       <>
       <div>
         <Head />
         <NavBar />
         <div className="mainContainer">
-            <h2>Work</h2><br />        
+            <h2>Work</h2>       
           <Link href="/work/offer-management">
           <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
               <div className="double-column">
