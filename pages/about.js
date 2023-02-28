@@ -1,6 +1,7 @@
 import styles from "./css/about.module.css"
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
+import styles from "./css/home.module.css"
 import Head from "next/head"
 
 
@@ -19,7 +20,14 @@ function About() {
                 <div className={styles.mainContainer}>
                     <div className="row">
                     <div className="column">
-                    <p>Hello, I'm Tom and I have been working in design for almost 10 years. I am now settled into the world of user experience but am still often found experimenting with UI components or even getting my hands dirty with some (limited) front end developement.</p>
+                    <div className={styles.blurb}>Hi, I'm Tom —</div>              
+                    <div className={styles.intro}>
+                        I'm a <b>UX Designer</b>
+                        &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
+                    </div>
+                    <div className={styles.blurb}>
+                        Currently UX Designer @ <b>Rakuten Advertising</b>
+                    </div>
                     </div>
                     <div className="column">
                             <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className={styles.bioImg} />
