@@ -59,16 +59,16 @@ function HomePage() {
             <div className="column-image">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
               </div>
-              <motion.div variants={item}>
+              <motion.div>
               <div className={styles.blurb}>Hi, I'm Tom —</div>
               </motion.div>
-              <motion.div variants={item}>
+              <motion.div>
               <div className={styles.intro}>
                 I'm a <b>UX Designer</b>
                 &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
                 </div>
               </motion.div>
-              <motion.div variants={item}>
+              <motion.div>
                 <div className={styles.blurb}>Currently UX Designer @ <b>Rakuten Advertising</b><br /><br /><br />
                 </div>
                 </motion.div>
