@@ -7,7 +7,7 @@ function Presentation (props){
     
 <div className='row'>
 <div className="double-column">
-  <img src="/{props.img}.png" alt="{props.title}" className={styles.imgRound} />
+  <img src={props.img} alt={props.title} className={styles.imgRound} />
 </div>
 <div className="column">
   <div className={styles.csTitle}>{props.tag}</div>
