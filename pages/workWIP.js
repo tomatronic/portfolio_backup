@@ -3,7 +3,7 @@ import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
 import caseStudies from "../components/caseStudies"
-import listWork from "../components/caseStudy"
+import casestudy from "../components/caseStudy"
 
 function WorkWIP() {
     return (
@@ -16,7 +16,7 @@ function WorkWIP() {
             
             {caseStudies.map((e)=>{
        return (
-       <listWork key={e.link} tag={e.tag} />
+       <casestudy key={e.link} tag={e.tag} />
      );})}
      
         </div>

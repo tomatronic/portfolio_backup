@@ -1,7 +1,7 @@
 
 import React from 'react';
  
-function listWork (props){
+function casestudy (props){
   return (
     <div style={{border:'1px solid black',
                  margin:'10px',width:'20%'}}>
@@ -18,4 +18,4 @@ function listWork (props){
  
   )
 }
-export default listWork;
+export default casestudy;
