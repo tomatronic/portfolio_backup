@@ -24,6 +24,16 @@ function HomePage() {
     }
   })
 
+  const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }
+  
+  const item = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  }
+
   return (
     <>
     <div>
@@ -32,26 +42,36 @@ function HomePage() {
         <meta property="og:title" content="Tom Spencer - Ux / UI Designer" />
       </Head>
       <NavBar />
-      <Layout>
+
+    
+ 
       <div className={styles.mainIntroContainer}>
         <div className={styles.introContainer}>
           <div className="top-row-intro">
             <div className="column">
+            <motion.div initial="hidden" animate="visible" variants={list}>
             <div className="column-image">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
               </div>
-              <div className={styles.blurb}>Hi, I'm Tom —</div>              
+              <motion.div variants={item}>
+              <div className={styles.blurb}>Hi, I'm Tom —</div>
+              </motion.div>
+              <motion.div variants={item}>
               <div className={styles.intro}>
                 I'm a <b>UX Designer</b>
                 &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
                 </div>
+              </motion.div>
+              <motion.div variants={item}>
                 <div className={styles.blurb}>Currently UX Designer @ <b>Rakuten Advertising</b><br /><br /><br />
-              </div>          
+                </div>
+                </motion.div>
+             </motion.div>        
             </div>
           </div>
         </div>
       </div>
-      </Layout>
+      
       <a name="work" id="work" />
       <div className="mainContainer">        
         <Link href="/work/offer-management">
