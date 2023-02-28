@@ -16,7 +16,7 @@ function WorkWIP() {
             
             {caseStudies.map((e)=>{
        return (
-        <Presentation key={e.link} tag={e.tag} />
+        <Presentation key={e.link} tag={e.tag} title={e.title} />
                 );
        })}
         </div>

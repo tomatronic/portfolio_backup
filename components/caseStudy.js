@@ -8,7 +8,7 @@ function Presentation (props){
       
  
 <p> {props.tag} </p>
-<p> {props.title}</p>
+<h1> {props.title}</h1>
 <p> {props.blurb}</p>
 <p> {props.link}</p>
 <p> {props.img}</p>
