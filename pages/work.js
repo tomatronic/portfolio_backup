@@ -5,7 +5,7 @@ import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
 
-function HomePage() {
+function Work() {
     return (
       <>
       <div>
@@ -62,4 +62,4 @@ function HomePage() {
     )
   }
   
-  export default HomePage
+  export default Work
