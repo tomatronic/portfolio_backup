@@ -33,21 +33,9 @@ function About() {
                             <p>I'm currently based just outside of sunny Brighton, UK. You'll usually find me hiking on the South Downs or paddle boarding at sea.</p>
                         </div>
                     </div>
-                    <div className="top-row">
+                    <div className="row">
                         <div className="column">
-                        <h1>Experience</h1>
-                        </div>
-                        <div className="double-column">
-                            <p>UX Designer <span className={styles.highlight}>&mdash; Feb 2020 - Present</span><br />
-                            <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Junior UX Designer <span className={styles.highlight}>&mdash; Jul 2018 - Feb 2020</span><br />
-                            <span className={styles.highlight}>Rakuten Advertising</span></p>
-                            <p>Senior Creative Developer <span className={styles.highlight}>&mdash; Feb 2016 - Jul 2018</span><br />
-                            <span className={styles.highlight}>Pure360</span></p>
-                            <p>Creative Developer <span className={styles.highlight}>&mdash; Jun 2014 - Feb 2016</span><br />
-                            <span className={styles.highlight}>Pure360</span></p>
-                            <p>Email Creative <span className={styles.highlight}>&mdash; Nov 2013 - Jun 2014</span><br />
-                            <span className={styles.highlight}>Friday Media Group</span></p>
+                            <img src="/aboutBanner.png" alt="A little insight to my life" width="100%" />
                         </div>
                     </div>
                     <div className="notm-row">
