@@ -11,8 +11,8 @@ function WorkWIP() {
       <div>
         <Head />
         <NavBar />
-        <div className="mainContainer">
-            <h2>Work</h2>       
+        <div className="container max-w-screen-lg mx-auto">
+            <p className="text-2xl">Work</p>       
             
             {caseStudies.map((e)=>{
        return (

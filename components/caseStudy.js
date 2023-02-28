@@ -5,15 +5,15 @@ import styles from "../pages/css/home.module.css"
 function Presentation (props){
   return (
     
-<div className='row'>
-<div className="double-column">
+<div className="flex flex-row gap-10 pb-10 items-center">
+<div className="basis-2/3">
   <img src={props.img} alt={props.title} className={styles.imgRound} />
 </div>
-<div className="column">
-  <div className={styles.csTitle}>{props.tag}</div>
-  <span className={styles.csDescription}>{props.title}</span>
-  <span className={styles.csSkills}>{props.blurb}</span>
-  <a className="secondaryLink">View Case Study</a>
+<div className="basis-1/3">
+  <p className={styles.csTitle}>{props.tag}</p>
+  <p className={styles.csDescription}>{props.title}</p>
+  <p className={styles.csSkills}>{props.blurb}</p>
+  <a className="secondaryLink pt-6">View Case Study</a>
 </div>
 </div>
      

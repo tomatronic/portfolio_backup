@@ -148,7 +148,6 @@ a:hover .caseStudy, a:hover .caseStudyRight, a:hover .caseStudy3 {
         border-radius: 8px;
         box-shadow: rgba(145, 109, 249, 0.2) 0px 2px 8px 0px;
         transition: 0.2s;
-        margin: 10px;
         overflow: hidden;
         cursor: pointer;
      }
