@@ -12,7 +12,7 @@ function WorkWIP() {
         <Head />
         <NavBar />
         <div className="container max-w-screen-lg mx-auto px-6 pt-10">
-            <p className="text-2xl font-semibold">Work</p>       
+            <p className="text-2xl font-semibold">WORK</p>       
             <p className="text-lg mb-6">The following is a small collection of projects I have contributed to and am particularly proud of.</p>
             {caseStudies.map((e)=>{
        return (
