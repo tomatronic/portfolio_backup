@@ -11,7 +11,7 @@
       padding: 0;
       margin: 0;
       line-height: 1.6;
-      font-size: 18px;
+      font-size: 16px;
       background-color:#FFF;
       color: #273959;
       scroll-behavior: smooth;
@@ -25,35 +25,6 @@
 * {
    box-sizing: border-box;
 }
-
-a {
-   position: relative;
-   color: #55C1FF;
-   text-decoration: none;
-   cursor: pointer;
-}
-
-a:hover {
-   text-decoration: none;
-}
-
-a::before {
-   content: "";
-   position: absolute;
-   display: block;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   background-color: #55C1FF;
-   transform: scaleX(0);
-   transform-origin: top left;
-   transition: transform 0.3s ease;
- }
-
- a:hover::before {
-   transform: scaleX(1);
- }
 
 .secondaryLink {
    color: #916DF9;
