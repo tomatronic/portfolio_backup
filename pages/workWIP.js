@@ -13,7 +13,7 @@ function WorkWIP() {
         <NavBar />
         <div className="container max-w-screen-lg mx-auto px-6 pt-10">
             <p className="text-4xl font-semibold">Work</p>       
-            <p>The following is a small collection of projects I have contributed to and am particularly proud of.</p>
+            <p className="text-lg mb-6">The following is a small collection of projects I have contributed to and am particularly proud of.</p>
             {caseStudies.map((e)=>{
        return (
         <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
