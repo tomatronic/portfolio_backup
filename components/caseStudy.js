@@ -10,10 +10,12 @@ function Presentation (props){
   <img src={props.img} alt={props.title} className={styles.imgRound} />
 </div>
 <div className="basis-1/3">
+  <div>
   <p className={styles.csTitle}>{props.tag}</p>
   <p className={styles.csDescription}>{props.title}</p>
-  <p className={styles.csSkills}>{props.blurb}</p>
-  <a className="secondaryLink pt-6">View Case Study</a>
+  <p className="mb-6">{props.blurb}</p>
+  <a href={props.link} className="secondaryLink">View Case Study</a>
+  </div>
 </div>
 </div>
      
