@@ -11,7 +11,7 @@ function WorkWIP() {
       <div>
         <Head />
         <NavBar />
-        <div className="container max-w-screen-lg mx-auto">
+        <div className="container max-w-screen-lg mx-auto px-6">
             <p className="text-2xl">Work</p>       
             <p>The following is a small collection of projects I have contributed to and am particularly proud of.</p>
             {caseStudies.map((e)=>{
