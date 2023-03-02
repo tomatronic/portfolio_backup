@@ -14,7 +14,7 @@ function About() {
             <NavBar />
             
             <div className="container max-w-screen-lg mx-auto px-6 pt-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-28 my-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-28 my-10">
                     
                     <div className="flex content-center justify-center flex-col">
                     <div className={extrastyles.blurb}>Hi, I'm Tom —</div>              
