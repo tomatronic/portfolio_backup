@@ -1,13 +1,13 @@
 import NavBar from "../components/navbar"
-import styles from "./css/home.module.css"
 import Link from "next/link"
 import Layout from "../components/Layout/index"
 import Footer from "../components/footer"
 import React from "react"
 import Head from "next/head"
+import caseStudies from "../components/caseStudies"
+import Presentation from "../components/caseStudy"
 
 function HomePage() {
-
 
   React.useEffect(() => {
     const path = window.location.hash
@@ -30,19 +30,19 @@ function HomePage() {
       <Head />
       <NavBar />
       <Layout>
-      <div className={styles.mainIntroContainer}>
-        <div className={styles.introContainer}>
-          <div className="top-row-intro">
-            <div className="column">
-            <div className="column-image">
+      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+        <div className="text-center">
+          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
+            <div className="flex flex-col">
+            <div className="my-6 mx-auto">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
               </div>
-              <div className={styles.blurb}>Hi, I'm Tom —</div>              
-              <div className={styles.intro}>
+              <div className="text-lg md:text-xl">Hi, I'm Tom —</div>              
+              <div className="text-2xl md:text-3xl leading-8">
                 I'm a <b>UX Designer</b>
-                &nbsp;focused on delivering <div className={styles.keyPoint}><span>effective</span></div> user centric designs that drive engagement.<br /><br />
+                &nbsp;focused on delivering effective user centric designs that drive engagement.<br /><br />
                 </div>
-                <div className={styles.blurb}>Currently UX Designer @ <b>Rakuten Advertising</b><br /><br /><br />
+                <div className="text-lg md:text-xl">Currently UX Designer @ <b>Rakuten Advertising</b><br /><br /><br />
               </div>          
             </div>
           </div>
@@ -50,49 +50,13 @@ function HomePage() {
       </div>
       </Layout>
       <a name="work" id="work" />
-      <div className="mainContainer">        
-        <Link href="/work/offer-management">
-        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
-            <div className="double-column">
-              <img src="/offersThumb.png" alt="Offer management section of the new dashboard for Rakuten Advertising" className={styles.imgRound} />
-            </div>
-            <div className="column">
-              <div className={styles.csTitle}>Rakuten Advertising</div>
-              <span className={styles.csDescription}>Improving the offer management experience</span>
-              <span className={styles.csSkills}>Product design, User research, User testing</span>
-              <a className="secondaryLink">View Case Study</a>
-            </div>
-          </div>
-        </Link>
-        <Link href="/work/designflows">
-        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
-            <div className="double-column">
-              <img src="/competitionThumb.png" alt="Designflows 2021 - Coming Soon" className={styles.imgRound} />
-            </div>
-            <div className="column">
-              <div className={styles.csTitle}>Designflows 2021</div>
-              <span className={styles.csDescription}>Creation of a tool hire app</span>
-              <span className={styles.csSkills}>Product design, User research, Brand creation</span>              
-              <a className="secondaryLink">View Case Study</a>
-            </div>
-
-          </div>
-        </Link>
-        <Link href="/work/beer-blog">
-        <div className={` ${'row-sm-gap'} , ${styles.caseStudy}`}>
-          <div className="double-column">
-            <img src="/brewtifulThumb.png" alt="Brewtiful - My own project looking at beers and design" className={styles.imgRound} />
-          </div>
-          <div className="column">
-            <div className={styles.csTitle}>Brewtiful</div>
-            <span className={styles.csDescription}>Showcasing craft beers and packaging design</span>
-            <span className={styles.csSkills}>Product design, User research, Brand creation, Front-end development</span>            
-            <a className="secondaryLink">View Case Study</a>
-          </div>
-        </div>
-        </Link>
+      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+      {caseStudies.map((e)=>{
+       return (
+        <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
+                );
+       })}
       </div>
-      
       <Footer />
     </div>
     

@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const Layout = ({ children }) => (
   <motion.div
-    initial={{ y: 70, opacity: 0 }}
+    initial={{ y: 80, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
-    // exit={{ y: 100, opacity: 0}}
+    exit={{ y: 0, opacity: 1}}
     transition={{
       when: "beforeChildren",
       type: "spring",
-      stiffness: 260,
+      duration: 0.3,
       damping: 20,
     }}
   >
