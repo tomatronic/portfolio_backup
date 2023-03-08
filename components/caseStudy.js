@@ -14,9 +14,9 @@ function Presentation (props){
 <div className="basis-1/3">
   <div>
   <p className={styles.csTitle}>{props.tag}</p>
-  <p className={styles.csDescription}>{props.title}</p>
+  <h1>{props.title}</h1>
   <p>{props.blurb}</p>
-  <a href={props.link} className="secondaryLink">View Case Study</a>
+  <a href={props.link} className="text-purple-600">View case study</a>
   </div>
 </div>
 

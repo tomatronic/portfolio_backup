@@ -8,14 +8,14 @@ const caseStudies=[
     },
     {
         tag: "Brewtiful",
-        title:"Improving the offer management invite experience",
+        title:"Creating a unique craft beer blog site",
         blurb:"Product design, User research, Brand creation, Front-end development",
         link:"/work/beer-blog",
         img: "/brewtifulThumb.png"
     },
     {
       tag: "Designflows 2021",
-      title:"Improving the offer management invite experience",
+      title:"A 48 hour app design challenge",
       blurb:"Product design, User research, Brand creation",
       link:"/work/designflows",
       img: "/competitionThumb.png"
