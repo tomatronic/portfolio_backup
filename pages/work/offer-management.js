@@ -83,7 +83,7 @@ function caseStudy() {
                     <div className="flex flex-row flex-wrap gap-6 content-center">
                         <div className="flex flex-col">
                             <Zoom>
-                                <Image src="/legacy1.png" layout="intrinsic" width="1346" height="1841" alt="The legacy dashboard offer invitation screen" />
+                                <Image src="/legacy1.png" layout="intrinsic" width="1952" height="1200" alt="The legacy dashboard offer invitation screen" />
                             </Zoom>
                         </div>
                     </div>
