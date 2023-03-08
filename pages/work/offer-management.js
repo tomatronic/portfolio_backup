@@ -1,6 +1,5 @@
 import NavBar from "../../components/navbar"
 import Link from "next/link"
-import styles from "./css/caseStudy.module.css"
 import Image from "next/image"
 import Footer from "../../components/footer"
 import Head from "next/head"
@@ -220,7 +219,7 @@ function caseStudy() {
                 <div className="container max-w-screen-lg mx-auto px-6 pt-10">
                     <div className="flex flex-row flex-wrap gap-6 content-center pb-20">
                             <Zoom>
-                                <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className={styles.imgRound} />
+                                <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className="rounded-2xl" />
                             </Zoom>
                     </div>
                 </div>
@@ -235,7 +234,7 @@ function caseStudy() {
                         </div>
                         <div className="flex flex-col flex-1 group cursor-pointer">
                             <Link href="/work/beer-blog">
-                                <div className="pNavButton group-hover:bg-purple-500 p-10 ease-in-out duration-300">
+                                <div className=" group-hover:bg-purple-500 p-10 ease-in-out duration-300">
                                     <div className="group-hover:text-white ease-in-out duration-300">
                                         <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-white ease-in-out duration-300">Next Project</div>
                                         <h2>Craft beer blog</h2>

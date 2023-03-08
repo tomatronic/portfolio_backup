@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'offers': "url('/coffeeshop.png')",
+        'beer':"url('/brewtifulBg.png')",
+        'designFlows':"url('/dfbg.png')",
       },
     },
     fontFamily:{
