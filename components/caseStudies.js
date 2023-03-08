@@ -1,7 +1,7 @@
 const caseStudies=[
     {
       tag: "Rakuten Advertising",
-      title:"Improving the offer management invite experience",
+      title:"Improve the offer management & invite experience",
       blurb:"Product design, User research, User testing",
       link:"/work/offer-management",
       img: "/offersThumb.png"

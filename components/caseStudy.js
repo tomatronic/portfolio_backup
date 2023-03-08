@@ -13,10 +13,10 @@ function Presentation (props){
 </div>
 <div className="basis-1/3">
   <div>
-  <p className={styles.csTitle}>{props.tag}</p>
-  <h1>{props.title}</h1>
-  <p>{props.blurb}</p>
-  <a href={props.link} className="text-purple-600">View case study</a>
+  <div className="text-gray-500 mb-1 uppercase font-semibold text-sm">{props.tag}</div>
+  <h2>{props.title}</h2>
+  <p className='text-base'>{props.blurb}</p>
+  <a href={props.link} className="text-purple-600">Read case study</a>
   </div>
 </div>
 
