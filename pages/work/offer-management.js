@@ -12,7 +12,7 @@ function caseStudy() {
             <div>
                 <Head />
                 <NavBar />
-                <div className={styles.csIntroBanner} />
+                <div className="h-[500px] bg-offers bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1> Offer management</h1>
                 </div>
@@ -28,7 +28,7 @@ function caseStudy() {
                     <div className="flex flex-row flex-wrap gap-6 content-center pb-20">
                         <div className="flex flex-col">
                             <Zoom>
-                                <Image src="/topBanner.png" layout="intrinsic" width="1116" height="766" alt="Small mock of end product" />
+                                <Image src="/topBanner.png" layout="intrinsic" width="1600" height="927" alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
@@ -72,6 +72,12 @@ function caseStudy() {
                             <h2>Project background</h2>
                             <p>Rakuten Advertising offers a way for users to communicate using a variety of dashboards depending on their needs. These communications allow users to create and manage affiliate marketing across a range of mediums.</p>
                             <p>The current dashboard is outdated and in need of a major revamp.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6 pt-10">
+                    <div className="flex flex-row flex-wrap gap-6 content-center">
+                        <div className="flex flex-col">
                             <h2>Discovery</h2>
                             <p>The key to any project is to ensure a thorough discovery process.</p>
                             <p>To understand the problem I first reviewed the current platform and flows associated with the management of offers. I mapped out the flow within Miro using screenshots from the legacy dashboard. This ensured I had a full understanding of how the feature was already working and gain some inital insight into where improvements could be made.</p>
@@ -88,7 +94,7 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-md mx-auto px-6 pt-10">
+                <div className="container max-w-screen-md mx-auto px-6 pt-20">
                     <div className="flex flex-row flex-wrap gap-6 content-center">
                         <div className="flex flex-col">
                             <h2>Gaining insight</h2>
@@ -113,8 +119,8 @@ function caseStudy() {
                     <div className="container max-w-screen-md mx-auto px-6 pt-10">
                         <div className="flex flex-row flex-wrap gap-6 content-center">
                             <div className="nopad-flex flex-col">
-                                <center><h2>Goals</h2>
-                                    <p>As a result of the survey data I was able to identify three main goals to focus on:</p></center>
+                                <h2>Goals</h2>
+                                <p>As a result of the survey data I was able to identify three main goals to focus on:</p>
                                 <p><b>Comparison</b><br />If I am presented with a new offer invitation I want to be able to compare it to my current offer.</p>
                                 <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p>
                                 <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p>
@@ -123,7 +129,7 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-md mx-auto px-6 pt-10">
+                <div className="container max-w-screen-md mx-auto px-6 pt-20">
                     <div className="flex flex-row flex-wrap gap-6 content-center pb-20">
                         <div className="flex flex-col">
                             <h2>Planning</h2>
@@ -131,7 +137,7 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+                <div className="container max-w-screen-lg mx-auto px-6">
                     <div className="flex flex-row flex-wrap gap-6 content-center pb-20">
                         <Zoom>
                             <Image src="/flowchart.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
@@ -218,24 +224,21 @@ function caseStudy() {
                             </Zoom>
                     </div>
                 </div>
-                <div className="projectNavContainer">
-                    <div className="flex flex-row flex-wrap gap-6 content-center justify-center">
-                        <div className="blank-flex flex-col">
+                <div className="container max-w-screen-lg mx-auto border-t border-gray-200">
+                    <div className="flex flex-row flex-wrap content-center justify-center">
+                        <div className="blank-flex flex-col flex-1">
 
                             <div className="pNavDirection">&nbsp;</div>
 
                             <div className="pNavName">&nbsp;</div>
 
                         </div>
-                        <div className="flex flex-col">
-                            <Link href="/work/designflows">
-                                <div className="pNavButton">
-                                    <div className="pNavTopic">
-                                        <div className="pNavDirection">Next Project</div>
-                                        <h2>Tool hire app</h2>
-                                    </div>
-                                    <div className="pNavChevronR">
-
+                        <div className="flex flex-col flex-1 group cursor-pointer">
+                            <Link href="/work/beer-blog">
+                                <div className="pNavButton group-hover:bg-purple-500 p-10 ease-in-out duration-300">
+                                    <div className="group-hover:text-white ease-in-out duration-300">
+                                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-white ease-in-out duration-300">Next Project</div>
+                                        <h2>Craft beer blog</h2>
                                     </div>
                                 </div>
                             </Link>

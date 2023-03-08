@@ -8,7 +8,7 @@ const caseStudies=[
     },
     {
         tag: "Brewtiful",
-        title:"Creating a unique craft beer blog site",
+        title:"The creation of a new craft beer brand and blog",
         blurb:"Product design, User research, Brand creation, Front-end development",
         link:"/work/beer-blog",
         img: "/brewtifulThumb.png"

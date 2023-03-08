@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'offers': "url('/coffeeshop.png')",
+      },
+    },
     fontFamily:{
       sans: ['Source Sans Pro', 'sans-serif']
     }

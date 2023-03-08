@@ -62,7 +62,7 @@
 
     .csIntroBanner {
         display: flex;
-        background-image: url("../../../public/coffeeshop.png");
+        
         background-size: cover;
         width: 100%;
         min-height: 500px;
