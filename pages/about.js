@@ -21,7 +21,7 @@ function About() {
                         &nbsp;based in Brighton, UK. I have 10 years of design experience and plan on many more.<br /><br />
                     </div>
                     <div className="text-lg md:text-xl">
-                        Currently UX Designer @ <b>Rakuten Advertising</b>
+                        Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank">Rakuten Advertising</a></b>
                     </div>
                     </div>
                     <div>
