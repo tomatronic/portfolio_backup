@@ -42,7 +42,7 @@ function HomePage() {
                 I'm a <b>UX Designer</b>
                 &nbsp;focused on delivering effective user centric designs that drive engagement.<br /><br />
                 </div>
-                <div className="text-lg md:text-xl">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank">Rakuten Advertising</a></b><br /><br /><br />
+                <div className="text-lg md:text-xl">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b><br /><br /><br />
               </div>          
             </div>
           </div>
