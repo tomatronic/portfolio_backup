@@ -40,10 +40,10 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="outer-row-purple">
-                    <div className="container max-w-screen-md mx-auto px-6 pt-10">
-                        <div className="flex flex-row flex-wrap gap-6 content-center">
-                            <div className="flex flex-col">
+                <div className="max-w-full bg-purple-500 text-white">
+                <div className="container max-w-screen-md mx-auto px-6 pt-20">
+                        <div className="flex flex-row gap-12 pb-20">
+                            <div className="flex flex-col flex-1">
                                 <h2>What I did</h2>
                                 <p>&bull; Sole UX designer on the project<br />
                                     &bull; Stakeholders interviews to identify goals<br />
@@ -55,7 +55,7 @@ function caseStudy() {
                                     &bull; High fidelity mockups<br />
                                 </p>
                             </div>
-                            <div className="flex flex-col">
+                            <div className="flex flex-col flex-1">
                                 <div>
                                     <h2>My role</h2>
                                     <p>For this project I was the sole UX designer. I worked closely with the product manager to ensure that the end product was as refined as possible and met all goals set.</p><br />
@@ -105,7 +105,7 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+                <div className="container max-w-screen-lg mx-auto px-6 pt-10 pb-20">
                     <div className="flex flex-row flex-wrap gap-6 content-center">
                         <div className="flex flex-col">
                             <Zoom>
@@ -114,7 +114,7 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="outer-row-purple">
+                <div className="max-w-full bg-purple-500 text-white">
                     <div className="container max-w-screen-md mx-auto px-6 pt-10">
                         <div className="flex flex-row flex-wrap gap-6 content-center">
                             <div className="nopad-flex flex-col">
