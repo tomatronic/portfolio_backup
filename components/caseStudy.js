@@ -1,6 +1,5 @@
 
 import React from 'react'
-import styles from "../pages/css/home.module.css"
 import Link from "next/link"
 
 function Presentation (props){

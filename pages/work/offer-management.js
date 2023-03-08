@@ -12,7 +12,7 @@ function caseStudy() {
             <div>
                 <Head />
                 <NavBar />
-                <div className="h-[500px] bg-offers bg-no-repeat bg-cover bg-center"></div>
+                <div className="h-[300px] md:h-[500px] bg-offers bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1> Offer management</h1>
                 </div>
