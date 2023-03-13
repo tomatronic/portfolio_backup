@@ -1,16 +1,11 @@
-import NavBar from "../../components/navbar"
 import Link from "next/link"
 import Image from "next/image"
-import Footer from "../../components/footer"
-import Head from "next/head"
 import Zoom from "react-medium-image-zoom"
 
-function caseStudy() {
+function Offer() {
     return (
         <>
             <div>
-                <Head />
-                <NavBar />
                 <div className="h-[300px] md:h-[500px] bg-offers bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1> Offer management</h1>
@@ -244,10 +239,9 @@ function caseStudy() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </>
     )
 }
 
-export default caseStudy
+export default Offer

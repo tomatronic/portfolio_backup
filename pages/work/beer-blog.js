@@ -1,17 +1,12 @@
-import NavBar from "../../components/navbar"
 import Link from "next/link"
 import Image from "next/image"
-import Footer from "../../components/footer"
-import Head from "next/head"
 import React from "react"
 import Zoom from "react-medium-image-zoom"
 
-function beerBlog() {
+function BeerBlog() {
     return (
         <>
             <div>
-                <Head />
-                <NavBar />
                 <div className="h-[300px] md:h-[500px] bg-beer bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1>It's Brewtiful</h1>
@@ -291,11 +286,9 @@ function beerBlog() {
                         </div>
                     </div>
                 </div>
-
-                <Footer />
             </div>
         </>
     )
 }
 
-export default beerBlog
+export default BeerBlog

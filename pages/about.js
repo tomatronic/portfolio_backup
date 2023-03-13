@@ -1,16 +1,8 @@
-import NavBar from "../components/navbar"
-import Footer from "../components/footer"
-import Head from "next/head"
-
-
 function About() {
     
     return (
     <>
-        <div>
-            <Head />
-            <NavBar />
-            
+        <div>           
             <div className="container max-w-screen-lg mx-auto px-6 pt-10">
             <div className="grid grid-cols-1 gap-14 md:gap-28 my-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-28">
@@ -41,7 +33,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
         </>
     )

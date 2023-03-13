@@ -3,7 +3,7 @@ import "../styles.css";
 import 'react-medium-image-zoom/dist/styles.css'
 import Script from "next/script";
 import Head from "next/head";
-import { AnimatePresence } from 'framer-motion';
+import NavBar from "/components/navbar.js"
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -33,9 +33,9 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="description" content="Hi, I'm Tom Spencer. UX/UI designer focused on delivering effective user centric designs that drive engagement. Currently UX Designer @ Rakuten Advertising." />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+      <NavBar/>
         <Component {...pageProps} key={router.asPath} />
-      </AnimatePresence>
+
     </div>
     
     </>

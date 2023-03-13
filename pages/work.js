@@ -1,16 +1,11 @@
-import NavBar from "../components/navbar"
 import styles from "./css/home.module.css"
 import Link from "next/link"
-import Footer from "../components/footer"
 import React from "react"
-import Head from "next/head"
 
 function Work() {
     return (
       <>
       <div>
-        <Head />
-        <NavBar />
         <div className="mainContainer">
             <h2>Work</h2>       
           <Link href="/work/offer-management">
@@ -54,8 +49,6 @@ function Work() {
           </div>
           </Link>
         </div>
-        
-        <Footer />
       </div>
       
       </>

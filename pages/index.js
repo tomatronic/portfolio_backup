@@ -1,9 +1,6 @@
-import NavBar from "../components/navbar"
 import Link from "next/link"
 import Layout from "../components/Layout/index"
-import Footer from "../components/footer"
 import React from "react"
-import Head from "next/head"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
 
@@ -27,10 +24,10 @@ function HomePage() {
   return (
     <>
     <div>
-      <Head />
-      <NavBar />
+      
+      <div className="bg-slate-100 -mt-[73px] h-screen z-0">
       <Layout>
-      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+      <div className="container max-w-screen-lg mx-auto px-6 h-screen flex justify-center items-center -mt-[73px]">
         <div className="text-center">
           <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
             <div className="flex flex-col">
@@ -49,15 +46,15 @@ function HomePage() {
         </div>
       </div>
       </Layout>
+      </div>      
       <a name="work" id="work" />
-      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+      <div className="container max-w-screen-lg mx-auto px-6 pt-20">
       {caseStudies.map((e)=>{
        return (
         <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
                 );
        })}
       </div>
-      <Footer />
     </div>
     
     </>

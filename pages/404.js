@@ -1,5 +1,3 @@
-import NavBar from "../components/navbar"
-import Footer from "../components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./css/404.module.css"
@@ -7,7 +5,6 @@ import styles from "./css/404.module.css"
 export default function Custom404() {
     return (
     <>
-    <NavBar />
     <div className="mainContainer">
       <div className="smlContainer">
         <div className={styles.imgSpacer}>
@@ -18,10 +15,7 @@ export default function Custom404() {
           </div>
         </div>
       </div>
-    </div>
-
-    <Footer />
-    
+    </div>    
     </>
     )
   }

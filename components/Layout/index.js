@@ -1,5 +1,3 @@
-// components/Layout/index.js
-
 import { motion } from "framer-motion";
 
 const Layout = ({ children }) => (
@@ -8,7 +6,7 @@ const Layout = ({ children }) => (
     animate={{ y: 0, opacity: 1 }}
     exit={{ y: 0, opacity: 1}}
     transition={{
-      when: "beforeChildren",
+      staggerChildren: "0.5",
       type: "spring",
       duration: 0.3,
       damping: 20,

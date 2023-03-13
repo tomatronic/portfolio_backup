@@ -1,7 +1,4 @@
-import NavBar from "../components/navbar"
-import Footer from "../components/footer"
 import React from "react"
-import Head from "next/head"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
 
@@ -9,8 +6,6 @@ function WorkWIP() {
     return (
       <>
       <div>
-        <Head />
-        <NavBar />
         <div className="container max-w-screen-lg mx-auto px-6 pt-10">
             <p className="text-2xl font-semibold">WORK</p>       
             <p className="text-lg mb-20">The following is a small collection of projects I have contributed to and am particularly proud of.</p>
@@ -20,8 +15,6 @@ function WorkWIP() {
                 );
        })}
         </div>
-        
-        <Footer />
       </div>
       
       </>
