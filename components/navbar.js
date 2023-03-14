@@ -39,7 +39,7 @@ function NavBar() {
             </Link>
             <nav className="self-center">
               <ul className="inline-block">
-                <motion.li className={`inline-block ${router.asPath.split("?")[0] == "/#work" ? "active" : ""}`} variants={navChild}>     
+                <motion.li className={`inline-block ${router.asPath.split("#")[0].split("?")[0] == "/work" ? "active" : ""}`} variants={navChild}>     
                   <Link href="/#work"><a href="/#work" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-purple-600 hover:ease-in-out relative"> Work </a></Link> 
                 </motion.li>
                 <motion.li className={`inline-block ${router.pathname == "/about" ? "active" : ""}`} variants={navChild}>          
