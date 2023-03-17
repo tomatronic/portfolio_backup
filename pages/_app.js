@@ -4,6 +4,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 import Script from "next/script";
 import Head from "next/head";
 import NavBar from "/components/navbar.js"
+import Footer from "/components/footer.js"
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -35,7 +36,7 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <NavBar/>
         <Component {...pageProps} key={router.asPath} />
-
+      <Footer />
     </div>
     
     </>
