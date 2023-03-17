@@ -3,6 +3,7 @@ import Layout from "../components/Layout/index"
 import React from "react"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
+import Scroll from "/public/chevron-down.svg"
 
 function HomePage() {
 
@@ -27,9 +28,9 @@ function HomePage() {
       
       <div className="bg-slate-100 -mt-[73px] h-screen z-0">
       <Layout>
-      <div className="container max-w-screen-lg mx-auto px-6 h-screen flex justify-center items-center -mt-[73px]">
-        <div className="text-center">
-          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
+      <div className="container max-w-screen-lg mx-auto px-6 h-screen flex flex-col justify-center items-center -mt-[73px]">
+        <div className="text-center h-full flex">
+          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24 content-center">
             <div className="flex flex-col">
             <div className="my-6 mx-auto">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
@@ -44,11 +45,15 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className="h-10 justify-self-end mb-10">
+        <a href="/#work" aria-label="Scroll down to work exmaples"><Scroll className="animate-bounce w-10 h-10" /></a>
+        </div>
       </div>
       </Layout>
       </div>      
       <a name="work" id="work" />
-      <div className="container max-w-screen-lg mx-auto px-6 pt-20">
+      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+        <h2 className="mb-10">Featured work</h2>
       {caseStudies.map((e)=>{
        return (
         <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />

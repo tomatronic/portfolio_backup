@@ -1,11 +1,12 @@
 
 import React from 'react'
 import Link from "next/link"
+import InView from './Layout/InView';
 
 
 function Presentation(props) {
   return (
-
+<InView>
       <div className="flex flex-col md:flex-row gap-10 pb-20">
 
         <div className="basis-2/3 overflow-hidden rounded-2xl">
@@ -21,6 +22,7 @@ function Presentation(props) {
         </div>
 
       </div>
+  </InView>
 
 
   )
