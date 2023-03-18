@@ -1,9 +1,17 @@
+import { useScroll, useEffect, useAnimationControls, isBrowser } from "react"
 import { motion } from "framer-motion"
+
+const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
 const ScrollToTopContainerVariants = {
     hide: { opacity: 0, y: 100 },
     show: { opacity: 1, y: 0 },
 };
+
+function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 function ScrollToTopButton() {
     const { scrollYProgress } = useScroll();
