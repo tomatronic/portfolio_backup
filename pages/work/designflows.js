@@ -1,11 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import Zoom from "react-medium-image-zoom"
+import ScrollToTopButton from "../../components/backToTop"
 
 function CaseStudy() {
     return (
         <>
             <div>
+                <ScrollToTopButton />
                 <div className="h-[300px] md:h-[500px] bg-designFlows bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1>Tool hire app</h1>
