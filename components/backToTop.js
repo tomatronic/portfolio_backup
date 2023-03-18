@@ -39,5 +39,3 @@ function ScrollToTopButton() {
         </motion.button>
     );
 }
-
-export default ScrollToTopButton;
