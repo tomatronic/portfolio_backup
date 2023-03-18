@@ -1,5 +1,6 @@
-import { useScroll, useEffect, useAnimationControls, isBrowser } from "react"
+import { useScroll, useEffect, useAnimationControls } from "react"
 import { motion } from "framer-motion"
+import Scroll from "/public/chevron-down.svg"
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
@@ -34,7 +35,7 @@ function ScrollToTopButton() {
             initial="hide"
             animate={controls}
             onClick={scrollToTop}>
-            <FaArrowUp />
+            <Scroll />
         </motion.button>
     );
 }
