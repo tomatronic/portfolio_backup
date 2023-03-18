@@ -3,11 +3,42 @@ import Image from "next/image"
 import Zoom from "react-medium-image-zoom"
 import ScrollToTopButton from "../../components/backToTop"
 
+const ScrollToTopContainerVariants = {
+    hide: { opacity: 0, y: 100 },
+    show: { opacity: 1, y: 0 },
+};
+
+function ScrollToTopButton() {
+    const { scrollYProgress } = useScroll();
+    const controls = useAnimationControls();
+
+    useEffect(() => {
+        return scrollYProgress.on('change', (latestValue) => {
+            if (latestValue > 0.5) {
+                controls.start('show');
+            } else {
+                controls.start('hide');
+            }
+        });
+    });
+
+    return (
+        <motion.button
+            className="fixed bottom-0 right-0 p-10"
+            variants={ScrollToTopContainerVariants}
+            initial="hide"
+            animate={controls}
+            onClick={scrollToTop}>
+            <FaArrowUp />
+        </motion.button>
+    );
+}
 function CaseStudy() {
     return (
         <>
+        
             <div>
-                <ScrollToTopButton />
+                
                 <div className="h-[300px] md:h-[500px] bg-designFlows bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1>Tool hire app</h1>
