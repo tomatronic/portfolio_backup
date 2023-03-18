@@ -2,42 +2,12 @@ import Link from "next/link"
 import Image from "next/image"
 import Zoom from "react-medium-image-zoom"
 
-const ScrollToTopContainerVariants = {
-    hide: { opacity: 0, y: 100 },
-    show: { opacity: 1, y: 0 },
-};
 
-function ScrollToTopButton() {
-    const { scrollYProgress } = useScroll();
-    const controls = useAnimationControls();
-
-    useEffect(() => {
-        return scrollYProgress.on('change', (latestValue) => {
-            if (latestValue > 0.5) {
-                controls.start('show');
-            } else {
-                controls.start('hide');
-            }
-        });
-    });
-
-    return (
-        <motion.button
-            className="fixed bottom-0 right-0 p-10"
-            variants={ScrollToTopContainerVariants}
-            initial="hide"
-            animate={controls}
-            onClick={scrollToTop}>
-            <FaArrowUp />
-        </motion.button>
-    );
-}
 function CaseStudy() {
     return (
         <>
-        
+
             <div>
-                <ScrollToTopButton />
                 <div className="h-[300px] md:h-[500px] bg-designFlows bg-no-repeat bg-cover bg-center"></div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10 border-b border-gray-200">
                     <h1>Tool hire app</h1>
@@ -47,7 +17,7 @@ function CaseStudy() {
                         <div className="flex flex-col">
                             <h2>About the project</h2>
                             <p>This was a competion brief that had to be completed in weekend.</p>
-                            <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>                            
+                            <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +49,7 @@ function CaseStudy() {
                                 <p>As this project was a competition I was the only person involved. It meant a lot of careful planning and self critque.</p>
                                 <p><b>Project duration</b>: 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -169,21 +139,21 @@ function CaseStudy() {
                                 <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
                             </Zoom>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div className="max-w-full bg-yellow-500">
                     <div className="container max-w-screen-md mx-auto px-6 pt-20">
                         <div className="flex flex-row gap-12 pb-20">
                             <div className="flex flex-col flex-1">
-                            <h2>Mockups</h2>
-                            <p>Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>
+                                <h2>Mockups</h2>
+                                <p>Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>
+                            </div>
                         </div>
-                    </div>
                         <div className="flex flex-row flex-wrap gap-6 content-center">
                             <div className="nopad-column">
-                            <Zoom>
-                                <Image src="/appMocks.png" layout="intrinsic" width="1365" height="879" alt="Preview of how the app mocks were looking" />
-                            </Zoom>
+                                <Zoom>
+                                    <Image src="/appMocks.png" layout="intrinsic" width="1365" height="879" alt="Preview of how the app mocks were looking" />
+                                </Zoom>
                             </div>
                         </div>
                     </div>
@@ -231,7 +201,7 @@ function CaseStudy() {
                 <div className="container max-w-screen-md mx-auto px-6 pt-10">
                     <div className="flex flex-row flex-wrap gap-6 content-center">
                         <div className="flex flex-col">
-                            <h2>Outcome</h2>                            
+                            <h2>Outcome</h2>
                             <p>Overall I am happy with the result. However, I wish I had more time to perfect this.</p>
                             <p>The initial area I would have spent more time on would have been the research phase, I would have liked to have gained a better understanding of the competitor landscape. The addition of user interviews would have also assisted in the research and the end result. I also think I could of come up with a more refined color palette and framework for the project, but this may of been a stretch to achieve given the time constraint.</p>
                         </div>
@@ -251,13 +221,13 @@ function CaseStudy() {
                         <div className="flex flex-col">
                             <h2>Final thoughts</h2>
                             <p>The competition was fun, and I will be looking out for the event again later this year. However, in the meantime I will take the judges feedback onboard and possibly revisit this project at a later date to try and improve the final result.</p>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div className="container max-w-screen-lg mx-auto border-t border-gray-200">
                     <div className="flex flex-row flex-wrap content-center justify-center">
-                    <div className="flex flex-col flex-1 group cursor-pointer text-right justify-items-end content-end">
+                        <div className="flex flex-col flex-1 group cursor-pointer text-right justify-items-end content-end">
                             <Link href="/work/beer-blog">
                                 <div className="group-hover:bg-purple-500 p-10 ease-in-out duration-300">
                                     <div className="group-hover:text-white ease-in-out duration-300">
@@ -274,7 +244,7 @@ function CaseStudy() {
                             <div className="pNavName">&nbsp;</div>
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
