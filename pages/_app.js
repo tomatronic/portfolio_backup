@@ -7,7 +7,7 @@ import NavBar from "/components/navbar.js"
 import Footer from "/components/footer.js"
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import * as gtag from '../lib/gtag'
+import * as gtag from '/lib/gtag'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
