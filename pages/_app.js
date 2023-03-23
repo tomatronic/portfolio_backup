@@ -7,14 +7,14 @@ import NavBar from "/components/navbar.js"
 import Footer from "/components/footer.js"
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import * as ga from '../lib/gtag'
+import * as gtag from '../lib/gtag'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      ga.pageview(url)
+      gtag.pageview(url)
     }
     //When the component is mounted, subscribe to router changes
     //and log those page views
