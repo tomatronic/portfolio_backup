@@ -5,6 +5,9 @@ import 'react-medium-image-zoom/dist/styles.css'
 import Head from "next/head";
 import NavBar from "/components/navbar.js"
 import Footer from "/components/footer.js"
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import * as ga from '../lib/gtag'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
