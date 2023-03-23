@@ -9,7 +9,7 @@ import ReactGA from "react-ga4"
 
 ReactGA.initialize("G-CCDKVM70NV")
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
