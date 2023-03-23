@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles.css";
 import 'react-medium-image-zoom/dist/styles.css'
-import Script from "next/script";
+// import Script from "next/script";
 import Head from "next/head";
 import NavBar from "/components/navbar.js"
 import Footer from "/components/footer.js"
