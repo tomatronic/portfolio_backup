@@ -20,8 +20,8 @@ function BeerBlog() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20">
-                    <div className="grid grid-cols-4 gap-10 auto-rows-auto">
+                <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         <div className="border-gray-200 border-t">
                             <div className="font-bold text-base pt-6">Role</div>
                             <p>Sole UX designer</p>
