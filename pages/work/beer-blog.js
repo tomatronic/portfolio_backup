@@ -15,7 +15,7 @@ function BeerBlog() {
                     <div className="flex flex-row flex-wrap content-center">
                         <div className="flex flex-col">
                             <Zoom>
-                                <Image src="/brewtifulBG.png" layout="intrinsic" width="1600" height="600" alt="Small mock of end product" />
+                                <Image src="/brewtifulBg.png" layout="intrinsic" width="1600" height="600" alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
