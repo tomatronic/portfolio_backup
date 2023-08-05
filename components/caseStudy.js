@@ -13,7 +13,7 @@ function Presentation(props) {
           <Link href={props.link}><img src={props.img} alt={props.title} className="object-cover ease-in-out duration-500 hover:scale-110 cursor-pointer" /></Link>
         </div>
         
-          <div>
+          <div className='mx-6 mb-6 flex flex-col gap-2'>
             <div className="text-gray-500 mb-1 uppercase font-semibold text-sm">{props.tag}</div>
             <h2>{props.title}</h2>
             <p className='text-base'>{props.blurb}</p>
