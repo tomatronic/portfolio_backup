@@ -6,11 +6,7 @@ import Zoom from "react-medium-image-zoom"
 function BeerBlog() {
     return (
         <>
-            <div className="bg-slate-100">
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
-                    <h1>It's Brewtiful</h1><p></p>
-                    <p>Personal project | Oct 2022 - Jan 2023</p>
-                </div>
+            <div className="bg-slate-100">                
                 <div className="container max-w-screen-xl mx-auto px-6">
                     <div className="flex flex-row flex-wrap content-center">
                         <div className="flex flex-col">
@@ -19,6 +15,10 @@ function BeerBlog() {
                             </Zoom>
                         </div>
                     </div>
+                </div>
+                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
+                <div className="text-2xl md:text-5xl leading-7 tracking-tight">It's Brewtiful</div>
+                <div className="text-base mt-5">Personal project | Oct 2022 - Jan 2023</div>
                 </div>
                 <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
