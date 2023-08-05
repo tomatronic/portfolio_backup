@@ -3,7 +3,6 @@ import Layout from "../components/Layout/index"
 import React from "react"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
-import Scroll from "/public/chevron-down.svg"
 
 function HomePage() {
 
