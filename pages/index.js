@@ -26,7 +26,7 @@ function HomePage() {
       
       <div>
       <Layout>
-      <div className="container max-width-screen-xl mx-auto px-6 flex flex-col justify-left">
+      <div className="container max-width-screen-sm md:max-width-screen-xl mx-auto px-6 flex flex-col justify-left">
         <div className="h-full flex">
           <div className="flex flex-row flex-wrap max-w-3xl my-24 md:mb-36 md:mt-40">
             <div className="flex flex-col">                        
