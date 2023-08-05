@@ -32,14 +32,14 @@ function Offer() {
                             <h2>About the project</h2>
                             <p className="mb-16">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. Currently active offers as well as offers that may be beneficial to the user and there affiliate development.</p>
                             <h2>Solution</h2>
-                            <p>Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase the usage of the platform. This in turn will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
+                            <p className="mb-16">Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase the usage of the platform. This in turn will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
                             <h2>Project background</h2>
                             <p>Rakuten Advertising offers a way for users to communicate using a variety of dashboards depending on their needs. These communications allow users to create and manage affiliate marketing across a range of mediums.</p>
-                            <p>The current dashboard is outdated and in need of a major revamp.</p>
+                            <p className="mb-16">The current dashboard is outdated and in need of a major revamp.</p>
                             <h2>Discovery</h2>
                             <p>The key to any project is to ensure a thorough discovery process.</p>
                             <p>To understand the problem I first reviewed the current platform and flows associated with the management of offers. I mapped out the flow within Miro using screenshots from the legacy dashboard. This ensured I had a full understanding of how the feature was already working and gain some inital insight into where improvements could be made.</p>
-                            <p>However, I will not jump to conclusions without gaining input from the user.</p>
+                            <p className="mb-16">However, I will not jump to conclusions without gaining input from the user.</p>
                             <div className="">
                                 <Zoom>
                                     <Image src="/legacy1.png" layout="intrinsic" width="1952" height="1200" alt="The legacy dashboard offer invitation screen" />
@@ -47,7 +47,7 @@ function Offer() {
                             </div>
                             <h2 className="pt-5">Gaining insight</h2>
                             <p>I went ahead and captured some qualitative data. To do this I created a small survey within a google form (click the image to view) to distribute amongst the account management teams to help gather a better understanding of how they interacted with this feature, it was also a chance for me to understand known pain points that the team have been presented with. The reason I chose the account managers was due to the level of exposure they have to both the platform and the end users.</p>
-                            <p>Once I had a pool of data collated I created an affinity diagram to help group the results I had received, this helped me to identify and prioritise points in the next step of the process. I also followed up with some of the participants to further discuss their inputs and gather additional feedback. I feel this additional step is important, not only will it ensure that the survey answers are fully understood, it creates an additional layer of empathy to help understand the goal of the project.</p>
+                            <p className="mb-16">Once I had a pool of data collated I created an affinity diagram to help group the results I had received, this helped me to identify and prioritise points in the next step of the process. I also followed up with some of the participants to further discuss their inputs and gather additional feedback. I feel this additional step is important, not only will it ensure that the survey answers are fully understood, it creates an additional layer of empathy to help understand the goal of the project.</p>
 
                             <Zoom>
                                 <Image src="/affinitymap.jpg" layout="intrinsic" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
