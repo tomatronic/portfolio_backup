@@ -3,7 +3,7 @@ function About() {
     return (
     <>
         <div>           
-            <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+            <div className="container max-w-screen-lg mx-auto px-6 pt-10 bg-slate-100">
             <div className="grid grid-cols-1 gap-14 md:gap-28 my-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-28">
                     <div className="flex content-center justify-center flex-col order-last md:order-first w-full">

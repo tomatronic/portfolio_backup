@@ -26,7 +26,7 @@ function HomePage() {
       
       <div className="bg-slate-100 -mt-[73px] z-0">
       <Layout>
-      <div className="container max-w-screen-lg mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
+      <div className="container mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
         <div className="h-full flex">
           <div className="flex flex-row flex-wrap max-w-xl md:my-24">
             <div className="flex flex-col">
@@ -43,7 +43,7 @@ function HomePage() {
       </div>
       </Layout>  
       <a name="work" id="work" />    
-      <div className="container max-w-screen-lg mx-auto px-6 pt-10">
+      <div className="container mx-auto px-6 pt-10">
       <div className="flex flex-col gap-8 md:flex-row md:flex-wrap">
       {caseStudies.map((e)=>{
        return (

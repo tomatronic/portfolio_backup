@@ -7,7 +7,7 @@ function BeerBlog() {
     return (
         <>
             <div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
+                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10 bg-slate-100">
                     <h1>It's Brewtiful</h1><p></p>
                     <p>Personal project | Oct 2022 - Jan 2023</p>
                 </div>
