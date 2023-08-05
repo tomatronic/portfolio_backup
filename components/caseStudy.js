@@ -7,7 +7,7 @@ import InView from './Layout/InView';
 function Presentation(props) {
   return (
 
-      <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12)]">
+      <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_108px_rgba(13,34,71,0.1)]">
 
         <div className="">
           <InView>
