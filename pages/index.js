@@ -32,7 +32,7 @@ function HomePage() {
             <div className="flex flex-col">                        
               <div className="text-2xl md:text-5xl leading-8">
                 <b>UX Designer</b>
-                &nbsp;focused on delivering effective user centric designs that drive engagement.<br /><br />
+                &nbsp;focused on delivering simple and effective user centric designs.<br /><br />
                 </div>
                 <div className="text-lg">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
               </div>          
