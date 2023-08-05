@@ -39,13 +39,13 @@ function NavBar() {
             <nav className="self-center">
               <ul className="inline-block">
                 <motion.li className={`inline-block ${router.asPath.startsWith("/#work") || router.pathname.startsWith("/work") ? "active" : ""}`} variants={navChild}>     
-                  <Link href="/#work"><a href="/#work" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-purple-600 hover:ease-in-out relative"> Work </a></Link> 
+                  <Link href="/#work"><a href="/#work" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-indigo-500 hover:ease-in-out relative"> Work </a></Link> 
                 </motion.li>
                 <motion.li className={`inline-block ${router.pathname == "/about" ? "active" : ""}`} variants={navChild}>          
-                  <Link href="/about"><a link="/about" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-purple-600 hover:ease-out relative"> About </a></Link>  
+                  <Link href="/about"><a link="/about" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-indigo-500 hover:ease-out relative"> About </a></Link>  
                 </motion.li>
                 <motion.li className={`inline-block ${router.pathname == "/resume" ? "active" : ""}`}variants={navChild}>
-                  <Link href="/resume.pdf"><a link="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-purple-600 hover:ease-out relative"> Resumé </a></Link>
+                  <Link href="/resume.pdf"><a link="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-lg py-2 px-4 mr-2 hover:text-indigo-500 hover:ease-out relative"> Resumé </a></Link>
                 </motion.li>
               </ul>                      
             </nav>
