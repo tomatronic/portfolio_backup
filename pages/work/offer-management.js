@@ -8,7 +8,7 @@ function Offer() {
             <div className="bg-slate-100">
 
                 <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
-                    <h1>Offer management</h1><p></p>
+                    <div className="text-2xl md:text-5xl leading-8">Offer management</div>
                     <p>Rakuten Advertising | June 2021 - August 2021</p>
                 </div>
                 <div className="container max-w-screen-xl mx-auto px-6">
