@@ -16,9 +16,9 @@ function Presentation(props) {
         </div>
         
           <div className='mx-6 mb-6 flex flex-col gap-2'>
-            <div className="text-gray-500 mb-1 uppercase font-semibold text-sm">{props.tag}</div>
-            <h2>{props.title}</h2>
-            <p className='text-base'>{props.blurb}</p>
+            <div className="text-gray-500 mb-1 uppercase font-semibold text-xs">{props.tag}</div>
+            <div className='text-lg'>{props.title}</div>
+            <p className='text-sm'>{props.blurb}</p>
             <Link href={props.link}><span className="text-purple-600">Read case study</span></Link>
           </div>
         
