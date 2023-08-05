@@ -49,11 +49,13 @@ function HomePage() {
       <a name="work" id="work" />    
       <div className="container max-w-screen-lg mx-auto px-6 pt-10">
         <h2 className="mb-10">Featured work</h2>
+      <div className="flex flex-col gap-8 md:flex-row md:flex-wrap">
       {caseStudies.map((e)=>{
        return (
         <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
                 );
        })}
+       </div>
       </div>
     </div>
     </div>
