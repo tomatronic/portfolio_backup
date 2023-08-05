@@ -5,9 +5,9 @@ import Zoom from "react-medium-image-zoom"
 function Offer() {
     return (
         <>
-            <div>
+            <div className="bg-slate-100">
 
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10 bg-slate-100">
+                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
                     <h1>Offer management</h1><p></p>
                     <p>Rakuten Advertising | June 2021 - August 2021</p>
                 </div>

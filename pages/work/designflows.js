@@ -7,8 +7,8 @@ function CaseStudy() {
     return (
         <>
 
-            <div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10 bg-slate-100">
+            <div className="bg-slate-100">
+                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
                     <h1>Homely</h1><p></p>
                     <p>Designflows | 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                 </div>
