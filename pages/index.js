@@ -28,7 +28,7 @@ function HomePage() {
       <div className="bg-slate-100 -mt-[73px] z-0">
       <Layout>
       <div className="container max-w-screen-lg mx-auto px-6 flex flex-col justify-left items-center -mt-[100px] md:-mt-[73px]">
-        <div className="text-center h-full flex">
+        <div className="h-full flex">
           <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
             <div className="flex flex-col">
             <div className="my-6 mx-auto">
@@ -45,9 +45,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      </Layout>
-      </div>      
-      <a name="work" id="work" />
+      </Layout>      
       <div className="container max-w-screen-lg mx-auto px-6 pt-10">
         <h2 className="mb-10">Featured work</h2>
       {caseStudies.map((e)=>{
@@ -57,7 +55,7 @@ function HomePage() {
        })}
       </div>
     </div>
-    
+    </div>
     </>
   )
 }
