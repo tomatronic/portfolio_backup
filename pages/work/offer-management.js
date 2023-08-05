@@ -9,7 +9,7 @@ function Offer() {
 
                 <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
                     <div className="text-2xl md:text-5xl leading-8">Offer management</div>
-                    <p>Rakuten Advertising | June 2021 - August 2021</p>
+                    <div className="text-base">Rakuten Advertising | June 2021 - August 2021</div>
                 </div>
                 <div className="container max-w-screen-xl mx-auto px-6">
                     <div className="flex flex-row flex-wrap content-center">
