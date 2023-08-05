@@ -1,7 +1,5 @@
-
 import React from 'react'
 import Link from "next/link"
-import InView from './Layout/InView';
 
 
 function Presentation(props) {
@@ -10,9 +8,7 @@ function Presentation(props) {
       <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
 
         <div className="">
-          <InView>
             <Link href={props.link}><img src={props.img} alt={props.title} className="object-cover cursor-pointer" /></Link>
-          </InView>
         </div>
         
           <div className='mx-6 my-6 flex flex-col gap-2'>
