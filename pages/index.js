@@ -24,7 +24,7 @@ function HomePage() {
     <>
     <div className="mb-10">
       
-      <div className="mt-[73px] z-0">
+      <div>
       <Layout>
       <div className="container max-width-screen-xl mx-auto px-6 flex flex-col justify-left">
         <div className="h-full flex">
