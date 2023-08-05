@@ -11,7 +11,7 @@ function Presentation(props) {
         <Link href={props.link}>
         <div className="">
           <InView>
-            <Link href={props.link}><img src={props.img} alt={props.title} className="object-cover ease-in-out duration-500 hover:scale-110 cursor-pointer" /></Link>
+            <img src={props.img} alt={props.title} className="object-cover ease-in-out duration-500 hover:scale-110 cursor-pointer" />
           </InView>
         </div>
         
