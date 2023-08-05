@@ -45,7 +45,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-      </Layout>      
+      </Layout>  
+      <a name="work" id="work" />    
       <div className="container max-w-screen-lg mx-auto px-6 pt-10">
         <h2 className="mb-10">Featured work</h2>
       {caseStudies.map((e)=>{
@@ -60,4 +61,5 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default HomePage   
+      
