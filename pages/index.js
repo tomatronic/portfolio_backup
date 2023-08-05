@@ -29,14 +29,14 @@ function HomePage() {
       <Layout>
       <div className="container max-w-screen-lg mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
         <div className="h-full flex">
-          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
+          <div className="flex flex-row flex-wrap max-w-xl md:my-24">
             <div className="flex flex-col">
             <div className="my-6">
-              <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
+              <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="60" /></Link>
               </div>
               <div className="text-lg md:text-xl">Hi, I'm Tom —</div>              
               <div className="text-2xl md:text-3xl leading-8">
-                I'm a <b>UX Designer</b>
+                <b>UX Designer</b>
                 &nbsp;focused on delivering effective user centric designs that drive engagement.<br /><br />
                 </div>
                 <div className="text-lg md:text-xl">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b><br /><br /><br />
