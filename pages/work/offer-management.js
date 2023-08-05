@@ -110,7 +110,7 @@ function Offer() {
                         </div>
                         <div className="flex flex-col flex-1 group cursor-pointer">
                             <Link href="/work/beer-blog">
-                                <div className=" group-hover:bg-purple-500 p-10 ease-in-out duration-300">
+                                <div className=" group-hover:bg-indigo-500 p-10 ease-in-out duration-300">
                                     <div className="group-hover:text-white ease-in-out duration-300">
                                         <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-white ease-in-out duration-300">Next Project</div>
                                         <h2>Craft beer blog</h2>
