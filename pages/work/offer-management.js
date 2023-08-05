@@ -25,9 +25,9 @@ function Offer() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         <div className="border-gray-200 border-t">
                             <div className="font-bold text-base pt-6">Role</div>
-                            <p>Sole UX designer</p>
+                            <p className="text-sm">Sole UX designer</p>
                             <div className="font-bold text-base">Skills used</div>
-                            <p className="pb-6 border-b border-gray-200">User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
+                            <p className="pb-6 border-b border-gray-200 text-sm">User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
                         </div>
                         <div className="col-span-3 pb-10">
                             <h2>About the project</h2>
