@@ -31,7 +31,7 @@ function HomePage() {
           <div className="flex flex-row flex-wrap max-w-3xl md:my-36">
             <div className="flex flex-col">                        
               <div className="text-2xl md:text-5xl leading-8">
-                <b className="text-transparent bg-clip-text bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400">UX Designer</b>
+                <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                 &nbsp;focused on delivering simple and effective user centric designs.<br /><br />
                 </div>
                 <div className="text-lg">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
