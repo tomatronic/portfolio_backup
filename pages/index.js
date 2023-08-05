@@ -28,10 +28,10 @@ function HomePage() {
       <Layout>
       <div className="container mx-auto px-6 flex flex-col justify-left">
         <div className="h-full flex">
-          <div className="flex flex-row flex-wrap max-w-xs md:max-w-3xl my-24 md:mb-36 md:mt-40">
+          <div className="text-center md:text-left flex flex-row flex-wrap max-w-xs md:max-w-3xl my-24 md:mb-36 md:mt-40">
             <div className="flex flex-col">                        
               <div className="text-2xl md:text-5xl leading-8">
-                <b className="text-center md:text-left text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                 &nbsp;focused on delivering simple and effective user centric designs.<br /><br />
                 </div>
                 <div className="text-base">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
