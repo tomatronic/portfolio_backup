@@ -26,7 +26,7 @@ function HomePage() {
       
       <div className="-mt-[73px] z-0">
       <Layout>
-      <div className="container mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
+      <div className="container max-width-screen-xl mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
         <div className="h-full flex">
           <div className="flex flex-row flex-wrap max-w-3xl md:mb-36 md:mt-40">
             <div className="flex flex-col">                        
