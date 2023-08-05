@@ -6,11 +6,13 @@ import InView from './Layout/InView';
 
 function Presentation(props) {
   return (
-<InView>
+
       <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white">
 
         <div className="">
-          <Link href={props.link}><img src={props.img} alt={props.title} className="object-cover ease-in-out duration-500 hover:scale-110 cursor-pointer" /></Link>
+          <InView>
+            <Link href={props.link}><img src={props.img} alt={props.title} className="object-cover ease-in-out duration-500 hover:scale-110 cursor-pointer" /></Link>
+          </InView>
         </div>
         
           <div className='mx-6 mb-6 flex flex-col gap-2'>
@@ -22,7 +24,7 @@ function Presentation(props) {
         
 
       </div>
-  </InView>
+  
 
 
   )
