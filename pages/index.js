@@ -22,7 +22,7 @@ function HomePage() {
 
   return (
     <>
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 mb-10">
       
       <div className="-mt-[73px] z-0">
       <Layout>
