@@ -12,7 +12,7 @@ function About() {
                         I'm a <b>UX Designer</b>
                         &nbsp;based in Brighton, UK. I have 10 years of design experience and plan on many more.<br /><br />
                     </div>
-                    <div className="text-lg md:text-xl">
+                    <div className="text-base">
                         Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
                     </div>
                     </div>
