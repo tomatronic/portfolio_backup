@@ -42,7 +42,7 @@ function HomePage() {
       </div>
       </Layout>  
       <a name="work" id="work" />    
-      <div className="container mx-auto px-6 pt-10">
+      <div className="container mx-auto px-6">
       <div className="flex flex-col gap-8 md:flex-row md:flex-wrap">
       {caseStudies.map((e)=>{
        return (
