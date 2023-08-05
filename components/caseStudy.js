@@ -15,9 +15,9 @@ function Presentation(props) {
           </InView>
         </div>
         
-          <div className='mx-6 mb-6 flex flex-col gap-2'>
-            <div className="text-gray-500 mb-1 uppercase font-semibold text-xs">{props.tag}</div>
-            <div className='text-lg'>{props.title}</div>
+          <div className='mx-6 my-6 flex flex-col gap-2'>
+            <div className="text-gray-500 uppercase font-semibold text-xs">{props.tag}</div>
+            <div className='text-lg font-medium tracking-tight'>{props.title}</div>
             <p className='text-sm'>{props.blurb}</p>
             <Link href={props.link}><span className="text-purple-600">Read case study</span></Link>
           </div>
