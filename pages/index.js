@@ -43,7 +43,7 @@ function HomePage() {
       </Layout>  
       <a name="work" id="work" />    
       <div className="container mx-auto px-6 pt-10">
-      <div className="flex flex-col gap-8 md:flex-row md:flex-wrap">
+      <div className="flex flex-col gap-8 md:flex-row md:flex-wrap mb-8">
       {caseStudies.map((e)=>{
        return (
         <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
