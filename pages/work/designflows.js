@@ -30,6 +30,7 @@ function CaseStudy() {
                             <p className="pb-6 border-b border-gray-200 text-base">Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
                         </div>
                         <div className="col-span-3 pb-10">
+                            <p><b>Note</b>: Project under review - New iteration soon.</p>
                             <h2>About the project</h2>
                             <p>This was a competion brief that had to be completed in weekend.</p>
                             <p className="mb-16">I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
