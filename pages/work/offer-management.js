@@ -53,7 +53,7 @@ function Offer() {
                                 <Image src="/affinitymap.jpg" layout="intrinsic" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
                             </Zoom>
 
-                            <div className="max-w-full bg-purple-200 rounded-lg p-10 pb-5">
+                            <div className="max-w-full bg-purple-200 rounded-lg p-10 pb-5 mt-16">
 
                                 <h2>Goals</h2>
                                 <p>Using survey data I was able to identify three main goals to focus on:</p>
@@ -63,34 +63,34 @@ function Offer() {
 
 
                             </div>
-                            <h2 className="pt-5">Planning</h2>
+                            <h2 className="pt-16">Planning</h2>
                             <p className="mb-16">With my new knowledge I could start planning my next steps. I begun with creating a simple flowchart to illustrate the possible routes a user would take in order to accept a new offer request. I ensured to liaise with several members of user facing teams to make sure nothing was missed out and that flows made sense.</p>
 
                             <Zoom>
                                 <Image src="/flowchart.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                             </Zoom>
 
-                            <h2 className="pt-5">Sketching</h2>
+                            <h2 className="pt-16">Sketching</h2>
                             <p className="mb-16">Once happy with the flow I opened my notepad and began sketching some initial ideas. At this stage I scribble a lot of ideas down both illustrated and in note form, it can look like a mess but I find it helps to get all my initial ideas on paper and then quickly eliminate ideas or come back to them at a later date if needed. As I develop an idea I start to sketch it into something of higher quality to allow me to easily translate it to a digital wireframe when the time comes.</p>
                             <Zoom>
                                 <Image src="/sketches.png" layout="intrinsic" width="1116" height="766" alt="Initial sketches and ideas - A bit messy but helps me gather thoughts" />
                             </Zoom>
-                            <h2 className="pt-5">Prototypes</h2>
+                            <h2 className="pt-16">Prototypes</h2>
                             <p className="mb-16">In order to validate my ideas I proceeded to complete a round of simple user testing. Rather than exposing my test candidates to my sketches I went ahead and created simple wireframes within Sketch that I could share and gather initial feedback with. I used to Zoom to conduct interviews with the candidates and got them to complete a set of simple tasks. This first round of testing allowed me to identify that the users were wanting a dedicated landing page for offer invitations alongside the proposed notification based system.</p>
                             <Zoom>
                                 <Image src="/digitalwireframe.png" layout="intrinsic" width="1116" height="766" alt="Simple flowchart of a proposed solution" />
                             </Zoom>
-                            <h2 className="pt-5">Flow iteration</h2>
+                            <h2 className="pt-16">Flow iteration</h2>
                             <p className="mb-16">I continued to slowly increase the complexity of my mocks, allowing the user to gain more understanding of the goal driven outcome. Once the mockups reached a certain point I began mapping them into a map of hotspots within Sketch to allow the creation of an interactive prototype. This prototype creates a more linear flow but enables a test candidate to become much more immersed in the test and provide a greater level of feedback.</p>
                             <Zoom>
                                 <Image src="/prototypeMap.png" layout="intrinsic" width="1403" height="931" alt="An example of the complex web of interactions created to allow for testing of the prototype" />
                             </Zoom>
-                            <h2 className="pt-5">User testing</h2>
+                            <h2 className="pt-16">User testing</h2>
                             <p className="mb-16">After performing a number of protoype testing sessions I was able to identify a couple of further design adjustments that were required. This involved a round of iterations to ensure functionality was highlighted in a relevant way and that offers were made easier to compare.</p>
                             <Zoom>
                                 <Image src="/usertestingOffers.png" layout="intrinsic" width="1849" height="900" alt="An example of the complex web of interactions created to allow for testing of the prototype with external users" />
                             </Zoom>
-                            <h2 className="pt-5">Outcome</h2>
+                            <h2 className="pt-16">Outcome</h2>
                             <p>Since the updated offer management flow and UI have been implemented we have seen a reduction in the amount of support tickets raised, and account managers have reported less queries based around offer management. The account management have said that this reduction in queries has led to them having more time to focus on the users needs and build better relationships with them.</p>
                             <p className="mb-16">Since being released I continue to monitor usage through the FullStory application, allowing me to perform iterative design amends to ensure a continual progression to the applications development.</p>
                             <Zoom>
