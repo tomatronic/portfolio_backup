@@ -30,7 +30,7 @@ function HomePage() {
         <div className="h-full flex">
           <div className="flex flex-row flex-wrap max-w-xl md:my-24">
             <div className="flex flex-col">                           
-              <div className="text-6xl md:text-3xl leading-8">
+              <div className="text-2xl md:text-6xl leading-8">
                 <b>UX Designer</b>
                 &nbsp;focused on delivering effective user centric designs that drive engagement.<br /><br />
                 </div>
