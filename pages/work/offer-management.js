@@ -30,7 +30,7 @@ function Offer() {
                         </div>
                         <div className="col-span-3 pb-10">
                             <h2>About the project</h2>
-                            <p className="mb-10">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. Currently active offers as well as offers that may be beneficial to the user and there affiliate development.</p>
+                            <p className="mb-16">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. Currently active offers as well as offers that may be beneficial to the user and there affiliate development.</p>
                             <h2>Solution</h2>
                             <p>Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase the usage of the platform. This in turn will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
                             <h2>Project background</h2>
