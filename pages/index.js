@@ -22,9 +22,9 @@ function HomePage() {
 
   return (
     <>
-    <div>
+    <div className="bg-slate-100">
       
-      <div className="bg-slate-100 -mt-[73px] z-0">
+      <div className="-mt-[73px] z-0">
       <Layout>
       <div className="container mx-auto px-6 flex flex-col justify-left -mt-[100px] md:-mt-[73px]">
         <div className="h-full flex">
