@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title>Tom Spencer - UX/UI Designer</title>
-        <meta property="og:title" content="Tom Spencer - UX / UI Designer" />
+        <title>Tom Spencer - UX Designer</title>
+        <meta property="og:title" content="Tom Spencer - UX Designer" />
         <meta charSet="UTF-8" />
         <meta name="keywords" content="UX, User Experience, UI, User Interface, Tom Spencer, UK, Brighton" />
         <meta name="author" content="Tom Spencer" />
