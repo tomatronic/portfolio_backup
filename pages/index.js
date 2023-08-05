@@ -28,7 +28,7 @@ function HomePage() {
       <Layout>
       <div className="container mx-auto px-6 flex flex-col justify-center md:justify-left">
         <div className="h-full flex">
-          <div className="text-center md:text-left flex flex-row flex-wrap max-w-s md:max-w-3xl my-24 md:mb-36 md:mt-40">
+          <div className="text-center md:text-left flex flex-row flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
             <div className="flex flex-col">                        
               <div className="text-2xl md:text-5xl leading-8">
                 <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
