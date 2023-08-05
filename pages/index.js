@@ -34,7 +34,7 @@ function HomePage() {
                 <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                 &nbsp;focused on delivering simple and effective user centric designs.<br /><br />
                 </div>
-                <div className="text-lg">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
+                <div className="text-base">Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
               </div>          
             </div>
           </div>
