@@ -34,7 +34,7 @@ function NavBar() {
     <motion.div className="container max-w-screen-lg mx-auto text-gray-700 py-3" variants={navVariants} initial="hidden" animate="visible">
       <div className="flex md:justify-between md:flex-row flex-col items-center">
             <Link href="/">
-              <motion.a link="/" className="text-gray-700 font-semibold text-2xl py-2 px-4 mx-2 cursor-pointer" variants={navChild}>TOM SPENCER</motion.a>
+              <motion.a link="/" className="text-gray-700 font-semibold text-2xl py-2 px-4 mx-2 cursor-pointer" variants={navChild}>Tom Spencer.</motion.a>
             </Link>
             <nav className="self-center">
               <ul className="inline-block">
