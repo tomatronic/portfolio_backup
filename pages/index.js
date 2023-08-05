@@ -26,11 +26,11 @@ function HomePage() {
     <>
     <div>
       
-      <div className="bg-slate-100 -mt-[73px] h-screen z-0">
+      <div className="bg-slate-100 -mt-[73px] z-0">
       <Layout>
       <div className="container max-w-screen-lg mx-auto px-6 flex flex-col justify-left items-center -mt-[100px] md:-mt-[73px]">
         <div className="text-center h-full flex">
-          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24 content-center">
+          <div className="flex flex-row flex-wrap max-w-xl mx-auto md:my-24">
             <div className="flex flex-col">
             <div className="my-6 mx-auto">
               <Link href="/about"><img src="/tomspencer.png" alt="Tom Spencer - UX/UI Designer" width="80" /></Link>
@@ -44,9 +44,6 @@ function HomePage() {
               </div>          
             </div>
           </div>
-        </div>
-        <div className="h-10 justify-self-end mb-10">
-        <a href="/#work" aria-label="Scroll down to work exmaples"><Scroll className="animate-bounce w-10 h-10" /></a>
         </div>
       </div>
       </Layout>
