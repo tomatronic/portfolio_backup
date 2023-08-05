@@ -15,7 +15,7 @@ const caseStudies=[
     },
     {
       tag: "Designflows 2021",
-      title:"Design Hack: A 48 hour app design challenge",
+      title:"Design Hack: A 48 hour app design competition",
       blurb:"Product design, User research, Brand creation",
       link:"/work/designflows",
       img: "/competitionThumb.png"
