@@ -120,7 +120,7 @@ function CaseStudy() {
                                 </div>
                             </Link>
                         </div>
-                        <div className="blank-flex flex-col flex-1">
+                        <div className="hidden md:block blank-flex flex-col flex-1">
 
                             <div className="pNavDirection">&nbsp;</div>
 
