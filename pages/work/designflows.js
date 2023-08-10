@@ -107,13 +107,14 @@ function CaseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto border-t border-gray-200">
+                <div className="container max-w-screen-lg mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100"></div>
+                <div className="container max-w-screen-lg mx-auto">
                     <div className="flex flex-row flex-wrap content-center justify-center">
                         <div className="flex flex-col flex-1 group cursor-pointer text-right justify-items-end content-end">
                             <Link href="/work/beer-blog">
-                                <div className="group-hover:bg-indigo-500 p-10 ease-in-out duration-300">
-                                    <div className="group-hover:text-white ease-in-out duration-300">
-                                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-white ease-in-out duration-300">Previous Project</div>
+                                <div className="p-10 ease-in-out duration-300">
+                                    <div className="group-hover:text-indigo-500 ease-in-out duration-300">
+                                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-indigo-500 ease-in-out duration-300">Previous Project</div>
                                         <h2>Craft beer blog</h2>
                                     </div>
                                 </div>
