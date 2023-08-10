@@ -8,11 +8,18 @@ import Footer from "/components/footer.js"
 import ReactGA from "react-ga4"
 
 
+
 ReactGA.initialize("G-CCDKVM70NV")
+
 
 function MyApp({ Component, pageProps, router }) {
 
+
+
   return (
+
+
+    
     <>
       <Head>
         <title>Tom Spencer - UX Designer</title>
