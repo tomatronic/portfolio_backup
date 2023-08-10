@@ -17,7 +17,7 @@ function Offer() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pb-16">
+                <div className="container max-w-screen-lg mx-auto px-6 pb-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight">Offer management</div>
                     <div className="text-base mt-5">Rakuten Advertising | June 2021 - August 2021</div>
                 </div>

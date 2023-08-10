@@ -6,6 +6,21 @@ import Presentation from "../components/caseStudy"
 
 function HomePage() {
 
+  React.useEffect(() => {
+    const path = window.location.hash
+    if (path && path.includes("#")) {
+      setTimeout(() => {
+        const id = path.replace("#", "")
+        const el = window.document.getElementById(id)
+        const r = el.getBoundingClientRect()
+        window.top.scroll({
+          top: pageYOffset + r.top,
+          behavior: "smooth",
+        })
+      }, 600)
+    }
+  })
+
   return (
     <>
       <div className="mb-16">
