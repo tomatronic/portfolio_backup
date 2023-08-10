@@ -119,7 +119,7 @@ function BeerBlog() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100">
+                <div className="container max-w-screen-lg mx-auto border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-right justify-items-end content-end">
                             <Link href="/work/offer-management">
