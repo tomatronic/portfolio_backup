@@ -22,7 +22,7 @@ function HomePage() {
 
   return (
     <>
-      <div className="mb-10">
+      <div className="mb-16">
 
         <div>
           <Layout>
