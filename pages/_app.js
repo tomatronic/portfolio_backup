@@ -7,6 +7,7 @@ import NavBar from "/components/navbar.js"
 import Footer from "/components/footer.js"
 import ReactGA from "react-ga4"
 
+
 ReactGA.initialize("G-CCDKVM70NV")
 
 function MyApp({ Component, pageProps, router }) {
