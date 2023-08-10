@@ -103,7 +103,7 @@ function Offer() {
                 <div className="container max-w-screen-lg mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100"></div>
                 <div className="container max-w-screen-lg mx-auto">
                     <div className="flex flex-row flex-wrap content-center justify-center">
-                        <div className="sm:hidden md:block blank-flex flex-col flex-1">
+                        <div className="hidden md:block blank-flex flex-col flex-1">
 
                             <div className="pNavDirection">&nbsp;</div>
 
