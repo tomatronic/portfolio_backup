@@ -1,7 +1,3 @@
-import Email from "/public/footer/email.svg"
-import Linkedin from "/public/footer/linkedin.svg"
-import Dribbble from "/public/footer/dribbble.svg"
-
 function Footer() {
     return <>
      <div className="bg-slate-100">
