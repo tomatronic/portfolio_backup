@@ -9,7 +9,7 @@ function Presentation(props) {
       <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
 
         <div className="">
-            <Link href={props.link}><Image src={props.img} alt={props.title} className="object-cover cursor-pointer" /></Link>
+            <Link href={props.link}><Image src={props.img} width={470} height={300} alt={props.title} className="object-cover cursor-pointer" /></Link>
         </div>
         
           <div className='mx-6 my-6 flex flex-col gap-2'>
