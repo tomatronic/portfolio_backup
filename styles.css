@@ -56,10 +56,10 @@ nav ul li a.active::after {
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #916DF9;
-  color: #916DF9;
+  background-color: #3949ab;
+  color: #3949ab;
 }
 
 .active a{
-   color: #916DF9;
+   color: #3949ab;
 }
