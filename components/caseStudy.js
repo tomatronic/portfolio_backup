@@ -8,7 +8,7 @@ function Presentation(props) {
 
       <div className="flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
 
-        <div className="">
+        <div className="max-w-lg">
             <Link href={props.link}><Image src={props.img} fill={true} alt={props.title} className="cursor-pointer" /></Link>
         </div>
         
