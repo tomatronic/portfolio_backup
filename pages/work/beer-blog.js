@@ -8,7 +8,7 @@ function BeerBlog() {
         <>
             <div className="bg-slate-100">                
                 <div className="container max-w-screen-full max-h-[70vh] mx-auto px-6 bg-[url('/brewtifulBg.png')]">
-                    <div className="flex flex-row flex-wrap content-center">
+                    <div className="flex flex-row flex-wrap content-center max-w-screen-md">
                         <div className="flex flex-col">
                             <Zoom>
                                 <Image src="/brewtifulBg.png" layout="intrinsic" width="1600" height="927" alt="Small mock of end product" priority={true} />
