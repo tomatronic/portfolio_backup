@@ -126,7 +126,7 @@ function BeerBlog() {
                             <Link href="/">
                                 <div className="p-10 ease-in-out duration-300">
                                     <div className="group-hover:text-indigo-500 ease-in-out duration-300">
-                                        <h2>Back to home page</h2>
+                                        <p>Back to home page</p>
                                     </div>
                                 </div>
                             </Link>
