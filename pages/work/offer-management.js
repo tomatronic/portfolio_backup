@@ -20,7 +20,7 @@ function Offer() {
                 <div className="container max-w-screen-md mx-auto px-6 pb-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Offer management</div>
                 </div>
-                <div className="container max-w-screen-md mx-auto px-6 pt-10 md:pt-20">
+                <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         
                         <div className="col-span-4 pb-10">
