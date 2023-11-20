@@ -17,15 +17,15 @@ function BeerBlog() {
                     </div>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
-                <div className="text-2xl md:text-5xl leading-7 tracking-tight">Brewtiful</div>
+                <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Brewtiful</div>
                 </div>
-                <div className="container max-w-screen-md mx-auto px-6 pt-10 md:pt-20">
+                <div className="container max-w-screen-md mx-auto px-6 pt-10">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                     <div className="col-span-4 pb-10">
                             <p><b>Scope:</b> Oct 2022 - Jan 2023</p>
                             <p><b>Project type:</b> Personal project</p>
                             <p><b>Role:</b> Sole UX designer</p>
-                            <p><b>Skills used:</b> Planning, Competitor research, Brand creation, Information architecture, Prototyping, User testing, Hi-fi mockups, Logo design</p>
+                            <p className="pb-10"><b>Skills used:</b> Planning, Competitor research, Brand creation, Information architecture, Prototyping, User testing, Hi-fi mockups, Logo design</p>
                         
                         
                             <h2>About the project</h2>
