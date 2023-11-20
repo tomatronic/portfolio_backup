@@ -19,7 +19,7 @@ function BeerBlog() {
                 <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
                 <div className="text-2xl md:text-5xl leading-7 tracking-tight">Brewtiful</div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
+                <div className="container max-w-screen-md mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                     <div className="col-span-4 pb-10">
                             <p><b>Scope:</b> Oct 2022 - Jan 2023</p>
@@ -118,7 +118,7 @@ function BeerBlog() {
                     </div>
                 </div>
                 <hr className="container mx-auto h-px border-t-0 bg-slate-300" />
-                <div className="container max-w-screen-lg mx-auto">
+                <div className="container max-w-screen-md mx-auto">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
                             <Link href="/">
