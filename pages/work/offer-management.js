@@ -100,7 +100,7 @@ function Offer() {
                         </div>
                     </div>
                 </div>
-                <hr className="mb-6 h-px border-t-0 bg-slate-300" />
+                <hr className="container mx-auto h-px border-t-0 bg-slate-300" />
                 <div className="container max-w-screen-lg mx-auto">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
