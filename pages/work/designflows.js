@@ -17,19 +17,17 @@ function CaseStudy() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
-                <div className="text-2xl md:text-5xl leading-7 tracking-tight">Homely</div>
-                <div className="text-base mt-5">Designflows | 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</div>
+                <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
+                <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Homely - Designflows</div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
+                <div className="container max-w-screen-md mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        <div className="border-gray-200 border-t">
-                            <div className="font-bold text-base pt-6">Role</div>
-                            <p className="text-base">Sole UX designer</p>
-                            <div className="font-bold text-base">Skills used</div>
-                            <p className="pb-6 border-b border-gray-200 text-base">Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
-                        </div>
-                        <div className="col-span-3 pb-10">                            
+                        <div className="col-span-4 pb-10">
+                            <p><b>Scope:</b>8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
+                            <p><b>Project type:</b> Personal project</p>
+                            <p><b>Role:</b> Sole UX designer</p>
+                            <p className="pb-10"><b>Skills used:</b> Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
+                                                   
                             <h2>About the project</h2>
                             <p>This was a competion brief that had to be completed in weekend.</p>
                             <p className="mb-16">I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
@@ -108,7 +106,7 @@ function CaseStudy() {
                     </div>
                 </div>
                 <hr className="container mx-auto  h-px border-t-0 bg-slate-300" />
-                <div className="container max-w-screen-lg mx-auto">
+                <div className="container max-w-screen-md mx-auto">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
                             <Link href="/">

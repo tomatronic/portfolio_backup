@@ -17,19 +17,17 @@ function Offer() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pb-10">
-                    <div className="text-2xl md:text-5xl leading-7 tracking-tight">Offer management</div>
-                    <div className="text-base mt-5">Rakuten Advertising | June 2021 - August 2021</div>
+                <div className="container max-w-screen-md mx-auto px-6 pb-10">
+                    <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Offer management</div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
+                <div className="container max-w-screen-md mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        <div className="border-gray-200 border-t">
-                            <div className="font-bold text-base pt-6">Role</div>
-                            <p className="text-sm">Sole UX designer</p>
-                            <div className="font-bold text-base">Skills used</div>
-                            <p className="pb-6 border-b border-gray-200 text-sm">User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
-                        </div>
-                        <div className="col-span-3 pb-10">
+                        
+                        <div className="col-span-4 pb-10">
+                            <p><b>Scope:</b>June 2021 - August 2021</p>
+                            <p><b>Project type:</b> Rakuten Advertising - Product evolution</p>
+                            <p><b>Role:</b> Sole UX designer</p>
+                            <p className="pb-10"><b>Skills used:</b> User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
                             <h2>About the project</h2>
                             <p className="mb-16">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. Currently active offers as well as offers that may be beneficial to the user and there affiliate development.</p>
                             <h2>Solution</h2>
@@ -101,7 +99,7 @@ function Offer() {
                     </div>
                 </div>
                 <hr className="container mx-auto h-px border-t-0 bg-slate-300" />
-                <div className="container max-w-screen-lg mx-auto">
+                <div className="container max-w-screen-md mx-auto">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
                             <Link href="/">
