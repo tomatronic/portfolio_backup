@@ -23,7 +23,7 @@ function CaseStudy() {
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         <div className="col-span-4 pb-10">
-                            <p><b>Scope:</b>8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
+                            <p><b>Scope:</b >8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                             <p><b>Project type:</b> Personal project</p>
                             <p><b>Role:</b> Sole UX designer</p>
                             <p className="pb-10"><b>Skills used:</b> Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
