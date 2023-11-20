@@ -18,16 +18,16 @@ function BeerBlog() {
                 </div>
                 <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
                 <div className="text-2xl md:text-5xl leading-7 tracking-tight">Brewtiful</div>
-                <div className="text-base mt-5">Personal project | Oct 2022 - Jan 2023</div>
                 </div>
                 <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                     <div className="col-span-4 pb-10">
-                       
+                            <p><b>Scope:</b> Oct 2022 - Jan 2023</p>
+                            <p><b>Project type:</b> Personal project</p>
                             <p><b>Role:</b> Sole UX designer</p>
                             <p><b>Skills used:</b> Planning, Competitor research, Brand creation, Information architecture, Prototyping, User testing, Hi-fi mockups, Logo design</p>
                         
-                        <p><b>Note</b>: Project under review - New iteration very soon.</p>
+                        
                             <h2>About the project</h2>
                             <p>I decided I wanted to find a new project for myself. I wanted to create something that would both challenge me as a designer but also still provide a solution to a problem.</p>
                             <p className="mb-16">So what did I decide? After spending a long time thinking about what I enjoyed and how I may be able to transform this into a project I came up with the concept of 'Brewtiful'. The basis to the idea is that craft beers often feature great designs on the cans and bottles they are distrubuted in. I noticed that although there are many websites and apps out there that focus on the beer itself very few mentioned the design effort.</p>
