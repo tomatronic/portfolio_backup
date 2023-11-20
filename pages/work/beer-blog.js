@@ -144,7 +144,22 @@ function BeerBlog() {
                         </div>
                     </div>
                 </div>
-            </div>
+                <div className="container max-w-screen-lg mx-auto">
+                        <div className="flex flex-col flex-1 group cursor-pointer">
+                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-indigo-500 ease-in-out duration-300">Projects</div>
+                            <Link href="/work/offer-management">
+                                Designflows
+                            </Link>
+                            <Link href="/work/beer-blog">
+                                Designflows
+                            </Link>
+                            <Link href="/work/designflows">
+                                Designflows
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            
         </>
     )
 }
