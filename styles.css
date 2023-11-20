@@ -36,7 +36,7 @@
    p {
       @apply mb-6;
       @apply text-base;
-      @apply md:text-lg/7;
+      @apply md:text-lg;
    }
 }
 
