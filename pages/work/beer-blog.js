@@ -122,42 +122,19 @@ function BeerBlog() {
                 <div className="container max-w-screen-lg mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100"></div>
                 <div className="container max-w-screen-lg mx-auto">
                     <div className="flex flex-row flex-wrap">
-                        <div className="flex flex-col flex-1 group cursor-pointer text-right justify-items-end content-end">
-                            <Link href="/work/offer-management">
+                        <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
+                            <Link href="/">
                                 <div className="p-10 ease-in-out duration-300">
                                     <div className="group-hover:text-indigo-500 ease-in-out duration-300">
-                                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-indigo-500 ease-in-out duration-300">Previous Project</div>
-                                        <h2>Offer management</h2>
+                                        <h2>Back to home page</h2>
                                     </div>
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex flex-col flex-1 group cursor-pointer">
-                            <Link href="/work/designflows">
-                                <div className="p-10 ease-in-out duration-300">
-                                    <div className="group-hover:text-indigo-500 ease-in-out duration-300">
-                                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm group-hover:text-indigo-500 ease-in-out duration-300">Next Project</div>
-                                        <h2>Designflows</h2>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                       
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto">
-                        <div className="flex flex-col flex-1 group cursor-pointer">
-                        <div className="text-gray-500 mb-1 uppercase font-semibold text-sm">Projects</div>
-                            <Link href="/work/offer-management">
-                                Offer management
-                            </Link>
-                            <Link href="/work/beer-blog">
-                                Brewtiful
-                            </Link>
-                            <Link href="/work/designflows">
-                                Designflows
-                            </Link>
-                        </div>
-                    </div>
+               
                 </div>
             
         </>
