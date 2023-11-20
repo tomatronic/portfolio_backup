@@ -16,7 +16,7 @@ function BeerBlog() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto px-6 pt-20 pb-10">
+                <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
                 <div className="text-2xl md:text-5xl leading-7 tracking-tight">Brewtiful</div>
                 </div>
                 <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
