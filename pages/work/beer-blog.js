@@ -119,12 +119,12 @@ function BeerBlog() {
                         </div>
                     </div>
                 </div>
-                <div className="container max-w-screen-lg mx-auto h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-50 dark:opacity-100"></div>
+                <hr className="mb-6 h-px border-t-0 bg-slate-300" />
                 <div className="container max-w-screen-lg mx-auto">
                     <div className="flex flex-row flex-wrap">
                         <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
                             <Link href="/">
-                                <div className="p-10 ease-in-out duration-300">
+                                <div className="pt-10 pb-4">
                                     <div className="group-hover:text-indigo-500 ease-in-out duration-300">
                                         <p>Back to home page</p>
                                     </div>
