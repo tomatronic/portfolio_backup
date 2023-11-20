@@ -22,13 +22,13 @@ function BeerBlog() {
                 </div>
                 <div className="container max-w-screen-lg mx-auto px-6 pt-10 md:pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
+                    <div className="col-span-4 pb-10">
                         <div className="border-gray-200 border-t">
                             <div className="font-bold text-base pt-6">Role</div>
                             <p>Sole UX designer</p>
                             <div className="font-bold text-base">Skills used</div>
                             <p className="pb-6 border-b border-gray-200">Planning, Competitor research, Brand creation, Information architecture, Prototyping, User testing, Hi-fi mockups, Logo design</p>
                         </div>
-                        <div className="col-span-3 pb-10">
                         <p><b>Note</b>: Project under review - New iteration very soon.</p>
                             <h2>About the project</h2>
                             <p>I decided I wanted to find a new project for myself. I wanted to create something that would both challenge me as a designer but also still provide a solution to a problem.</p>
