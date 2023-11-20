@@ -7,7 +7,7 @@ function BeerBlog() {
     return (
         <>
             <div className="bg-slate-100">                
-                <div className="container max-w-screen-full h-[70vh] mx-auto px-6 bg-[url('/brewtifulBg.png')]">
+                <div className="container max-w-screen-full h-[70vh] mx-auto px-6 bg-[url('/backgroundBrew.png')]">
                     <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto">
                         <div className="flex flex-col">
                             <Zoom>
