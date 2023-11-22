@@ -29,9 +29,9 @@ function Offer() {
                             <p><b>Role:</b> Sole UX designer</p>
                             <p className="pb-10"><b>Skills used:</b> User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
                             <h2>About the project</h2>
-                            <p className="mb-16">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. Currently active offers as well as offers that may be beneficial to the user and there affiliate development.</p>
+                            <p className="mb-16">Allow Publishers (a user that will promote an offer) to manage offers that are available to them from a host of available Advertisers (A user that wants to promote a business, product or marketing event), offers are found in an Advertisers profile or the Advertiser may make direct contact with an offer proposal. There are multiple offer types.</p>
                             <h2>Solution</h2>
-                            <p className="mb-16">Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase the usage of the platform. This in turn will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
+                            <p className="mb-16">Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase usage of the platform. This will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
                             <h2>Project background</h2>
                             <p>Rakuten Advertising offers a way for users to communicate using a variety of dashboards depending on their needs. These communications allow users to create and manage affiliate marketing across a range of mediums.</p>
                             <p className="mb-16">The current dashboard is outdated and in need of a major revamp.</p>
