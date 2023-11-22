@@ -8,7 +8,7 @@ function Offer() {
             <div className="bg-slate-100">
 
                 
-            <div className="container max-w-full h-[70vh] bg-[url('/offersRevamp.png')] bg-cover">
+            <div className="container max-w-full h-[70vh] bg-[url('/offersBG.png')] bg-cover">
                     <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
                     <div className="flex flex-col">
                             <Zoom>
