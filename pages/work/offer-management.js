@@ -24,7 +24,7 @@ function Offer() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         
                         <div className="col-span-4 pb-10">
-                            <p><b>Scope:</b>June 2021 - August 2021</p>
+                            <p><b>Scope:</b> June 2021 - August 2021</p>
                             <p><b>Project type:</b> Rakuten Advertising - Product evolution</p>
                             <p><b>Role:</b> Sole UX designer</p>
                             <p className="pb-10"><b>Skills used:</b> User interviews, Competitor analysis, Information architecture, Prototyping, User testing, Hi-fi mockups</p>
