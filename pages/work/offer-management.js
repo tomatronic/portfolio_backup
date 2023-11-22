@@ -10,6 +10,11 @@ function Offer() {
                 
             <div className="container max-w-full h-[70vh] bg-[url('/offersRevamp.png')] bg-cover">
                     <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
+                    <div className="flex flex-col">
+                            <Zoom>
+                                <Image src="/offersFull.png" layout="intrinsic" width="1000" height="640" alt="Small mock of end product" priority={true} />
+                            </Zoom>
+                        </div>
                     </div>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
