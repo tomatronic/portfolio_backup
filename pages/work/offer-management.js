@@ -8,13 +8,8 @@ function Offer() {
             <div className="bg-slate-100">
 
                 
-                <div className="container max-w-screen-xl mx-auto px-6">
-                    <div className="flex flex-row flex-wrap content-center">
-                        <div className="flex flex-col">
-                            <Zoom>
-                                <Image src="/topBanner.png" layout="intrinsic" width="1600" height="927" alt="Small mock of end product" />
-                            </Zoom>
-                        </div>
+            <div className="container max-w-full h-[70vh] bg-[url('/offersRevamp.png')] bg-cover">
+                    <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
                     </div>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6 pb-10">
