@@ -12,7 +12,7 @@ function Offer() {
                     <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
                     </div>
                 </div>
-                <div className="container max-w-screen-md mx-auto px-6 pb-10">
+                <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Offer management</div>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
