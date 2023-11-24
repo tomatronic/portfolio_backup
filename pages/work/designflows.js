@@ -19,7 +19,7 @@ function CaseStudy() {
                 </div>                
                 <div className="container max-w-screen-md mx-auto px-6 pt-10 pb-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Designflows</div>
-                    <p className="pt-4">Hoemly &bull; 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
+                    <p className="pt-4">Homely &bull; 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto mb-10">
