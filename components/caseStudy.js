@@ -14,9 +14,9 @@ function Presentation(props) {
         
           <div className='mx-6 my-6 flex flex-col gap-2 col-span-2'>
             <div className="text-gray-500 uppercase font-semibold text-xs">{props.tag}</div>
-            <div className='text-lg font-medium tracking-tight'>{props.title}</div>
+            <div className='text-lg font-medium'>{props.title}</div>
             <p className='text-sm'>{props.blurb}</p>
-            <Link href={props.link}><span className="text-indigo-600 hover:text-indigo-500 cursor-pointer tracking-tight">Read case study &#x2192;</span></Link>
+            <div className='mt-auto'><Link href={props.link}><span className="text-indigo-600 hover:text-indigo-500 cursor-pointer tracking-tight">Read case study &#x2192;</span></Link></div>
           </div>
         </div>
 

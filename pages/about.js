@@ -3,21 +3,21 @@ function About() {
     return (
     <>
         <div className="bg-slate-100">           
-            <div className="container max-w-screen-lg mx-auto px-6 pt-10">
-            <div className="grid grid-cols-1 gap-14 md:gap-28 my-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-28">
-                    <div className="flex content-center justify-center flex-col order-last md:order-first w-full">
+            <div className="container max-w-screen-md mx-auto px-6 pt-10">
+            <div className="grid grid-cols-1 gap-14 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-12 gap-14">
+                    <div className="flex content-center justify-center flex-col order-last md:order-first w-full col-span-8">
                     <div className="text-lg md:text-xl">Hi, I'm Tom —</div>              
                     <div className="text-2xl md:text-3xl leading-8">
-                        I'm a <b>UX Designer</b>
-                        &nbsp;based in Brighton, UK. I have 10 years of design experience and plan on many more.<br /><br />
+                        I'm a <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                        &nbsp;based in Brighton, UK. I have over 10 years of design industry experience.<br /><br />
                     </div>
-                    <div className="text-base">
+                    <div className="text-lg">
                         Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
                     </div>
                     </div>
-                    <div>
-                        <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className="rounded-2xl max-w-[170px] md:max-w-xs mx-auto" />
+                    <div className="col-span-4">
+                        <img src="/bio.png" alt="You will often find me out hiking in the South Downs National Park" className="rounded-2xl mx-auto" />
                     </div>
                     </div>
                     <div>
