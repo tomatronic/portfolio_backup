@@ -22,15 +22,22 @@ function CaseStudy() {
                     <p className="pt-4">Hoemly &bull; 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto mb-10">
+                    <div className="col-span-3">                            
+                        <p>This was a competion brief that had to be completed in weekend.</p>
+                        <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
+                        </div>
+                        <div className="col-span-1">
+                        <p><b>Project type:</b> Personal project</p>                                                    
+                            <p><b>Role:</b><br/> Sole UX designer</p>
+                            <p><b>Skills used:</b><br/> UX/UI<br/>User Research<br/>App icon design<br/>Poster design</p>
+                        </div>
+                        </div>
+                        </div>  
+                        <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        <div className="col-span-4 pb-10">                            
-                            <p><b>Project type:</b> Personal project</p>
-                            <p><b>Role:</b> Sole UX designer</p>
-                            <p className="pb-10"><b>Skills used:</b> Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
-                                                  
-                            <h2>About the project</h2>
-                            <p>This was a competion brief that had to be completed in weekend.</p>
-                            <p className="mb-16">I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
+                        
+                        <div className="col-span-4 pb-10">                   
                             <center><Zoom>
                                 <Image src="/designflows.png" layout="intrinsic" width="394" height="214" alt="Designflows 2021 logo" />
                             </Zoom></center>
