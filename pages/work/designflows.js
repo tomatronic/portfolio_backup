@@ -8,12 +8,10 @@ function CaseStudy() {
         <>
 
             <div>
-                <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover">
-                    <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
+                <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover relative">
+                    <div className="flex flex-row flex-wrap content-center mx-auto place-content-center h-fit">
                         <div className="flex flex-col">
-                            <Zoom>
-                                <Image src="/dfMocks.png" layout="intrinsic" width="2911" height="1700" alt="Small mock of end product" />
-                            </Zoom>
+                                <Image src="/tools.png" layout="fill" alt="Small mock of end product" className="object-cover" />
                         </div>
                     </div>
                 </div>
