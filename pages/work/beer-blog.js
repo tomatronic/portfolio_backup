@@ -18,19 +18,23 @@ function BeerBlog() {
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6 py-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Brewtiful</div>
+                    <p className="pt-4">Personal Project &bull; Oct 2022 - Jan 2023</p>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto mb-10">
+                        <div className="col-span-3">
+                        <p>I decided I wanted to find a new project for myself. I wanted to create something that would both challenge me as a designer but also still provide a solution to a problem.</p>
+                        <p className="mb-16">So what did I decide? After spending a long time thinking about what I enjoyed and how I may be able to transform this into a project I came up with the concept of 'Brewtiful'. The basis to the idea is that craft beers often feature great designs on the cans and bottles they are distrubuted in. I noticed that although there are many websites and apps out there that focus on the beer itself very few mentioned the design effort.</p>
+                        </div>
+                        <div className="col-span-1">
+                            <p><b>Role:</b><br /> Sole UX designer</p>
+                            <p><b>Skills used:</b><br /> UX/UI<br />User Research<br />Prototyping<br />User testing</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         <div className="col-span-4 pb-10">
-                            <p><b>Scope:</b> Oct 2022 - Jan 2023</p>
-                            <p><b>Project type:</b> Personal project</p>
-                            <p><b>Role:</b> Sole UX designer</p>
-                            <p className="pb-10"><b>Skills used:</b> Planning, Competitor research, Brand creation, Information architecture, Prototyping, User testing, Hi-fi mockups, Logo design</p>
-
-
-                            <h2>About the project</h2>
-                            <p>I decided I wanted to find a new project for myself. I wanted to create something that would both challenge me as a designer but also still provide a solution to a problem.</p>
-                            <p className="mb-16">So what did I decide? After spending a long time thinking about what I enjoyed and how I may be able to transform this into a project I came up with the concept of 'Brewtiful'. The basis to the idea is that craft beers often feature great designs on the cans and bottles they are distrubuted in. I noticed that although there are many websites and apps out there that focus on the beer itself very few mentioned the design effort.</p>
                             <h2>Project Goal</h2>
                             <p className="mb-16">Create a magazine/blog style website that focuses on craft beers and the packaging they are delivered in. Each beer will be reviewed in a way that entertains but also educates.</p>
                             <Zoom>
