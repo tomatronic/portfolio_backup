@@ -34,7 +34,7 @@ function NavBar() {
     <motion.div className="container max-w-screen-lg mx-auto text-gray-700 py-3" variants={navVariants} initial="hidden" animate="visible">
       <div className="flex md:justify-between md:flex-row flex-col items-center">
             <Link href="https://www.tomspencer.design">
-              <motion.a href="https://www.tomspencer.design" className="text-gray-700 font-semibold text-2xl py-2 px-4 mx-2 cursor-pointer" variants={navChild}>Tom Spencer.</motion.a>
+              <motion.a href="https://www.tomspencer.design" className="text-gray-700 font-semibold text-2xl py-2 px-4 mx-2 cursor-pointer md:leading-none" variants={navChild}>Tom Spencer<br/><span className="text-base font-normal">UX Designer</span></motion.a>
             </Link>
             <nav className="self-center">
               <ul className="inline-block">

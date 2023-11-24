@@ -7,47 +7,58 @@ function CaseStudy() {
     return (
         <>
 
-            <div>                
-            <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover">
-            <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
-                    <div className="flex flex-col">
+            <div>
+                <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover">
+                    <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
+                        <div className="flex flex-col">
                             <Zoom>
-                                <Image src="/dfbg.png" layout="intrinsic" width="1600" height="750" alt="Small mock of end product" />
+                                <Image src="/dfMocks.png" layout="intrinsic" width="2911" height="1700" alt="Small mock of end product" />
                             </Zoom>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <div className="container max-w-screen-md mx-auto px-6 pt-10 pb-10">
                     <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Designflows</div>
                     <p className="pt-4">Homely &bull; 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto mb-10">
-                    <div className="col-span-3">                            
-                        <p>This was a competion brief that had to be completed in weekend.</p>
-                        <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
+                        <div className="col-span-3">
+                            <p>This was a competion brief that had to be completed in weekend.</p>
+                            <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
                         </div>
-                        <div className="col-span-1">                                                  
-                            <p><b>Role:</b><br/> Sole UX designer</p>
-                            <p><b>Skills used:</b><br/> UX/UI<br/>User Research<br/>App icon design<br/>Poster design</p>
+                        <div className="col-span-1">
+                            <p><b>Role:</b><br /> Sole UX designer</p>
+                            <p><b>Skills used:</b><br /> UX/UI<br />User Research<br />App icon design<br />Poster design</p>
                         </div>
+                    </div>
+                </div>
+                <div className="bg-white">
+                    <div className="container max-w-screen-md mx-auto px-6">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
+
+                            <div className="col-span-4 py-10 mt-16">
+                                <center>
+                                <Zoom>
+                                    <Image src="/designflows.png" layout="intrinsic" width="197" height="107" alt="Designflows 2021 logo" />
+                                </Zoom>
+                                </center>
+                                <h2 className="pt-16">Overview</h2>
+                                <p>The brief requested a new mobile app to be designed to allow a user to hire a toolkit from a location nearby for a specific DIY task.</p>
+                                <p>For example I may need to put some shelves up, I would visit this app and find a location to pick up a toolkit containing the required tools.</p>
+                                <p>The brief specified 3 specific pages that required designing:</p>
+                                <p>&bull; <b>Toolkit rental</b> - This had to include a search bar<br />
+                                    &bull; <b>My rentals</b> - Manage and track bookings<br />
+                                    &bull; <b>How it works</b> - Instructions on how to collect a toolkit</p>
+                                <p className="mb-16">As well as an app icon and a poster that would present the screens.</p>
+                            </div>
                         </div>
-                        </div>  
-                        <div className="container max-w-screen-md mx-auto px-6">
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        
-                        <div className="col-span-4 pb-10">                   
-                            <center><Zoom>
-                                <Image src="/designflows.png" layout="intrinsic" width="394" height="214" alt="Designflows 2021 logo" />
-                            </Zoom></center>
-                            <h2 className="pt-16">Overview</h2>
-                            <p>The brief requested a new mobile app to be designed to allow a user to hire a toolkit from a location nearby for a specific DIY task.</p>
-                            <p>For example I may need to put some shelves up, I would visit this app and find a location to pick up a toolkit containing the required tools.</p>
-                            <p>The brief specified 3 specific pages that required designing:</p>
-                            <p>&bull; <b>Toolkit rental</b> - This had to include a search bar<br />
-                                &bull; <b>My rentals</b> - Manage and track bookings<br />
-                                &bull; <b>How it works</b> - Instructions on how to collect a toolkit</p>
-                            <p className="mb-16">As well as an app icon and a poster that would present the screens.</p>
+
+                        <div className="col-span-4 py-10 mt-16">
                             <h2>Plan of action</h2>
                             <p>This project was going to be a lot of work, and there was not much time to do it. I decided to spend the friday evening reading through the brief multiple times, I printed the document off and highlighted key points.</p>
                             <p className="mb-16">Once happy I understood what was being asked for I began making a to do list. This would help me work methodically and would make sure I covered everything required of me during this weekend.</p>
@@ -60,28 +71,44 @@ function CaseStudy() {
                             <Zoom>
                                 <Image src="/compResearch.png" layout="intrinsic" width="2000" height="944" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
                             </Zoom>
-                            <h2 className="pt-16">Brand identity</h2>
+                            </div>
+                    </div>
+                </div>
+                <div className="bg-white">
+                    <div className="container max-w-screen-md mx-auto px-6">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
+
+                            <div className="col-span-4 py-16">
+                            <h2>Brand identity</h2>
                             <p>I decided to spend some time inventing a brand identiy for this project. It meant I was able to create a simple pattern library that I could then deploy much quicker into the final design.</p>
                             <p className="mb-16">I mainly focused on the colour palette and typography. I settled on something that was fairly simple but offered a level of uniqueness.</p>
                             <Zoom>
                                 <Image src="/brandID.png" layout="intrinsic" width="2000" height="1040" alt="Identifying key components in competitor / similar applications allowed me to begun gathering a list of potential components that would be needed." />
                             </Zoom>
-                            <h2 className="pt-16">Initial ideas</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
+
+                        <div className="col-span-4 pb-10 mt-16">
+                            <h2>Initial ideas</h2>
                             <p>Now I had a basic pattern library I decided to start sketching out some ideas for my app.</p>
                             <p>I had a lot of ideas at this stage and ended up working out a full user flow, even though I would only be working on a couple of screens, this likely cost me some time, but it meant I identified some extra details I could use to enhance the app.</p>
                             <p>I begun with some really rough sketches that I could then iterate on if I felt they had enough potential. This allowed me to complete a lot more sketches in a much shorter amount of time.</p>
                             <p className="mb-16">By Saturday evening I was confident that I had created a sketch that I could work with. I decided to take a break at this point until the next day.</p>
                             <div className="pb-16">
-                            <Zoom>
-                                <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
-                            </Zoom>
+                                <Zoom>
+                                    <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
+                                </Zoom>
                             </div>
                             <div className="max-w-full bg-yellow-500 rounded-lg p-10">
                                 <h2>Mockups</h2>
-                                    <p>Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>  
-                                        <Zoom>
-                                            <Image src="/appMocks.png" layout="intrinsic" width="1365" height="879" alt="Preview of how the app mocks were looking" />
-                                        </Zoom>
+                                <p>Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>
+                                <Zoom>
+                                    <Image src="/appMocks.png" layout="intrinsic" width="1365" height="879" alt="Preview of how the app mocks were looking" />
+                                </Zoom>
                             </div>
                             <h2 className="pt-16">App icon</h2>
                             <p>The last major part of the project to complete on sunday afternoon was the app icon. This was an area of the project I struggled with. I have not had to design an app icon before which meant there was a bit of learning curve.</p>
@@ -99,35 +126,37 @@ function CaseStudy() {
                             <Zoom>
                                 <Image src="/appStoreMock.png" layout="intrinsic" width="1024" height="1757" alt="Final icon design" />
                             </Zoom>
-                            <h2 className="pt-16">Outcome</h2>
+                            </div>
+                    </div>
+                </div>
+                <div className="bg-white">
+                    <div className="container max-w-screen-md mx-auto px-6">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
+
+                            <div className="col-span-4 py-16">
+                            <h2>Outcome</h2>
                             <p>Overall I am happy with the result. However, I wish I had more time to perfect this.</p>
                             <p className="mb-16">The initial area I would have spent more time on would have been the research phase, I would have liked to have gained a better understanding of the competitor landscape. The addition of user interviews would have also assisted in the research and the end result. I also think I could of come up with a more refined color palette and framework for the project, but this may of been a stretch to achieve given the time constraint.</p>
                             <Zoom>
                                 <Image src="/dfFinal.png" layout="intrinsic" width="1403" height="931" alt="Designflows final submission 2021" />
                             </Zoom>
+                            
                             <h2 className="pt-16">Final thoughts</h2>
                             <p>The competition was fun, and I will be looking out for the event again later this year. However, in the meantime I will take the judges feedback onboard and possibly revisit this project at a later date to try and improve the final result.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <hr className="container mx-auto  h-px border-t-0 bg-slate-300" />
-                <div className="container max-w-screen-md mx-auto">
-                    <div className="flex flex-row flex-wrap">
-                        <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
+                            <br/><br/><br/>
                             <Link href="/">
-                                <div className="pt-10 pb-4">
-                                    <div className="group-hover:text-indigo-500 ease-in-out duration-300">
+                                <div className="pt-10 pb-4 underline">
+                                    <div className="hover:text-indigo-500 ease-in-out duration-300">
                                         <p>Back to home page</p>
                                     </div>
                                 </div>
                             </Link>
+                            </div>
                         </div>
-                       
                     </div>
-                </div>
-               
-                </div>
+                </div>                
+
+            </div>
         </>
     )
 }
