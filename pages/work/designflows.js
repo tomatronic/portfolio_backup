@@ -27,8 +27,7 @@ function CaseStudy() {
                         <p>This was a competion brief that had to be completed in weekend.</p>
                         <p>I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
                         </div>
-                        <div className="col-span-1">
-                        <p><b>Project type:</b> Personal project</p>                                                    
+                        <div className="col-span-1">                                                  
                             <p><b>Role:</b><br/> Sole UX designer</p>
                             <p><b>Skills used:</b><br/> UX/UI<br/>User Research<br/>App icon design<br/>Poster design</p>
                         </div>
