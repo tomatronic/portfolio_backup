@@ -8,7 +8,7 @@ function CaseStudy() {
         <>
 
             <div>                
-                <div className="container max-w-screen-xl mx-auto px-6">
+            <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover">
                     <div className="flex flex-row flex-wrap content-center">
                         <div className="flex flex-col">
                             <Zoom>
@@ -16,18 +16,18 @@ function CaseStudy() {
                             </Zoom>
                         </div>
                     </div>
-                </div>
-                <div className="container max-w-screen-md mx-auto px-6 pt-20 pb-10">
-                <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Homely - Designflows</div>
+                </div>                
+                <div className="container max-w-screen-md mx-auto px-6 pt-10 pb-10">
+                    <div className="text-2xl md:text-5xl leading-7 tracking-tight font-semibold">Designflows</div>
+                    <p className="pt-4">Hoemly &bull; 8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        <div className="col-span-4 pb-10">
-                            <p><b>Scope:</b >8 Oct 2021 7p.m. - 11 Oct 2021 9a.m.</p>
+                        <div className="col-span-4 pb-10">                            
                             <p><b>Project type:</b> Personal project</p>
                             <p><b>Role:</b> Sole UX designer</p>
                             <p className="pb-10"><b>Skills used:</b> Competitor analysis, Information architecture, Prototyping, Hi-fi mockups, App icon design, Poster design</p>
-                                                   
+                                                  
                             <h2>About the project</h2>
                             <p>This was a competion brief that had to be completed in weekend.</p>
                             <p className="mb-16">I received access to the brief at 7pm Friday night and had to submit my high fidelity mocks by Monday at 9am.</p>
