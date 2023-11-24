@@ -31,7 +31,7 @@ const navChild = {
 function NavBar() {
   const router = useRouter();
     return <>
-    <motion.div className="container max-w-screen-md mx-auto text-gray-700 py-3" variants={navVariants} initial="hidden" animate="visible">
+    <motion.div className="container max-w-screen-lg mx-auto text-gray-700 py-3" variants={navVariants} initial="hidden" animate="visible">
       <div className="flex md:justify-between md:flex-row flex-col items-center">
             <Link href="https://www.tomspencer.design">
               <motion.a href="https://www.tomspencer.design" className="text-gray-700 font-semibold text-2xl py-2 px-4 mx-2 cursor-pointer" variants={navChild}>Tom Spencer.</motion.a>
