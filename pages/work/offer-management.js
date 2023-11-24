@@ -7,10 +7,10 @@ function Offer() {
         <>
             <div className="bg-slate-100">
 
-                
-            <div className="container max-w-full h-[70vh] bg-[url('/offerBG.png')] bg-cover">
+
+                <div className="container max-w-full h-[70vh] bg-[url('/offerBG.png')] bg-cover">
                     <div className="flex flex-row flex-wrap content-center max-w-screen-md mx-auto place-content-center h-full">
-                    <div className="flex flex-col">
+                        <div className="flex flex-col">
                             <Zoom>
                                 <Image src="/offersFull.png" layout="intrinsic" width="1000" height="640" alt="Small mock of end product" priority={true} />
                             </Zoom>
@@ -23,29 +23,29 @@ function Offer() {
                 </div>
                 <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto mb-10">
-                    <div className="col-span-3">                            
+                        <div className="col-span-3">
                             <p>Rakuten Advertising offers a way for users to communicate using a variety of dashboards depending on their needs. These communications allow users to create and manage affiliate marketing across a range of mediums.</p>
                             <p>The current dashboard is outdated and in need of a major revamp.</p>
                         </div>
-                        <div className="col-span-1">                                                       
-                            <p><b>Role:</b><br/> Sole UX designer</p>
-                            <p><b>Skills used:</b><br/> UX/UI<br/>User Research<br/>Prototyping<br/>User testing</p>
+                        <div className="col-span-1">
+                            <p><b>Role:</b><br /> Sole UX designer</p>
+                            <p><b>Skills used:</b><br /> UX/UI<br />User Research<br />Prototyping<br />User testing</p>
                         </div>
-                        </div>
-                        </div>  
-                            <div className="container max-w-screen-md mx-auto flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] mb-16">
-                                <div className="mx-6 my-6 flex flex-col gap-2">
-                                <h2>Problem</h2>
-                                <p className="m-0">Managing offers is a cumbersome task, it involves multiple pages and unclear terminology that deters users from exploring options. The dashboard has also been neglected for many years and is in need of a UI overhaul.</p>
-                            </div>
-                            </div>
-                            <div className="container max-w-screen-md mx-auto px-6">
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] mb-16">
+                    <div className="mx-6 my-6 flex flex-col gap-2">
+                        <h2>Problem</h2>
+                        <p className="m-0">Managing offers is a cumbersome task, it involves multiple pages and unclear terminology that deters users from exploring options. The dashboard has also been neglected for many years and is in need of a UI overhaul.</p>
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
-                        
+
                         <div className="col-span-4 pb-10">
                             <h2>Solution</h2>
                             <p className="mb-16">Redesign how publishers manage affiliate based offers within the Rakuten Advertising dashboard and increase usage of the platform. This will provide a larger ROI for both Rakuten Advertising and the Publisher.</p>
-                            
+
                             <h2>Discovery</h2>
                             <p>The key to any project is to ensure a thorough discovery process.</p>
                             <p>To understand the problem I first reviewed the current platform and flows associated with the management of offers. I mapped out the flow within Miro using screenshots from the legacy dashboard. This ensured I had a full understanding of how the feature was already working and gain some inital insight into where improvements could be made.</p>
@@ -62,21 +62,21 @@ function Offer() {
                             <Zoom>
                                 <Image src="/affinitymap.jpg" layout="intrinsic" width="1386" height="721" alt="The affinity map was created to help understand the results from the completed user surveys" />
                             </Zoom>
-                            </div>
                         </div>
-                        </div>
-                            <div className="container max-w-screen-md mx-auto flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
-                                <div className="mx-6 my-6 flex flex-col gap-2">
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto flex-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)]">
+                    <div className="mx-6 my-6 flex flex-col gap-2">
 
-                                <h2>Goals</h2>
-                                <p>Using survey data I was able to identify three main goals to focus on:</p>
-                                <p><b>Comparison</b><br />If I am presented with a new offer invitation I want to be able to compare it to my current offer.</p>
-                                <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p>
-                                <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p>
+                        <h2>Goals</h2>
+                        <p>Using survey data I was able to identify three main goals to focus on:</p>
+                        <p><b>Comparison</b><br />If I am presented with a new offer invitation I want to be able to compare it to my current offer.</p>
+                        <p><b>Discovery</b><br />There was no consistant answer to how a user would find a new offer invitation. Can I make a consistant point of discovery?</p>
+                        <p><b>Partnership status</b><br />The current UI does not offer any indication of partnership status. A user wants to know if a partnership already exists.</p>
 
-                                </div>
-                            </div>
-                            <div className="container max-w-screen-md mx-auto px-6">
+                    </div>
+                </div>
+                <div className="container max-w-screen-md mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10 auto-rows-auto">
                         <div className="col-span-4 pb-10">
                             <h2 className="pt-16">Planning</h2>
@@ -112,26 +112,18 @@ function Offer() {
                             <Zoom>
                                 <Image src="/after.png" layout="intrinsic" width="2435" height="1544" alt="The final offer invitation screen" className="rounded-2xl" />
                             </Zoom>
-                        </div>
-                    </div>
-                </div>
-                <hr className="container mx-auto h-px border-t-0 bg-slate-300" />
-                <div className="container max-w-screen-md mx-auto">
-                    <div className="flex flex-row flex-wrap">
-                        <div className="flex flex-col flex-1 group cursor-pointer text-center justify-items-end content-end">
+                            <br /><br /><br />
                             <Link href="/">
-                                <div className="pt-10 pb-4">
-                                    <div className="group-hover:text-indigo-500 ease-in-out duration-300">
+                                <div className="pt-10 pb-4 underline">
+                                    <div className="hover:text-indigo-500 ease-in-out duration-300">
                                         <p>Back to home page</p>
                                     </div>
                                 </div>
                             </Link>
                         </div>
-                       
                     </div>
                 </div>
-               
-                </div>
+            </div>
         </>
     )
 }
