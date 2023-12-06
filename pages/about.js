@@ -10,7 +10,7 @@ function About() {
                     <div className="text-lg md:text-xl">Hi, I'm Tom —</div>              
                     <div className="text-2xl md:text-3xl leading-8">
                         I'm a <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
-                        &nbsp;based in Brighton, UK. I have over 10 years of design industry experience.<br /><br />
+                        &nbsp;based in Brighton, UK. I have 10+ years of design industry experience.<br /><br />
                     </div>
                     <div className="text-lg">
                         Currently UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
