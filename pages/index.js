@@ -27,6 +27,7 @@ function HomePage() {
 
         <div>
           <Layout>
+            <div className="bgImage bg-center bg-no-repeat bg-cover bg-opacity-50">
             <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center">
               <div className="h-full flex">
                 <div className="text-center md:text-left flex flex-row flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
@@ -40,6 +41,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </Layout>
           <a name="work" id="work" />
