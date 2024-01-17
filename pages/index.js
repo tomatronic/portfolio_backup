@@ -25,7 +25,7 @@ function HomePage() {
     <>
       <div className="mb-16">
 
-        <div>
+        <div className="pt-40 md:pt-20">
           <Layout>
             <div className="bgImage bg-center bg-no-repeat bg-cover bg-opacity-50">
             <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center">
@@ -45,7 +45,7 @@ function HomePage() {
             </div>
           </Layout>
           <a name="work" id="work" />
-          <div className="container max-w-screen-md mx-auto px-6">
+          <div className="container max-w-screen-md mx-auto pt-20">
             <div className="flex flex-col gap-8 md:flex-wrap">
               {caseStudies.map((e) => {
                 return (

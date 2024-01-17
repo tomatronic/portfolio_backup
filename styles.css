@@ -45,7 +45,15 @@
 }
 
 nav ul li a.active {
-   color: #916DF9;
+   background-clip: text;
+   color: transparent;
+   background-image: linear-gradient(to right top, #fb7185,#d946ef,#6366f1);
+}
+
+nav ul li a:hover {
+   background-clip: text;
+   color: transparent;
+   background-image: linear-gradient(to right top, #fb7185,#d946ef,#6366f1);
 }
 
 nav ul li a.active::after {
@@ -60,12 +68,22 @@ nav ul li a.active::after {
   color: #4f46e5;
 }
 
+.self-center {
+   background-color: rgba(179, 179, 179, .1);
+   border-radius: 12px;
+   margin-top: 6px;
+   padding: 12px;
+   backdrop-filter: blur(18px);
+}
+
 .active a{
-   color: #4f46e5;
+   background-clip: text;
+   color: transparent;
+   background-image: linear-gradient(to right top, #fb7185,#d946ef,#6366f1);
 }
 
 .bgImage{
    background-image:
-    radial-gradient(circle, rgba(241,245,249,0.6) 0%, rgba(241,245,249,1) 55%),
+    radial-gradient(circle, rgba(241,245,249,0.6) 0%, rgba(241,245,249,1) 50%),
     url('/homeBg.png');
 }
