@@ -8,7 +8,7 @@ function CaseStudy() {
         <>
 
             <div>
-                <div className="container max-w-full h-[70vh] bg-[url('/dfbg.png')] bg-cover relative">
+                <div className="container h-[70vh] bg-[url('/dfbg.png')] bg-cover rounded-2xl max-w-screen-lg mx-auto mt-40 md:mt-20 relative">
                     <div className="flex flex-row flex-wrap content-center mx-auto place-content-center h-fit">
                         <div className="flex flex-col">
                                 <Image src="/tools.png" layout="fill" alt="Small mock of end product" className="object-cover" />
@@ -98,10 +98,10 @@ function CaseStudy() {
                             <p className="mb-16">By Saturday evening I was confident that I had created a sketch that I could work with. I decided to take a break at this point until the next day.</p>
                             <div className="pb-16">
                                 <Zoom>
-                                    <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" alt="An example of sketches completed for the first screen of the app" />
+                                    <Image src="/sketch.png" layout="intrinsic" width="1421" height="1000" className="rounded-2xl" alt="An example of sketches completed for the first screen of the app" />
                                 </Zoom>
                             </div>
-                            <div className="max-w-full bg-yellow-500 rounded-lg p-10">
+                            <div className="max-w-full bg-yellow-500 rounded-2xl p-10">
                                 <h2>Mockups</h2>
                                 <p>Sunday morning I decided to get an early start, I spent a large chunk of the day working on the hi-fidelity mock ups for the required screens. Even though I wasnt completing a full app I wanted to make sure that it could be added to in the future easily and still make sense.</p>
                                 <Zoom>
@@ -135,10 +135,11 @@ function CaseStudy() {
                             <h2>Outcome</h2>
                             <p>Overall I am happy with the result. However, I wish I had more time to perfect this.</p>
                             <p className="mb-16">The initial area I would have spent more time on would have been the research phase, I would have liked to have gained a better understanding of the competitor landscape. The addition of user interviews would have also assisted in the research and the end result. I also think I could of come up with a more refined color palette and framework for the project, but this may of been a stretch to achieve given the time constraint.</p>
+                            <div className="rounded-3xl overflow-hidden">
                             <Zoom>
-                                <Image src="/dfFinal.png" layout="intrinsic" width="1403" height="931" alt="Designflows final submission 2021" />
+                                <Image src="/dfFinal.png" layout="intrinsic" width="1403" height="931" className="rounded-2xl" alt="Designflows final submission 2021" />
                             </Zoom>
-                            
+                            </div>
                             <h2 className="pt-16">Final thoughts</h2>
                             <p>The competition was fun, and I will be looking out for the event again later this year. However, in the meantime I will take the judges feedback onboard and possibly revisit this project at a later date to try and improve the final result.</p>
                             <br/><br/><br/>

@@ -31,10 +31,10 @@ const navChild = {
 function NavBar() {
   const router = useRouter();
     return <>
-    <motion.div className="container max-w-screen-lg mx-auto text-gray-700 py-3" variants={navVariants} initial="hidden" animate="visible">
+    <motion.div className="container max-w-screen-lg mx-auto text-gray-700 py-3 px-3" variants={navVariants} initial="hidden" animate="visible">
       <div className="flex md:justify-between md:flex-row flex-col items-center md:text-left text-center fixed top-0 right-0 left-0 max-w-screen-lg mx-auto z-50">
             <Link href="https://www.tomspencer.design">
-              <motion.a href="https://www.tomspencer.design" className="text-gray-700 font-semibold text-2xl py-4 px-4 mx-2 cursor-pointer md:leading-none" variants={navChild}>Tom Spencer<br/><span className="text-base font-normal">UX Designer</span></motion.a>
+              <motion.a href="https://www.tomspencer.design" className="text-gray-700 font-semibold text-2xl py-4 cursor-pointer md:leading-none" variants={navChild}>Tom Spencer<br/><span className="text-base font-normal">UX Designer</span></motion.a>
             </Link>
             <nav className="self-center text-lg">
               <ul className="inline-block">
