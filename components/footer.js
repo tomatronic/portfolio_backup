@@ -5,7 +5,7 @@ function Footer() {
                 <hr className="mb-6 h-px border-t-0 " />
                 <div className="flex flex-col">
                     <div className="text-sm text-center">
-                        Designed and built by Tom Spencer - 2023
+                        Designed and built by Tom Spencer - 2024
                     </div>
                 </div>
             </div>
