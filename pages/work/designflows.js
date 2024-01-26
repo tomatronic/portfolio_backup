@@ -144,8 +144,8 @@ function CaseStudy() {
                             <p>The competition was fun, and I will be looking out for the event again later this year. However, in the meantime I will take the judges feedback onboard and possibly revisit this project at a later date to try and improve the final result.</p>
                             <br/><br/><br/>
                             <Link href="/">
-                                <div className="pt-10 pb-4 underline">
-                                    <div className="hover:text-indigo-500 ease-in-out duration-300">
+                                <div className="pt-10 pb-4 inline-flex">
+                                    <div className="text-indigo-600 hover:ease-in-out hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500 tracking-tight">
                                         <p>Back to home page</p>
                                     </div>
                                 </div>
