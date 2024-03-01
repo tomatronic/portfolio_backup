@@ -18,7 +18,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
     const deltaX = dotX - mouseX;
-    const deltaY = dotY - mouseY;
+    const deltaY = dotY - mouseY -35;
     return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - dotSize;
   };
 
