@@ -29,25 +29,24 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   useEffect(() => {
     console.log("Mouse Position:", mousePosition.x, mousePosition.y);
   }, [mousePosition.x, mousePosition.y]);
-
   const createDots = () => {
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize * 2 + gapSize;
-const dotY = row * (dotSize * 2 + gapSize) + dotSize * 2 + gapSize;
-        const distance = calculateDistance(dotX, dotY, mousePosition.x, mousePosition.y);
+        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize - handleMouseMove.x;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize - handleMouseMove.y;
+        const distance = calculateDistance(dotX, dotY, 0, 0); // Adjusted for mouse position
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-
+  
         newDots.push(
           <circle
             key={`${row}-${col}`}
             cx={dotX}
             cy={dotY}
             r={dotSize}
-            fill="#273959"
+            fill="#273959" // Change the color if needed
             style={{
               opacity,
               transition: 'opacity 0.1s ease-in 0.5 ease-out',
