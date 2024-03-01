@@ -1,15 +1,14 @@
 import Layout from "../components/Layout/index"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
-import React, { useState } from "react"
 import DotMatrix from "../components/portfolioVisual"
 
 
 function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  React.useEffect(() => {
+  useEffect(() => {
     const path = window.location.hash;
     if (path && path.includes("#")) {
       setTimeout(() => {
@@ -27,7 +26,7 @@ function HomePage() {
   const handleMouseMove = (event) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
-
+  
   return (
     <>
       <div className="mb-16">
