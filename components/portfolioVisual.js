@@ -21,7 +21,12 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   };
 
   const calculateDistance = (dotX, dotY) => {
-    const container = document.getElementById('dot-container');
+    const container = typeof document !== 'undefined' && document.getElementById('dot-container');
+  
+    if (!container) {
+      return 0;
+    }
+  
     const containerRect = container.getBoundingClientRect();
     const mouseX = mousePosition.x - containerRect.left;
     const mouseY = mousePosition.y - containerRect.top;
