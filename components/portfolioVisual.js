@@ -30,8 +30,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     console.log("Mouse Position:", mousePosition.x, mousePosition.y);
   }, [mousePosition.x, mousePosition.y]);
 
-  const createDots = () => {
-    const { x: mouseX, y: mouseY } = handleMouseMove();  // Call the function to get the current mouse position
+  const createDots = (mouseX, mouseY) => {
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
@@ -67,7 +66,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
-        {createDots()}
+        {createDots(mousePosition.x, mousePosition.y)}
       </svg>
     </div>
   );
