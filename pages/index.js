@@ -6,7 +6,7 @@ import DotMatrix from "../components/portfolioVisual"
 
 
 function HomePage() {
-  // eslint-disable-next-line no-unused-vars
+  
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
