@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Layout = ({ children }) => (
+/* const Layout = ({ children }) => (
   <motion.div
     initial={{ y: 80, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
@@ -14,5 +14,5 @@ const Layout = ({ children }) => (
   >
     {children}
   </motion.div>
-);
+); */
 export default Layout;
