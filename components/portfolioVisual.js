@@ -31,7 +31,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     if (!container) return [];
   
     const containerRect = container.getBoundingClientRect();
-    console.log('Container Rect:', containerRect);
   
     const newDots = [];
   
