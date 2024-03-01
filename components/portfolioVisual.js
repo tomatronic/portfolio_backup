@@ -36,6 +36,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        console.log('Dot Position:', dotX, dotY);
         const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
@@ -57,7 +58,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       }
     }
     return newDots;
-  };  
+  };
   
   return (
     <div
