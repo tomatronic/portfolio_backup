@@ -33,7 +33,7 @@ function HomePage() {
       <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="relative">
+            <div className="relative" onMouseMove={handleMouseMove}>
               <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} handleMouseMove={handleMouseMove} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
               <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40" onMouseMove={handleMouseMove} style={{ pointerEvents: 'none' }} >
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
