@@ -24,7 +24,6 @@ function HomePage() {
   });
 
   const handleMouseMove = (event) => {
-    console.log("Mouse Moved");
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
 
