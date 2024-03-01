@@ -40,9 +40,9 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const containerX = containerRect.left;
-        const containerY = containerRect.top + window.scrollY + 131; // Update this line
+        const containerY = containerRect.top + window.scrollY; // Update this line
     
-        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
+        const distance = calculateDistance(dotX + containerX, dotY + containerY + 131, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
