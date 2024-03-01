@@ -1,9 +1,9 @@
-// DotMatrix.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const [dots, setDots] = useState([]);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const initialDots = [];
@@ -27,14 +27,16 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   };
 
   useEffect(() => {
-    console.log("Mouse Position:", mousePosition.x, mousePosition.y);
+    console.log('Mouse Position:', mousePosition.x, mousePosition.y);
   }, [mousePosition.x, mousePosition.y]);
 
   const createDots = (mouseX, mouseY) => {
-    const container = document.getElementById('dot-container'); // Add an ID to your container
+    const container = containerRef.current;
+    if (!container) return [];
+
     const containerRect = container.getBoundingClientRect();
-  
     const newDots = [];
+
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.left;
@@ -44,7 +46,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-  
+
         newDots.push(
           <circle
             key={`${row}-${col}`}
@@ -62,11 +64,11 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
-  
-  
+
   return (
     <div
       id="dot-container"
+      ref={containerRef}
       style={{ position: 'absolute', width: '100%', height: '200%', top: '-50%' }}
       onMouseMove={handleMouseMove}
     >
