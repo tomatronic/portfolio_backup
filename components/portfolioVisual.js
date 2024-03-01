@@ -45,6 +45,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+        const filter = isInfluenceRadius ? 'url(#purple-glow)' : 'none';
 
         newDots.push(
           <circle
@@ -68,12 +69,23 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'fixed', width: '100%', height: '200%', top: containerTop + 'px' }}
+      style={{ position: 'fixed', width: '100%', top: containerTop + 'px' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
-        {createDots(mousePosition.x, mousePosition.y)}
-      </svg>
+  <defs>
+    <filter id="purple-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feFlood result="color" flood-color="#8a3df5"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  {createDots(mousePosition.x, mousePosition.y)}
+</svg>
     </div>
   );
 };
