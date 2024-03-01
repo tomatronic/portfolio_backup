@@ -6,7 +6,8 @@ import DotMatrix from "../components/portfolioVisual"
 
 
 function HomePage() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // eslint-disable-next-line no-unused-vars
+const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const path = window.location.hash;
@@ -26,7 +27,7 @@ function HomePage() {
   const handleMouseMove = (event) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
-  
+
   return (
     <>
       <div className="mb-16">
