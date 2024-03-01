@@ -18,7 +18,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
     const deltaX = dotX - mouseX;
-    const deltaY = dotY - mouseY +131;
+    const deltaY = dotY - mouseY;
     return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - dotSize;
   };
 
@@ -70,7 +70,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'absolute', width: '100%', height: '200%', top: '-50%' }}
+      style={{ position: 'absolute', width: '100%', height: '200%', top: '-266px' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
