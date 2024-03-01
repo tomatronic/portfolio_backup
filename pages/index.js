@@ -26,18 +26,23 @@ function HomePage() {
       <div className="mb-16">
 
         <div className="pt-40 md:pt-20">
-        <Layout>
-                    <div className="relative">
-        
-        <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
-        
-        <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center z-10">
-                <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
-                  <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
-                  &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
-                </div>
-                <div className="text-lg pt-10">
-                  Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
+          <Layout>
+            <div className="relative">
+
+              <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
+
+              <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center">
+                <div className="h-full flex">
+                  <div className="text-center md:text-left flex flex-row flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
+                    <div className="flex flex-col text-center">
+                      <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
+                        Senior <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                        &nbsp;focused on delivering simple, yet effective, user centric designs.<br />
+                      </div>
+                      <div className="text-lg pt-10">Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -46,21 +51,21 @@ function HomePage() {
           <div className="container max-w-screen-md mx-auto pt-20">
             <h2>Case studies</h2>
             <div className="grid grid-cols-2 gap-4">
-  {[...Array(3)].map((_, i) => (
-    <div key={i} className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1 ${ i === 0 ? "col-span-2" : "" }`}>
-      {/* Render the specific case study based on the current iteration index */}
-      <Presentation
-        key={caseStudies[i].link}
-        tag={caseStudies[i].tag}
-        title={caseStudies[i].title}
-        blurb={caseStudies[i].blurb}
-        img={caseStudies[i].img}
-        link={caseStudies[i].link}
-      />
-    </div>
-  ))}
-</div>
-{/*             <div className="flex flex-col gap-8 md:flex-wrap pb-20">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1 ${i === 0 ? "col-span-2" : ""}`}>
+                  {/* Render the specific case study based on the current iteration index */}
+                  <Presentation
+                    key={caseStudies[i].link}
+                    tag={caseStudies[i].tag}
+                    title={caseStudies[i].title}
+                    blurb={caseStudies[i].blurb}
+                    img={caseStudies[i].img}
+                    link={caseStudies[i].link}
+                  />
+                </div>
+              ))}
+            </div>
+            {/*             <div className="flex flex-col gap-8 md:flex-wrap pb-20">
               {caseStudies.map((e) => {
                 return (
                   <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
@@ -80,8 +85,8 @@ function HomePage() {
               <div className="row-span-5 col-start-3 row-start-1">7</div>
             </div> */}
 
-          <h2 className="pt-20">Additional work</h2>
-          <p>Coming soon...</p>
+            <h2 className="pt-20">Additional work</h2>
+            <p>Coming soon...</p>
           </div>
         </div>
       </div>
