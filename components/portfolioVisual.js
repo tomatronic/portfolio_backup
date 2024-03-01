@@ -41,7 +41,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const containerX = containerRect.left;
         const containerY = containerRect.top + window.scrollY; // Update this line
     
-        const distance = calculateDistance(dotX + containerX, dotY + containerY + 131, mouseX, mouseY);
+        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
@@ -67,7 +67,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'absolute', width: '100%', height: '200%', top: '-50%' }}
+      style={{ position: 'absolute', width: '100%', height: '200%', top: '-200px' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
