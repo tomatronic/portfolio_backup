@@ -68,7 +68,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
-      style={{ position: 'absolute' }}
+      style={{ position: 'absolute', width: '100%' }}
       onMouseMove={handleMouseMove}
     >
       <svg

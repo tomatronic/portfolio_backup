@@ -35,13 +35,13 @@ function HomePage() {
               gapSize={12}
               style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }}
             />
-            <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center text-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
+            <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
               {/* Your content */}
-              <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
+              <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
                 <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                 &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
               </div>
-              <div className="text-lg pt-10">
+              <div className="text-lg pt-10 text-center">
                 Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
               </div>
             </div>
