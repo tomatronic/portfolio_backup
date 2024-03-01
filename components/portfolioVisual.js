@@ -34,8 +34,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const dotX = col * (dotSize * 2 + gapSize) + dotSize * 2 + gapSize;
+const dotY = row * (dotSize * 2 + gapSize) + dotSize * 2 + gapSize;
         const distance = calculateDistance(dotX, dotY, mousePosition.x, mousePosition.y);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
