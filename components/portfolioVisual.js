@@ -34,12 +34,15 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
     const newDots = [];
 
+    // Calculate the vertical center of the parent div
+    const containerCenterY = containerRect.height / 2;
+
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.top + window.scrollY;
 
-        const distance = calculateDistance(dotX + containerRect.left, dotY + containerRect.top + window.scrollY, mousePosition.x, mousePosition.y);
+        const distance = calculateDistance(dotX, dotY, mousePosition.x, mousePosition.y);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
@@ -47,8 +50,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX + containerRect.left}
-            cy={dotY + containerRect.top + window.scrollY}
+            cx={dotX}
+            cy={dotY}
             r={dotSize}
             fill="#273959"
             style={{
@@ -67,7 +70,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'fixed', width: '100%', top: 0 }}
+      style={{ position: 'relative', width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
