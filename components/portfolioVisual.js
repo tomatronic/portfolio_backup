@@ -33,25 +33,27 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const createDots = (mouseX, mouseY) => {
     const container = containerRef.current;
     if (!container) return [];
-
+  
     const containerRect = container.getBoundingClientRect();
     const newDots = [];
-
+  
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.left;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.top;
-        console.log('Dot Position:', dotX, dotY);
-        const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
+        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const containerX = containerRect.left;
+        const containerY = containerRect.top;
+  
+        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-
+  
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX}
-            cy={dotY}
+            cx={dotX + containerX}
+            cy={dotY + containerY}
             r={dotSize}
             fill="#273959"
             style={{
@@ -64,6 +66,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
+  
 
   return (
     <div
