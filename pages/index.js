@@ -29,7 +29,7 @@ function HomePage() {
           <Layout>
           <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative">
             <DotMatrix
-              rows={20}
+              rows={200}
               columns={100}
               dotSize={2}
               gapSize={12}
