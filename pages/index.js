@@ -36,8 +36,7 @@ function HomePage() {
               style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
             />
 
-            {/* Your existing content */}
-            <div className="bgImage bg-center bg-no-repeat bg-cover bg-opacity-50 h-full">
+            {/* Your existing content */}            
               {/* The content you want to appear on top of the DotMatrix */}
               <div className="flex flex-col text-center z-10">
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
@@ -48,7 +47,6 @@ function HomePage() {
                   Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
                 </div>
               </div>
-            </div>
           </div>
         </Layout>
           <a name="work" id="work" />
