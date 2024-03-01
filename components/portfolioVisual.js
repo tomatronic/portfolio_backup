@@ -32,31 +32,32 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
   const createDots = () => {
     const newDots = [];
+    const mouseX = handleMouseMove?.x || 0;
+    const mouseY = handleMouseMove?.y || 0;
+  
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        
-        if (handleMouseMove && typeof handleMouseMove.x === 'number' && typeof handleMouseMove.y === 'number') {
-          const distance = calculateDistance(dotX, dotY, handleMouseMove.x, handleMouseMove.y);
-          const isInfluenceRadius = distance < 24;
-          const baseOpacity = dots[row * columns + col];
-          const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
   
-          newDots.push(
-            <circle
-              key={`${row}-${col}`}
-              cx={dotX - handleMouseMove.x}
-              cy={dotY - handleMouseMove.y}
-              r={dotSize}
-              fill="#273959" // Change the color if needed
-              style={{
-                opacity,
-                transition: 'opacity 0.1s ease-in 0.5 ease-out',
-              }}
-            />
-          );
-        }
+        const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
+        const isInfluenceRadius = distance < 24;
+        const baseOpacity = dots[row * columns + col];
+        const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+  
+        newDots.push(
+          <circle
+            key={`${row}-${col}`}
+            cx={dotX}
+            cy={dotY}
+            r={dotSize}
+            fill="#273959" // Change the color if needed
+            style={{
+              opacity,
+              transition: 'opacity 0.1s ease-in 0.5 ease-out',
+            }}
+          />
+        );
       }
     }
     return newDots;
