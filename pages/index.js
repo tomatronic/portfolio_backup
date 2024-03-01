@@ -39,7 +39,7 @@ function HomePage() {
             <div className="bgImage bg-center bg-no-repeat bg-cover bg-opacity-50 h-full">
               <div className="flex flex-col text-center">
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
-                  Senior <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                  <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                   &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
                 </div>
                 <div className="text-lg pt-10">
