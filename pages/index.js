@@ -38,7 +38,7 @@ function HomePage() {
               <div
                 className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"
                 onMouseMove={handleMouseMove}
-                style={{ pointerEvents: 'none' }} // Allow events to pass through
+                style={{ pointerEvents: 'none' }}
               >
 
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
@@ -57,7 +57,7 @@ function HomePage() {
             <div className="grid grid-cols-2 gap-4">
               {[...Array(3)].map((_, i) => (
                 <div key={i} className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1 ${i === 0 ? "col-span-2" : ""}`}>
-                  {/* Render the specific case study based on the current iteration index */}
+                  
                   <Presentation
                     key={caseStudies[i].link}
                     tag={caseStudies[i].tag}
