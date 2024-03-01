@@ -19,7 +19,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
     const deltaX = dotX - mouseX;
     const deltaY = dotY - mouseY;
-    return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - dotSize; // Subtract dotSize to consider the center
   };
 
   const handleMouseMove = (event) => {
