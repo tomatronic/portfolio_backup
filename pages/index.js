@@ -26,17 +26,17 @@ function HomePage() {
       <div className="mb-16">
 
         <div className="pt-40 md:pt-20">
-          <Layout>
-          <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative">
-            <DotMatrix
-              rows={200}
-              columns={100}
-              dotSize={2}
-              gapSize={12}
-              style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
-            />
+        <Layout>
+            <div className="relative">
+              <DotMatrix
+                rows={200}
+                columns={100}
+                dotSize={2}
+                gapSize={12}
+                style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}
+              />
 
-            {/* Your existing content */}            
+              {/* Your existing content */}
               {/* The content you want to appear on top of the DotMatrix */}
               <div className="flex flex-col text-center z-10">
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
@@ -47,8 +47,8 @@ function HomePage() {
                   Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
                 </div>
               </div>
-          </div>
-        </Layout>
+            </div>
+          </Layout>
           <a name="work" id="work" />
           <div className="container max-w-screen-md mx-auto pt-20">
             <h2>Case studies</h2>
