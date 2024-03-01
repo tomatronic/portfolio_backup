@@ -26,10 +26,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
 
-  useEffect(() => {
-    console.log('Mouse Position:', mousePosition.x, mousePosition.y);
-  }, [mousePosition.x, mousePosition.y]);
-
  const createDots = (mouseX, mouseY) => {
   const container = containerRef.current;
   if (!container) return [];
