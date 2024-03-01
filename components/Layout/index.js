@@ -1,4 +1,4 @@
-/* import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Layout = ({ children }) => (
   <motion.div
@@ -15,4 +15,4 @@ const Layout = ({ children }) => (
     {children}
   </motion.div>
 );
-export default Layout; */
+export default Layout;

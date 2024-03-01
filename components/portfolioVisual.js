@@ -38,13 +38,11 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize - containerY;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const containerX = containerRect.left;
         const containerY = containerRect.top + window.scrollY; // Update this line
-  
-        console.log('dotX:', dotX, 'dotY:', dotY, 'containerX:', containerX, 'containerY:', containerY);
-  
-        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
+    
+        const distance = calculateDistance(dotX + containerX, dotY - containerY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
