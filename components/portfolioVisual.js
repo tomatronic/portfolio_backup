@@ -16,11 +16,11 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setDots(initialDots);
   }, [rows, columns]);
 
-  const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
-    const deltaX = dotX - mouseX;
-    const deltaY = dotY - mouseY;
-    return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - dotSize; // Subtract dotSize to consider the center
-  };
+const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
+  const deltaX = dotX - mouseX;
+  const deltaY = dotY - mouseY;
+  return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - (dotSize + 50); // Subtract dotSize + 50
+};
 
   const handleMouseMove = (event) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
