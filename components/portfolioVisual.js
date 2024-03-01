@@ -74,16 +74,18 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
   <defs>
-    <filter id="purple-glow" x="-50%" y="-50%" width="200%" height="200%">
-    <feFlood result="color" flood-color="#8a3df5"/>
-      <feComposite in2="SourceAlpha" operator="in"/>
-      <feGaussianBlur stdDeviation="3"/>
-      <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feFlood result="flood" floodColor="#8a3df5" />
+    <feComposite in="flood" in2="SourceGraphic" operator="in" />
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="1" />
+    </feComponentTransfer>
+    <feMerge>
+      <feMergeNode in="SourceGraphic" />
+      <feMergeNode />
+    </feMerge>
+  </filter>
+</defs>
   {createDots(mousePosition.x, mousePosition.y)}
 </svg>
     </div>
