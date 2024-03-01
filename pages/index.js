@@ -27,21 +27,21 @@ function HomePage() {
 
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="relative">
-        {/* DotMatrix as background */}
-        <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
+            <div className="relative" style={{ height: '100vh' }}>
+              
+              <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
 
-        {/* Your content on top of DotMatrix */}
-        <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center text-center z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
-          <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
-            <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
-            &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
-          </div>
-          <div className="text-lg pt-10">
-            Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
-          </div>
-        </div>
-      </div>
+              
+              <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center text-center z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40">
+                <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
+                  <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                  &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
+                </div>
+                <div className="text-lg pt-10">
+                  Currently Senior UX Designer @ <b><a href="https://www.rakutenadvertising.com" target="_blank" rel="noreferrer">Rakuten Advertising</a></b>
+                </div>
+              </div>
+            </div>
           </Layout>
           <a name="work" id="work" />
           <div className="container max-w-screen-md mx-auto pt-20">
