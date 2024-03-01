@@ -2,6 +2,7 @@ import Layout from "../components/Layout/index"
 import React from "react"
 import caseStudies from "../components/caseStudies"
 import Presentation from "../components/caseStudy"
+import React, { useState } from "react"
 import DotMatrix from "../components/portfolioVisual"
 
 
