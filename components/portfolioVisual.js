@@ -40,7 +40,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const containerX = containerRect.left;
-        const containerY = containerRect.top + window.scrollY; // Update this line
+        const containerY = containerRect.top + window.scrollY;
     
         const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
@@ -56,7 +56,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
             fill="#273959"
             style={{
               opacity,
-              transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`,
+             
             }}
           />
         );
