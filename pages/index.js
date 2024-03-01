@@ -27,7 +27,7 @@ function HomePage() {
 
         <div className="pt-40 md:pt-20">
           <Layout>
-            <<div className="relative">
+            <div className="relative">
         {/* DotMatrix as background */}
         <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} />
 
