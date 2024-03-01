@@ -31,7 +31,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   }, [mousePosition.x, mousePosition.y]);
 
   const createDots = () => {
-    const { x: mouseX, y: mouseY } = handleMouseMove;  // Destructure handleMouseMove
+    const { x: mouseX, y: mouseY } = handleMouseMove();  // Call the function to get the current mouse position
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
@@ -59,7 +59,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };  
-  
   
   return (
     <div
