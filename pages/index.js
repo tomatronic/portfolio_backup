@@ -34,7 +34,7 @@ function HomePage() {
         <div className="pt-40 md:pt-20">
           <Layout>
             <div
-              className="relative" id="dot-container"
+              className="relative"
               onMouseMove={handleMouseMove}
             >
               <DotMatrix
