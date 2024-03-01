@@ -26,8 +26,8 @@ function HomePage() {
       <div className="mb-16">
 
         <div className="pt-40 md:pt-20">
-        <Layout>
-            <div className="relative">
+                    <Layout>
+            <div className="relative container max-w-screen-md mx-auto px-6 flex flex-col justify-center">
               <DotMatrix
                 rows={200}
                 columns={100}
