@@ -31,6 +31,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     if (!container) return [];
 
     const containerRect = container.getBoundingClientRect();
+    const containerCenterX = containerRect.left + containerRect.width / 2;
+    const containerCenterY = containerRect.top + containerRect.height / 2;
 
     const newDots = [];
 
@@ -39,7 +41,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
 
-        const distance = calculateDistance(dotX + containerRect.left, dotY + containerRect.top + window.scrollY, mousePosition.x, mousePosition.y);
+        const distance = calculateDistance(dotX + containerCenterX, dotY + containerCenterY, mousePosition.x, mousePosition.y);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
@@ -47,8 +49,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX + containerRect.left}
-            cy={dotY + containerRect.top + window.scrollY}
+            cx={dotX + containerCenterX}
+            cy={dotY + containerCenterY}
             r={dotSize}
             fill="#273959"
             style={{
@@ -67,7 +69,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'absolute', width: '100%', top: 0 }}
+      style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0 }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
