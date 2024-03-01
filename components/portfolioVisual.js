@@ -1,14 +1,15 @@
+// DotMatrix.js
 import React, { useState, useEffect } from 'react';
 
-const DotMatrix = ({ rows, columns, dotSize, gapSize, handleMouseMove }) => {
+const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const [dots, setDots] = useState([]);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    // Randomize opacity for each dot once on page load
     const initialDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
-        const baseOpacity = Math.random() * 0.2; // Cap opacity at 20%
+        const baseOpacity = Math.random() * 0.2;
         initialDots.push(baseOpacity);
       }
     }
@@ -21,13 +22,21 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize, handleMouseMove }) => {
     return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
   };
 
+  const handleMouseMove = (event) => {
+    setMousePosition({ x: event.pageX, y: event.pageY });
+  };
+
+  useEffect(() => {
+    console.log("Mouse Position:", mousePosition.x, mousePosition.y);
+  }, [mousePosition.x, mousePosition.y]);
+
   const createDots = () => {
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const distance = calculateDistance(dotX, dotY, handleMouseMove.x, handleMouseMove.y);
+        const distance = calculateDistance(dotX, dotY, mousePosition.x, mousePosition.y);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
@@ -38,7 +47,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize, handleMouseMove }) => {
             cx={dotX}
             cy={dotY}
             r={dotSize}
-            fill="#273959" // Change the color if needed
+            fill="#273959"
             style={{
               opacity,
               transition: 'opacity 0.1s ease-in 0.5 ease-out',
@@ -49,10 +58,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize, handleMouseMove }) => {
     }
     return newDots;
   };
-
-  useEffect(() => {
-    console.log("Mouse Position:", handleMouseMove.x, handleMouseMove.y);
-  }, [handleMouseMove.x, handleMouseMove.y]);
 
   return (
     <div
