@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+const DotMatrix = ({ rows, columns, dotSize, gapSize, handleMouseMove }) => {
   const [dots, setDots] = useState([]);
 
   useEffect(() => {
@@ -16,21 +15,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setDots(initialDots);
   }, [rows, columns]);
 
-  const handleMouseMove = (event) => {
-    setMousePosition({ x: event.pageX, y: event.pageY });
-  };
-
-  const calculateDistance = (dotX, dotY) => {
-    const container = typeof document !== 'undefined' && document.getElementById('dot-container');
-
-    if (!container) {
-      return 0;
-    }
-
-    const containerRect = container.getBoundingClientRect();
-    const mouseX = mousePosition.x - containerRect.left;
-    const mouseY = mousePosition.y - containerRect.top;
-
+  const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
     const deltaX = dotX - mouseX;
     const deltaY = dotY - mouseY;
     return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
@@ -42,7 +27,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const distance = calculateDistance(dotX, dotY);
+        const distance = calculateDistance(dotX, dotY, handleMouseMove.x, handleMouseMove.y);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 1 : baseOpacity;
@@ -66,20 +51,9 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   };
 
   return (
-    <div
-      id="dot-container"
-      style={{ position: 'absolute', width: '100%' }}
-      onMouseMove={handleMouseMove}
-    >
-      <svg
-      width="100%"
-      height="100%"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ display: 'block' }}
-    >
-        {createDots()}
-      </svg>
-    </div>
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
+      {createDots()}
+    </svg>
   );
 };
 
