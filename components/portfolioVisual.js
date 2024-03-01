@@ -26,49 +26,46 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
 
- const createDots = (mouseX, mouseY) => {
-  const container = containerRef.current;
-  if (!container) return [];
-
-  const containerRect = container.getBoundingClientRect();
-  console.log('Container Rect:', containerRect);
-
-  const newDots = [];
-
-  for (let row = 0; row < rows; row++) {
-    for (let col = 0; col < columns; col++) {
-      const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-      const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-      const containerX = containerRect.left;
-      const containerY = containerRect.top;
-
-      console.log('dotX:', dotX, 'dotY:', dotY, 'containerX:', containerX, 'containerY:', containerY);
-
-      const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
-      const isInfluenceRadius = distance < 24;
-      const baseOpacity = dots[row * columns + col];
-      const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-
-      newDots.push(
-        <circle
-          key={`${row}-${col}`}
-          cx={dotX + containerX}
-          cy={dotY + containerY}
-          r={dotSize}
-          fill="#273959"
-          style={{
-            opacity,
-            transition: 'opacity 0.1s ease-in 0.5 ease-out',
-          }}
-        />
-      );
-    }
-  }
-  return newDots;
-};
-
+  const createDots = (mouseX, mouseY) => {
+    const container = containerRef.current;
+    if (!container) return [];
   
-
+    const containerRect = container.getBoundingClientRect();
+    console.log('Container Rect:', containerRect);
+  
+    const newDots = [];
+  
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < columns; col++) {
+        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const containerX = containerRect.left;
+        const containerY = containerRect.top + window.scrollY; // Update this line
+  
+        console.log('dotX:', dotX, 'dotY:', dotY, 'containerX:', containerX, 'containerY:', containerY);
+  
+        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
+        const isInfluenceRadius = distance < 24;
+        const baseOpacity = dots[row * columns + col];
+        const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+  
+        newDots.push(
+          <circle
+            key={`${row}-${col}`}
+            cx={dotX + containerX}
+            cy={dotY + containerY}
+            r={dotSize}
+            fill="#273959"
+            style={{
+              opacity,
+              transition: 'opacity 0.1s ease-in 0.5 ease-out',
+            }}
+          />
+        );
+      }
+    }
+    return newDots;
+  };  
   return (
     <div
       id="dot-container"
