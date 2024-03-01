@@ -8,14 +8,14 @@ const caseStudies=[
     },
     {
         tag: "Brewtiful",
-        title:"Creation of a new craft beer brand and blog",
+        title:"Creation of craft beer brand and blog",
         blurb:"Product design, User research, Brand creation",
         link:"/work/beer-blog",
         img: "/brewtifulThumb.png"
     },
     {
       tag: "Designflows 2021",
-      title:"Design hack: A 48 hour app design competition",
+      title:"48 hour app design competition",
       blurb:"Product design, User research, Brand creation",
       link:"/work/designflows",
       img: "/competitionThumb.png"
