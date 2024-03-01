@@ -22,15 +22,15 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
   const calculateDistance = (dotX, dotY) => {
     const container = typeof document !== 'undefined' && document.getElementById('dot-container');
-  
+
     if (!container) {
       return 0;
     }
-  
+
     const containerRect = container.getBoundingClientRect();
     const mouseX = mousePosition.x - containerRect.left;
     const mouseY = mousePosition.y - containerRect.top;
-  
+
     const deltaX = dotX - mouseX;
     const deltaY = dotY - mouseY;
     return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
@@ -46,7 +46,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 1 : baseOpacity;
-  
+
         newDots.push(
           <circle
             key={`${row}-${col}`}
@@ -56,7 +56,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
             fill="#273959" // Change the color if needed
             style={{
               opacity,
-              transition: `opacity ${isInfluenceRadius ? '0.5s' : '1s'} ease-in-out`, // Adjust durations as needed
+              transition: 'opacity 0.3s ease-in-out',
             }}
           />
         );
@@ -64,18 +64,19 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
-  
-  
-  
-  
 
   return (
     <div
       id="dot-container"
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: '100%', position: 'relative' }}
       onMouseMove={handleMouseMove}
     >
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="100%"
+        height="100%"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}
+      >
         {createDots()}
       </svg>
     </div>
