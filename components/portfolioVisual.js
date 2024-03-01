@@ -26,67 +26,52 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
 
-  const createDots = () => {
+  const createDots = (mouseX, mouseY) => {
     const container = containerRef.current;
     if (!container) return [];
-
+  
     const containerRect = container.getBoundingClientRect();
-    const containerCenterX = containerRect.left + containerRect.width / 2;
-    const containerCenterY = containerRect.top + containerRect.height / 2;
-
+  
     const newDots = [];
-
+  
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-
-        const distance = calculateDistance(dotX + containerCenterX, dotY + containerCenterY, mousePosition.x, mousePosition.y);
+        const containerX = containerRect.left;
+        const containerY = containerRect.top + window.scrollY; // Update this line
+    
+        const distance = calculateDistance(dotX + containerX, dotY + containerY + 131, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-
+  
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX + containerCenterX}
-            cy={dotY + containerCenterY}
+            cx={dotX + containerX}
+            cy={dotY + containerY}
             r={dotSize}
             fill="#273959"
             style={{
               opacity,
-              transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`,
-              filter: isInfluenceRadius ? 'url(#glow)' : 'none', // Apply filter conditionally
+              transition: 'opacity 0.1s ease-in 0.5 ease-out',
             }}
           />
         );
       }
     }
     return newDots;
-  };
-
+  };  
   return (
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0 }}
+      style={{ position: 'absolute', width: '100%', height: '200%', top: '-50%' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
-        <defs>
-          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-            <feFlood result="flood" floodColor="#8a3df5" />
-            <feComposite in="flood" in2="SourceGraphic" operator="in" />
-            <feComponentTransfer>
-              <feFuncA type="linear" slope="1" />
-            </feComponentTransfer>
-            <feMerge>
-              <feMergeNode in="SourceGraphic" />
-              <feMergeNode />
-            </feMerge>
-          </filter>
-        </defs>
-        {createDots()}
+        {createDots(mousePosition.x, mousePosition.y)}
       </svg>
     </div>
   );
