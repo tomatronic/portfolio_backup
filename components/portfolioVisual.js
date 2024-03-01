@@ -55,7 +55,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
             fill="#273959"
             style={{
               opacity,
-              transition: 'opacity 0.1s ease-in 0.5 ease-out',
+              transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`, // Adjust the durations as needed
             }}
           />
         );
