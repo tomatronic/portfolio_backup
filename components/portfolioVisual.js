@@ -30,40 +30,44 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     setMousePosition({ x: event.pageX, y: event.pageY });
   };
 
-  const createDots = (mouseX, mouseY) => {
-    const container = containerRef.current;
-    if (!container) return [];
-
-    const newDots = [];
-
-    for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-
-        const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
-        const isInfluenceRadius = distance < 24;
-        const baseOpacity = dots[row * columns + col];
-        const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-        const filter = isInfluenceRadius ? 'url(#purple-glow)' : 'none';
-
-        newDots.push(
-          <circle
-            key={`${row}-${col}`}
-            cx={dotX}
-            cy={dotY}
-            r={dotSize}
-            fill="#273959"
-            style={{
-              opacity,
-              transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`,
-            }}
-          />
-        );
+    const createDots = (mouseX, mouseY) => {
+      const container = containerRef.current;
+      if (!container) return [];
+    
+      const containerRect = container.getBoundingClientRect();
+    
+      const newDots = [];
+    
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < columns; col++) {
+          const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
+          const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+          const containerX = containerRect.left;
+          const containerY = containerRect.top + window.scrollY;
+    
+          const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
+          const isInfluenceRadius = distance < 24;
+          const baseOpacity = dots[row * columns + col];
+          const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+    
+          newDots.push(
+            <circle
+              key={`${row}-${col}`}
+              cx={dotX + containerX}
+              cy={dotY + containerY}
+              r={dotSize}
+              fill="#273959"
+              style={{
+                opacity,
+                transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`,
+                filter: isInfluenceRadius ? 'url(#glow)' : 'none', // Apply filter conditionally
+              }}
+            />
+          );
+        }
       }
-    }
-    return newDots;
-  };
+      return newDots;
+    };
 
   return (
     <div
