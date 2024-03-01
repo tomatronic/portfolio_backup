@@ -46,7 +46,7 @@ function HomePage() {
                 onMouseMove={handleMouseMove}
                 style={{ pointerEvents: 'none' }} // Allow events to pass through
               >
-                {/* Your content */}
+                
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
                   <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                   &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
