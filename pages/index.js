@@ -27,12 +27,19 @@ function HomePage() {
 
         <div className="pt-40 md:pt-20">
                     <Layout>
-                    <div className="relative">
-        
-        <DotMatrix rows={200} columns={100} dotSize={2} gapSize={12} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }} />
+            <div className="relative container max-w-screen-md mx-auto px-6 flex flex-col justify-center">
+              <DotMatrix
+                rows={200}
+                columns={100}
+                dotSize={2}
+                gapSize={12}
+                style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}
+              />
 
-        <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center z-10">
-          <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
+              {/* Your existing content */}
+              {/* The content you want to appear on top of the DotMatrix */}
+              <div className="flex flex-col text-center z-10">
+                <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
                   <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                   &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
                 </div>
