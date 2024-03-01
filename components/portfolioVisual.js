@@ -31,11 +31,14 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   }, [mousePosition.x, mousePosition.y]);
 
   const createDots = (mouseX, mouseY) => {
+    const container = document.getElementById('dot-container'); // Add an ID to your container
+    const containerRect = container.getBoundingClientRect();
+  
     const newDots = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.left;
+        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize + containerRect.top;
         console.log('Dot Position:', dotX, dotY);
         const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
@@ -59,6 +62,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
+  
   
   return (
     <div
