@@ -7,7 +7,7 @@ import DotMatrix from "../components/portfolioVisual"
 
 function HomePage() {
   // eslint-disable-next-line no-unused-vars
-const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const path = window.location.hash;
@@ -47,7 +47,7 @@ const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
                 onMouseMove={handleMouseMove}
                 style={{ pointerEvents: 'none' }} // Allow events to pass through
               >
-                
+
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
                   <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                   &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
@@ -76,26 +76,6 @@ const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
                 </div>
               ))}
             </div>
-            {/*             <div className="flex flex-col gap-8 md:flex-wrap pb-20">
-              {caseStudies.map((e) => {
-                return (
-                  <Presentation key={e.link} tag={e.tag} title={e.title} blurb={e.blurb} img={e.img} link={e.link} />
-                );
-              })}
-            </div> */}
-            {/* <h2 className="text-center text-[36px]">Effective designs that convert</h2>
-            <p className="text-center pb-8">Archive of designs I have created.</p>
-
-            <div className="grid grid-cols-3 grid-rows-5 gap-4">
-              <div className="row-span-3">
-                <Image src="/donutmock.png" width={1000} height={700} className="object-cover animate-fade-in block h-full w-full scale-100 transform object-center opacity-100 transition duration-300 group-hover:scale-110" />
-              </div>
-              <div className="row-span-2 col-start-1 row-start-4">2</div>
-              <div className="row-span-2 col-start-2 row-start-1">5</div>
-              <div className="row-span-3 col-start-2 row-start-3">6</div>
-              <div className="row-span-5 col-start-3 row-start-1">7</div>
-            </div> */}
-
             <h2 className="pt-20">Additional work</h2>
             <p>Coming soon...</p>
           </div>
