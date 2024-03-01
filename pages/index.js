@@ -29,12 +29,11 @@ function HomePage() {
 
   return (
     <>
-      <div className="mb-16">
+            <div className="mb-16" onMouseMove={handleMouseMove}>
         <div className="pt-40 md:pt-20">
           <Layout>
             <div
               className="relative"
-              onMouseMove={handleMouseMove}
             >
               <DotMatrix
                 rows={200}
@@ -53,7 +52,6 @@ function HomePage() {
               />
               <div
                 className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"
-                onMouseMove={handleMouseMove}
                 style={{ pointerEvents: "none" }}
               >
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
