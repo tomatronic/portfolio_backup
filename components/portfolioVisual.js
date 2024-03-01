@@ -4,6 +4,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const [dots, setDots] = useState([]);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const containerRef = useRef(null);
+  const [containerTop, setContainerTop] = useState(0);
 
   useEffect(() => {
     const initialDots = [];
@@ -14,6 +15,9 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       }
     }
     setDots(initialDots);
+
+    // Set container top dynamically based on its position in the document
+    setContainerTop(containerRef.current.getBoundingClientRect().top + window.scrollY);
   }, [rows, columns]);
 
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
@@ -29,34 +33,29 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const createDots = (mouseX, mouseY) => {
     const container = containerRef.current;
     if (!container) return [];
-  
-    const containerRect = container.getBoundingClientRect();
-    console.log('Container Rect:', containerRect);
-  
+
     const newDots = [];
-  
+
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const containerX = containerRect.left;
-        const containerY = containerRect.top + window.scrollY;
-    
-        const distance = calculateDistance(dotX + containerX, dotY + containerY, mouseX, mouseY);
+
+        const distance = calculateDistance(dotX, dotY, mouseX, mouseY);
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
         const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
-  
+
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX + containerX}
-            cy={dotY + containerY}
+            cx={dotX}
+            cy={dotY}
             r={dotSize}
             fill="#273959"
             style={{
               opacity,
-             
+              transition: `opacity 0.2s ease-in ${isInfluenceRadius ? '1s' : '2s'} ease-out`,
             }}
           />
         );
@@ -64,13 +63,12 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
-  
-  
+
   return (
     <div
       id="dot-container"
       ref={containerRef}
-      style={{ position: 'absolute', width: '100%', height: '200%', top: '-266px' }}
+      style={{ position: 'fixed', width: '100%', height: '200%', top: containerTop + 'px' }}
       onMouseMove={handleMouseMove}
     >
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
