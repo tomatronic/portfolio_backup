@@ -6,21 +6,20 @@ import DotMatrix from "../components/portfolioVisual"
 
 
 function HomePage() {
-
   React.useEffect(() => {
-    const path = window.location.hash
+    const path = window.location.hash;
     if (path && path.includes("#")) {
       setTimeout(() => {
-        const id = path.replace("#", "")
-        const el = window.document.getElementById(id)
-        const r = el.getBoundingClientRect()
+        const id = path.replace("#", "");
+        const el = window.document.getElementById(id);
+        const r = el.getBoundingClientRect();
         window.top.scroll({
           top: pageYOffset + r.top,
           behavior: "smooth",
-        })
-      }, 600)
+        });
+      }, 600);
     }
-  })
+  });
 
   return (
     <>
@@ -30,16 +29,19 @@ function HomePage() {
           <Layout>
           <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative">
             <DotMatrix
-              rows={200}
+              rows={20}
               columns={100}
               dotSize={2}
               gapSize={12}
               style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
-            />            
+            />
+
+            {/* Your existing content */}
             <div className="bgImage bg-center bg-no-repeat bg-cover bg-opacity-50 h-full">
-              <div className="flex flex-col text-center">
+              {/* The content you want to appear on top of the DotMatrix */}
+              <div className="flex flex-col text-center z-10">
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight">
-                  <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
+                  Senior <b className="text-transparent bg-clip-text bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">UX Designer</b>
                   &nbsp;focused on delivering simple, yet effective, user-centric designs.<br />
                 </div>
                 <div className="text-lg pt-10">
