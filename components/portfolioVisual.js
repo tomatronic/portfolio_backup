@@ -56,6 +56,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
             style={{
               opacity,
               transition: 'opacity 0.1s ease-in 0.5 ease-out',
+              filter: isInfluenceRadius ? `drop-shadow(0px 0px 5px #8a3df5)` : 'none' // Apply drop shadow conditionally
             }}
           />
         );
