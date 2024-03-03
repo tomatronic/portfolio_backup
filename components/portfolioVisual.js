@@ -75,13 +75,14 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
-      className='container mx-auto'
       ref={containerRef}
       style={{
         position: 'absolute',
         width: '100%',
         height: '300%',
         top: '-250px',
+        marginleft: 'auto',
+        marginright: 'auto',
         WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 45%)'
       }}
       onMouseMove={handleMouseMove}
