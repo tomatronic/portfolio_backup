@@ -32,10 +32,9 @@ function HomePage() {
             <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="relative"  onMouseMove={handleMouseMove}>
+            <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"  onMouseMove={handleMouseMove}>
               
               <DotMatrix
-              className="max-w-screen-md"
                 rows={35}
                 columns={40}
                 dotSize={2.5}
