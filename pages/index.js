@@ -80,7 +80,7 @@ function HomePage() {
           <a name="work" id="work" />
           <div className="container max-w-screen-md mx-auto pt-20">
             <h2>Case studies</h2>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[...Array(3)].map((_, i) => (
                 <div
                   key={i}
