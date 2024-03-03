@@ -85,7 +85,7 @@ function HomePage() {
                 <div
                   key={i}
                   className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1 ${
-                    i === 0 ? "col-span-2" : ""
+                    i === 0 ? "md:col-span-2" : ""
                   }`}
                 >
                   <Presentation

@@ -78,7 +78,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       ref={containerRef}
       style={{
         position: 'absolute',
-        width: 'auto',              
+        width: '900px',              
         height: '200%',
         top: '-180px',
         left: '0',
