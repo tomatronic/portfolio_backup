@@ -50,7 +50,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         );
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
-        const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+        const opacity = isInfluenceRadius ? 1 : baseOpacity;
         const fill = isInfluenceRadius ? "#6366f1" : "#273959";
   
         newDots.push(
