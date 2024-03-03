@@ -50,7 +50,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         );
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
-        const opacity = isInfluenceRadius ? 1 : baseOpacity;
+        const opacity = isInfluenceRadius ? 0.8 : baseOpacity;
         const fill = isInfluenceRadius ? "#6366f1" : "#273959";
   
         newDots.push(
@@ -73,27 +73,19 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   
 
   return (
-    <div
-      id="dot-container"
-      ref={containerRef}
-      style={{
-        position: 'absolute',
-        width: '100%',
-        maxWidth: '690px',
-        height: '200%',
-        top: '-120px',
-        left: '0',
-        right: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 65%)',
-      }}
-      onMouseMove={handleMouseMove}
-    >
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
-        {createDots()}
-      </svg>
-    </div>
+<div
+  id="dot-container"
+  ref={containerRef}
+  className="absolute w-full max-w-690 h-200% top-[-80px] md:top-[-120px] left-0 right-0 mx-auto"
+  style={{
+    WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 65%)',
+  }}
+  onMouseMove={handleMouseMove}
+>
+  <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
+    {createDots()}
+  </svg>
+</div>
   );
 };
 
