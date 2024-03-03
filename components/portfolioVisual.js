@@ -50,7 +50,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         );
         const isInfluenceRadius = distance < 24;
         const baseOpacity = dots[row * columns + col];
-        const opacity = isInfluenceRadius ? 1.0 : baseOpacity;
+        const opacity = isInfluenceRadius ? 0.5 : baseOpacity;
+        const fill = isInfluenceRadius ? "#6366f1" : "#273959";
   
         newDots.push(
           <circle
@@ -58,7 +59,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
             cx={dotX}
             cy={dotY}
             r={dotSize}
-            fill="#273959"
+            fill={fill}
             style={{
               opacity,
               transition: 'opacity 0.1s ease-in 0.5 ease-out',
