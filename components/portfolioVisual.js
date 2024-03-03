@@ -75,14 +75,16 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
+      className='max-w-screen-md'
       ref={containerRef}
       style={{
-        position: 'absolute',
-        width: '100%',
+        position: 'absolute',        
         height: '300%',
         top: '-250px',
-        marginleft: 'auto',
-        marginright: 'auto',
+        left: '0',
+        right: '0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
         WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 45%)'
       }}
       onMouseMove={handleMouseMove}
