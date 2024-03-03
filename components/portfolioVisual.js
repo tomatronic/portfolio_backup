@@ -3,8 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const [dots, setDots] = useState([]);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const containerRef = useRef(null);
-  const [containerPosition, setContainerPosition] = useState({ left: 0, top: 0 });
 
   useEffect(() => {
     const initialDots = [];
@@ -16,12 +14,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     setDots(initialDots);
 
-    // Set container position
-    const containerRect = containerRef.current.getBoundingClientRect();
-    setContainerPosition({
-      left: containerRect.left + window.scrollX,
-      top: containerRect.top + window.scrollY,
-    });
   }, [rows, columns]);
 
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
@@ -75,11 +67,11 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
-      ref={containerRef}
+      
       style={{
         position: 'absolute',
         width: '100%',
-                    
+        maxWidth: '690px',            
         height: '200%',
         top: '-180px',
         left: '0',
