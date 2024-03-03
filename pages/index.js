@@ -46,7 +46,7 @@ function HomePage() {
               />
               
               <div
-                className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"
+                className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:my-24"
                 style={{ pointerEvents: "none" }}
               >
                 <div className="text-2xl md:text-5xl md:leading-snug tracking-tight text-center">
