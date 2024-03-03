@@ -29,15 +29,15 @@ function HomePage() {
 
   return (
     <>
-      <div className="mb-16">
+            <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
             <div className="relative"  onMouseMove={handleMouseMove}>
-              <div className="max-w-screen-md">
+              
               <DotMatrix
                 rows={40}
-                columns={50}
-                dotSize={2.5}
+                columns={60}
+                dotSize={2}
                 gapSize={12}
                 handleMouseMove={handleMouseMove}
                 style={{
@@ -49,7 +49,7 @@ function HomePage() {
                   zIndex: 1,
                 }}
               />
-              </div>
+              
               <div
                 className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"
                 style={{ pointerEvents: "none" }}
