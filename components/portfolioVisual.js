@@ -30,6 +30,10 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     const container = document.getElementById("dot-container");
     const containerRect = container.getBoundingClientRect();
     const containerX = containerRect.left;
+    const screenWidth = window.innerWidth;
+  
+    // Adjust the influence radius position based on the screen width
+    const influenceRadiusOffset = (screenWidth - 1200) / 2; // You can adjust this value as needed
   
     const newDots = [];
   
@@ -39,7 +43,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
   
         const distance = calculateDistance(
-          dotX - containerX, // Adjust the value based on the container's position
+          dotX - containerX - influenceRadiusOffset, // Adjust the value based on the influence radius offset
           dotY,
           mouseX,
           mouseY
@@ -66,6 +70,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
+  
 
   return (
     <div
