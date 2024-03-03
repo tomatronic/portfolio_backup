@@ -38,7 +38,7 @@ function HomePage() {
               
               <DotMatrix
                 rows={40}
-                columns={50}
+                columns={60}
                 dotSize={2}
                 gapSize={12}
                 handleMouseMove={handleMouseMove}
