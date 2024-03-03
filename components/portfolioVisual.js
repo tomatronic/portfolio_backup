@@ -75,12 +75,11 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
-      className='max-w-screen-md'
       ref={containerRef}
       style={{
         position: 'absolute',               
-        height: '300%',
-        top: '-250px',
+        height: '200%',
+        top: '-180px',
         left: '0',
         right: '0',
         marginLeft: 'auto',
