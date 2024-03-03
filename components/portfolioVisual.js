@@ -31,7 +31,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     const container = containerRef.current;
     const containerRect = container ? container.getBoundingClientRect() : { left: 0, top: 0 };
     const containerX = containerRect.left;
-    const containerY = containerRect.top + window.scrollY;
+    const containerY = containerRect.top + (typeof window !== 'undefined' ? window.scrollY : 0);
   
     const newDots = [];
   
@@ -68,6 +68,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
     }
     return newDots;
   };
+  
   
 
   return (
