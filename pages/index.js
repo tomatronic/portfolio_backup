@@ -32,9 +32,7 @@ function HomePage() {
             <div className="mb-16" onMouseMove={handleMouseMove}>
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div
-              className="relative container mx-auto"
-            >
+            <div className="relative container mx-auto"  onMouseMove={handleMouseMove}>
               
               <DotMatrix
                 rows={40}
