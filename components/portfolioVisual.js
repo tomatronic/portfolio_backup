@@ -73,19 +73,18 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
 
   return (
+    <div className='container mx-auto relative'>
     <div
       id="dot-container"
       ref={containerRef}
       style={{
         position: 'absolute',
-        width: '680px',
-        maxWidth: '100%',              
+        width: '100%',              
         height: '200%',
         top: '-180px',
         left: '0',
         right: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto',
+
         WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 45%)'
       }}
       onMouseMove={handleMouseMove}
@@ -93,6 +92,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
         {createDots(mousePosition.x, mousePosition.y)}
       </svg>
+    </div>
     </div>
   );
 };
