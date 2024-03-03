@@ -73,19 +73,27 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   
 
   return (
-<div
-  id="dot-container"
-  ref={containerRef}
-  className="absolute w-full max-w-690 h-200% top-[-80px] md:top-[-120px] left-0 right-0 mx-auto"
-  style={{
-    WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 65%)',
-  }}
-  onMouseMove={handleMouseMove}
->
-  <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
-    {createDots()}
-  </svg>
-</div>
+    <div
+      id="dot-container"
+      ref={containerRef}
+      className="top-[-70px] md:top-[-120px]"
+      style={{
+        position: 'absolute',
+        width: '100%',
+        maxWidth: '690px',
+        height: '200%',        
+        left: '0',
+        right: '0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 65%)',
+      }}
+      onMouseMove={handleMouseMove}
+    >
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
+        {createDots()}
+      </svg>
+    </div>
   );
 };
 
