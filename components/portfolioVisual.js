@@ -28,49 +28,52 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
   const createDots = (mouseX, mouseY) => {
     const newDots = [];
-    const screenWidth = window.innerWidth;
     
-    // Calculate influence radius offset based on cursor position
-    const influenceRadiusOffsetPercentage = 10; // You can adjust this value as needed
-    const cursorPercentage = (mouseX / screenWidth) * 100;
-    const offset = (screenWidth * influenceRadiusOffsetPercentage) / 100;
-    const influenceRadiusOffset = (cursorPercentage * offset) / 100;
+    if (typeof window !== 'undefined') {
+      const screenWidth = window.innerWidth;
+      
+      // Calculate influence radius offset based on cursor position
+      const influenceRadiusOffsetPercentage = 10; // You can adjust this value as needed
+      const cursorPercentage = (mouseX / screenWidth) * 100;
+      const offset = (screenWidth * influenceRadiusOffsetPercentage) / 100;
+      const influenceRadiusOffset = (cursorPercentage * offset) / 100;
   
-    for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < columns; col++) {
-        const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
-        const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < columns; col++) {
+          const dotX = col * (dotSize * 2 + gapSize) + dotSize + gapSize;
+          const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
   
-        // Calculate distance with influence radius offset
-        const distance = calculateDistance(
-          dotX,
-          dotY,
-          mouseX - influenceRadiusOffset,
-          mouseY
-        );
-        const isInfluenceRadius = distance < 24;
-        const baseOpacity = dots[row * columns + col];
-        const opacity = isInfluenceRadius ? 0.4 : baseOpacity;
+          // Calculate distance with influence radius offset
+          const distance = calculateDistance(
+            dotX,
+            dotY,
+            mouseX - influenceRadiusOffset,
+            mouseY
+          );
+          const isInfluenceRadius = distance < 24;
+          const baseOpacity = dots[row * columns + col];
+          const opacity = isInfluenceRadius ? 0.4 : baseOpacity;
   
-        newDots.push(
-          <circle
-            key={`${row}-${col}`}
-            cx={dotX}
-            cy={dotY}
-            r={dotSize}
-            fill="#273959"
-            style={{
-              opacity,
-              transition: 'opacity 0.1s ease-in 0.5 ease-out',
-              filter: isInfluenceRadius ? `drop-shadow(5px 5px 5px red)` : 'none',
-            }}
-          />
-        );
+          newDots.push(
+            <circle
+              key={`${row}-${col}`}
+              cx={dotX}
+              cy={dotY}
+              r={dotSize}
+              fill="#273959"
+              style={{
+                opacity,
+                transition: 'opacity 0.1s ease-in 0.5 ease-out',
+                filter: isInfluenceRadius ? `drop-shadow(5px 5px 5px red)` : 'none',
+              }}
+            />
+          );
+        }
       }
     }
+    
     return newDots;
   };
-  
   
 
   return (
