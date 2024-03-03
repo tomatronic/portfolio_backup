@@ -33,11 +33,11 @@ function HomePage() {
         <div className="pt-40 md:pt-20">
           <Layout>
             <div className="relative"  onMouseMove={handleMouseMove}>
-              <div>
+              <div className="max-w-screen-md">
               <DotMatrix
                 rows={40}
                 columns={50}
-                dotSize={3}
+                dotSize={2.5}
                 gapSize={12}
                 handleMouseMove={handleMouseMove}
                 style={{
