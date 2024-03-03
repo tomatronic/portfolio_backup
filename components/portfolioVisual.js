@@ -79,7 +79,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       style={{
         position: 'absolute',
         width: '100%',
-        maxWidth: '680px',              
+                    
         height: '200%',
         top: '-180px',
         left: '0',
