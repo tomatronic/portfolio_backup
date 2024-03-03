@@ -19,7 +19,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   const calculateDistance = (dotX, dotY, mouseX, mouseY) => {
     const deltaX = dotX - mouseX;
     const deltaY = dotY - mouseY;
-    return Math.sqrt(deltaX * deltaX + deltaY * deltaY) - dotSize;
+    return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
   };
 
   const handleMouseMove = (event) => {
@@ -67,13 +67,12 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
   return (
     <div
       id="dot-container"
-      
       style={{
         position: 'absolute',
         width: '100%',
-        maxWidth: '690px',            
+        maxWidth: '690px',
         height: '200%',
-        top: '-180px',
+        top: '-120px',
         left: '0',
         right: '0',
         marginLeft: 'auto',
