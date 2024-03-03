@@ -35,19 +35,12 @@ function HomePage() {
             <div className="relative"  onMouseMove={handleMouseMove}>
               
               <DotMatrix
+              className="max-w-screen-md"
                 rows={35}
                 columns={40}
                 dotSize={2.5}
                 gapSize={12}
                 handleMouseMove={handleMouseMove}
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  zIndex: 1,
-                }}
               />
               
               <div
