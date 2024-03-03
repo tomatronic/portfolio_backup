@@ -32,7 +32,7 @@ function HomePage() {
             <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:mb-36 md:mt-40"  onMouseMove={handleMouseMove}>
+            <div className="relative"  onMouseMove={handleMouseMove}>
               
               <DotMatrix
                 rows={35}
@@ -40,6 +40,16 @@ function HomePage() {
                 dotSize={2.5}
                 gapSize={12}
                 handleMouseMove={handleMouseMove}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  marginLeft: auto,
+                  marginRight: auto,
+                  zIndex: 1,
+                }}
               />
               
               <div
