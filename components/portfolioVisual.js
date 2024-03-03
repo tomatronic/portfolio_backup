@@ -44,7 +44,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
         const distance = calculateDistance(
           dotX + containerPosition.left,
-          dotY + containerPosition.top + 12,
+          dotY + containerPosition.top,
           mouseX,
           mouseY
         );
@@ -77,7 +77,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       id="dot-container"
       ref={containerRef}
       style={{
-        position: 'absolute',               
+        position: 'absolute',
+        width: '768px',              
         height: '200%',
         top: '-180px',
         left: '0',
