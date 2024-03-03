@@ -43,7 +43,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
 
         const distance = calculateDistance(
-          dotX + containerPosition.left - 600,
+          dotX + containerPosition.left,
           dotY + containerPosition.top,
           mouseX,
           mouseY
@@ -73,18 +73,19 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
 
 
   return (
-    <div className='container mx-auto relative'>
     <div
       id="dot-container"
       ref={containerRef}
       style={{
         position: 'absolute',
-        width: '100%',              
+        width: '100%',
+        maxWidth: '680px',              
         height: '200%',
         top: '-180px',
         left: '0',
         right: '0',
-
+        marginLeft: 'auto',
+        marginRight: 'auto',
         WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 45%)'
       }}
       onMouseMove={handleMouseMove}
@@ -92,7 +93,6 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style={{ pointerEvents: 'none' }}>
         {createDots(mousePosition.x, mousePosition.y)}
       </svg>
-    </div>
     </div>
   );
 };
