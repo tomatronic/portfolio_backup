@@ -43,7 +43,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
 
         const distance = calculateDistance(
-          dotX + containerPosition.left + window.ScrollX,
+          dotX + containerPosition.left + ScrollX,
           dotY + containerPosition.top + 12,
           mouseX,
           mouseY
