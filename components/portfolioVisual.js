@@ -47,8 +47,8 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         newDots.push(
           <circle
             key={`${row}-${col}`}
-            cx={dotX + containerPosition.left}
-            cy={dotY + containerPosition.top}
+            cx={dotX}
+            cy={dotY}
             r={dotSize}
             fill="#273959"
             style={{
