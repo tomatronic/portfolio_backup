@@ -46,8 +46,8 @@ function HomePage() {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  marginLeft: auto,
-                  marginRight: auto,
+                  marginLeft: "auto",
+                  marginRight: "auto",
                   zIndex: 1,
                 }}
               />
