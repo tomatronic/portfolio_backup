@@ -35,7 +35,7 @@ function HomePage() {
             <div className="relative"  onMouseMove={handleMouseMove}>
               
               <DotMatrix
-                rows={35}
+                rows={30}
                 columns={40}
                 dotSize={2.5}
                 gapSize={12}
