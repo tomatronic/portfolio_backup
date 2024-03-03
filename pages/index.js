@@ -29,11 +29,11 @@ function HomePage() {
 
   return (
     <>
-            <div className="mb-16" onMouseMove={handleMouseMove}>
+      <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="relative container mx-auto"  onMouseMove={handleMouseMove}>
-              <div className="w-3/12">
+            <div className="relative"  onMouseMove={handleMouseMove}>
+              <div>
               <DotMatrix
                 rows={40}
                 columns={60}
