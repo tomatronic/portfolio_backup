@@ -86,7 +86,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         right: '0',
         marginLeft: 'auto',
         marginRight: 'auto',
-        WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 45%)',
+        WebkitMaskImage: 'radial-gradient(circle at center, white 0, transparent 65%)',
       }}
       onMouseMove={handleMouseMove}
     >
