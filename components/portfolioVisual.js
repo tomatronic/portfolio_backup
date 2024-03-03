@@ -35,7 +35,7 @@ const DotMatrix = ({ rows, columns, dotSize, gapSize }) => {
         const dotY = row * (dotSize * 2 + gapSize) + dotSize + gapSize;
 
         const distance = calculateDistance(
-          dotX - 60,
+          dotX + 300,
           dotY,
           mouseX,
           mouseY
