@@ -95,7 +95,7 @@ function HomePage() {
               ))}
             </div>
             <h2 className="pt-20">Additional work</h2>
-            <p>Coming soon...</p>
+            <p>Coming very soon...</p>
           </div>
         </div>
       </div>
