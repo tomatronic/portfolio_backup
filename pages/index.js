@@ -2,11 +2,8 @@ import Layout from "../components/Layout/index";
 import React, { useState, useEffect } from "react";
 import caseStudies from "../components/caseStudies";
 import Presentation from "../components/caseStudy";
-import DotMatrix from "../components/portfolioVisual";
 
 function HomePage() {
-  // eslint-disable-next-line no-unused-vars
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const path = window.location.hash;
@@ -23,27 +20,14 @@ function HomePage() {
     }
   });
 
-  const handleMouseMove = (event) => {
-    setMousePosition({ x: event.pageX, y: event.pageY });
-  };
-
   return (
     <>
             <div className="mb-16">
         <div className="pt-40 md:pt-20">
           <Layout>
-            <div className="relative"  onMouseMove={handleMouseMove}>
+            <div className="relative">
               
-              <DotMatrix
-                rows={30}
-                columns={30}
-                dotSize={2.5}
-                gapSize={12}
-                handleMouseMove={handleMouseMove}
-                style={{
-                  zIndex: 1,
-                }}
-              />
+
               
               <div
                 className="container max-w-screen-md mx-auto px-6 flex flex-col justify-center relative z-10 md:text-left flex-wrap max-w-s md:max-w-3xl my-16 md:my-24"
@@ -73,15 +57,13 @@ function HomePage() {
             </div>
           </Layout>
           <a name="work" id="work" />
-          <div className="container max-w-screen-md mx-auto pt-20">
+          <div className="container max-w-screen-xl mx-auto pt-20">
             <h2>Case studies</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               {[...Array(3)].map((_, i) => (
                 <div
                   key={i}
-                  className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1 ${
-                    i === 0 ? "md:col-span-2" : ""
-                  }`}
+                  className={`flex-1 flex flex-row justify-between overflow-hidden rounded-2xl bg-white border shadow-[0px_1px_8px_rgba(13,34,71,0.12),_0px_28px_96px_rgba(13,34,71,0.1)] group row-span-1`}
                 >
                   <Presentation
                     key={caseStudies[i].link}
