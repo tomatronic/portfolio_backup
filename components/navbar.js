@@ -3,18 +3,6 @@ import { useRouter } from "next/router";
 
 
 
-const navChild = {
-  hidden: {
-    opacity: 0,
-    y: '-20px'
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    duration: 0.3
-  }
-}
-
 function NavBar() {
   const router = useRouter();
     return <>

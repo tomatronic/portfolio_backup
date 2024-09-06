@@ -1,5 +1,5 @@
 import Layout from "../components/Layout/index";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import caseStudies from "../components/caseStudies";
 import Presentation from "../components/caseStudy";
 
